@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  --color-neon-green: #39FF14;
+  --color-neon-green-glow: rgba(57, 255, 20, 0.5);
+  --color-sage-bg: #E8F0E9; /* Near white but distinctively sage/mint */
+  --color-sage-dark: #CBDAD0;
+  --color-medical-accent: #2C3E50;
+}
+
+:root {
+  --background: #E8F0E9;
+  --foreground: #1A202C;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+@layer utilities {
+  .neon-glow {
+    text-shadow: 0 0 10px var(--color-neon-green-glow), 0 0 20px var(--color-neon-green-glow);
+  }
+  .neon-border {
+    border: 3px solid var(--color-neon-green);
+    box-shadow: 0 0 20px var(--color-neon-green-glow);
+  }
+  .glass-sage {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(57, 255, 20, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.05);
+  }
+  .medical-shadow {
+    box-shadow: 0 20px 50px -10px rgba(44, 62, 80, 0.1);
+  }
+  .section-divide {
+    background: linear-gradient(180deg, transparent, var(--color-sage-dark), transparent);
+  }
+  .text-neon {
+    color: var(--color-neon-green);
+    filter: drop-shadow(0 0 5px var(--color-neon-green-glow));
+  }
+}
