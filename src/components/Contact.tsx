@@ -1,10 +1,33 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, Clock, Send, Info, ShieldCheck } from "lucide-react";
+import { Mail, Phone, MapPin, Clock, Send, Info, ShieldCheck, ChevronDown } from "lucide-react";
 import { siteData } from "@/data/site-data";
+import { useState, useEffect, useRef } from "react";
+import { AnimatePresence } from "framer-motion";
 
 export function Contact() {
+  const [selectedService, setSelectedService] = useState("SCHOLL SS26 / ORTHOPÉDIE");
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setIsDropdownOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  const services = [
+    "SCHOLL SS26 / ORTHOPÉDIE",
+    "LOCATION MATÉRIEL",
+    "VENTE MATÉRIEL MÉDICAL",
+    "AUTRE DEMANDE"
+  ];
+
   return (
     <section id="contact" className="py-32 bg-sage-bg relative overflow-hidden">
       <div className="absolute top-0 right-0 w-full h-full bg-neon-green/[0.03] blur-[200px] rounded-full translate-x-1/2" />
@@ -101,14 +124,47 @@ export function Contact() {
                   />
                 </div>
               </div>
-              <div className="space-y-3 sm:space-y-4">
+              <div className="space-y-3 sm:space-y-4 relative" ref={dropdownRef}>
                 <label className="text-medical-accent font-black uppercase tracking-[0.3em] text-[10px] ml-3">Service Concerné</label>
-                <select className="w-full bg-sage-bg border-2 border-transparent rounded-[2rem] sm:rounded-[2.5rem] py-6 sm:py-8 px-10 sm:px-12 text-medical-accent font-black uppercase tracking-widest text-[10px] sm:text-xs focus:border-neon-green outline-none transition-all appearance-none">
-                  <option>SCHOLL SS26 / ORTHOPÉDIE</option>
-                  <option>LOCATION MATÉRIEL</option>
-                  <option>VENTE MATÉRIEL MÉDICAL</option>
-                  <option>AUTRE DEMANDE</option>
-                </select>
+                <div className="relative">
+                  <button 
+                    type="button"
+                    onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                    className="w-full bg-sage-bg border-2 border-transparent rounded-[2rem] sm:rounded-[2.5rem] py-6 sm:py-8 px-10 sm:px-12 text-medical-accent font-black uppercase tracking-widest text-[10px] sm:text-xs focus:border-neon-green outline-none transition-all flex items-center justify-between group"
+                  >
+                    <span>{selectedService}</span>
+                    <ChevronDown size={20} className={`text-neon-green transition-transform duration-500 ${isDropdownOpen ? 'rotate-180' : ''}`} />
+                  </button>
+
+                  <AnimatePresence>
+                    {isDropdownOpen && (
+                      <motion.div 
+                        initial={{ opacity: 0, y: 10, scale: 0.95 }}
+                        animate={{ opacity: 1, y: 0, scale: 1 }}
+                        exit={{ opacity: 0, y: 10, scale: 0.95 }}
+                        className="absolute top-full left-0 right-0 mt-4 bg-white border-4 border-medical-accent/5 rounded-[2.5rem] shadow-2xl z-[100] overflow-hidden p-4"
+                      >
+                        {services.map((service) => (
+                          <button
+                            key={service}
+                            type="button"
+                            onClick={() => {
+                              setSelectedService(service);
+                              setIsDropdownOpen(false);
+                            }}
+                            className={`w-full text-left px-8 py-5 rounded-2xl font-black uppercase tracking-widest text-[10px] transition-all ${
+                              selectedService === service 
+                                ? "bg-medical-accent text-neon-green" 
+                                : "text-medical-accent/40 hover:bg-sage-bg hover:text-medical-accent"
+                            }`}
+                          >
+                            {service}
+                          </button>
+                        ))}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
               </div>
               <div className="space-y-3 sm:space-y-4">
                 <label className="text-medical-accent font-black uppercase tracking-[0.3em] text-[10px] ml-3">Message</label>

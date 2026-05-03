@@ -43,6 +43,17 @@ export default function ServicesPage() {
                 </div>
               ))}
            </div>
+
+           <div className="mt-32">
+              <h3 className="text-xl font-black text-neon-green mb-12 uppercase tracking-[0.4em] text-center italic">Marques & Partenaires Officiels</h3>
+              <div className="flex flex-wrap justify-center gap-4 sm:gap-8">
+                 {siteData.brandCategories.flatMap(cat => cat.brands).map((brand) => (
+                    <div key={brand} className="px-8 py-4 bg-medical-accent/5 rounded-2xl border-2 border-medical-accent/10 hover:border-neon-green transition-all group">
+                       <span className="text-medical-accent/40 font-black text-[10px] sm:text-xs uppercase tracking-widest group-hover:text-medical-accent transition-colors">{brand}</span>
+                    </div>
+                 ))}
+              </div>
+           </div>
         </div>
       </section>
       <Footer />

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { Services } from "@/components/Services";
+import { Marques } from "@/components/Marques";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 import { siteData } from "@/data/site-data";
@@ -120,6 +121,8 @@ export default function Home() {
       </section>
 
       <Services />
+
+      <Marques />
 
       <section className="py-24 bg-medical-accent text-center">
          <Link href="/catalogues">

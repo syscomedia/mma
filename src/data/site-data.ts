@@ -84,5 +84,30 @@ export const siteData = {
         { name: "Kyle Sandal", material: "Synthetic", colors: "Grey, Black", tech: "Bioprint", image: "/assets/extracted/pharma-030.jpg" }
       ]
     }
+  ],
+  brandCategories: [
+    {
+      id: "medical",
+      name: "Distributeur / Médical Terrain",
+      brands: [
+        "Drive DeVilbiss Healthcare",
+        "Invacare",
+        "Identités",
+        "Systam",
+        "Herdegen",
+        "Mobio",
+        "Vermeiren"
+      ]
+    },
+    {
+      id: "ortho",
+      name: "Orthopédie / Orthèses",
+      brands: [
+        "Gibaud",
+        "Cizeta Medicali",
+        "Thuasne",
+        "Bauerfeind"
+      ]
+    }
   ]
 };
