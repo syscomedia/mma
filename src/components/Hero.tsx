@@ -17,7 +17,7 @@ export function Hero() {
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="flex flex-col"
+          className="flex flex-col max-w-3xl"
         >
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -38,11 +38,10 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="text-4xl sm:text-6xl md:text-8xl font-black text-medical-accent leading-[0.9] mb-8 sm:mb-10 tracking-tighter"
+            className="text-4xl sm:text-6xl lg:text-[5rem] font-black text-medical-accent leading-[0.9] mb-10 sm:mb-12 tracking-tighter uppercase"
           >
-            SANTÉ. <br />
-            <span className="text-neon-green neon-glow">CONFORT.</span> <br />
-            STYLE.
+            Matériel Médical <br />
+            <span className="text-neon-green neon-glow">& Orthopédie.</span>
           </motion.h1>
 
           <motion.p
@@ -96,7 +95,7 @@ export function Hero() {
           <div className="relative aspect-[4/5] rounded-[3rem] sm:rounded-[3.5rem] overflow-hidden border-8 border-white shadow-[0_40px_100px_-20px_rgba(44,62,80,0.2)] group">
             <Image
               src="/assets/centre.png"
-              alt="Centre Médical"
+              alt="Façade de la Maison Médicale Aixoise au Parc de la Duranne, Aix-en-Provence"
               fill
               className="object-cover group-hover:scale-110 transition-transform duration-1000"
               priority

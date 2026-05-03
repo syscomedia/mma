@@ -1,0 +1,49 @@
+# Guide SEO : Atteindre la 1ère Place sur Google France 🏥
+
+Pour que votre site soit le premier résultat sur Google pour le "matériel médical" en France (et spécifiquement à Aix-en-Provence), nous avons suivi une stratégie à trois niveaux.
+
+## 🛠 1. Optimisation Technique (Déjà implémentée)
+J'ai déjà configuré les éléments suivants dans votre code :
+- **Langue Locale** : Changement du site en `fr` (Français) pour que Google comprenne la cible.
+- **Métadonnées Avancées** : Ajout de titres, descriptions et mots-clés optimisés dans `layout.tsx`.
+- **Sitemap & Robots** : Création de fichiers automatiques pour guider les robots de Google.
+- **Structured Data (JSON-LD)** : Ajout d'un marquage "MedicalBusiness" pour apparaître dans les résultats locaux et Google Maps.
+
+---
+
+## 📍 2. Stratégie SEO Locale (ACTION REQUISE)
+Pour dominer les recherches à Aix-en-Provence, vous **devez** faire ces étapes manuellement :
+
+1.  **Google Business Profile (Crucial)** :
+    *   Créez ou revendiquez votre fiche sur [Google Business Profile](https://www.google.com/business/).
+    *   Utilisez le nom exact : `Maison Médicale Aixoise`.
+    *   Ajoutez l'adresse exacte, les horaires et le numéro de téléphone.
+    *   **Demandez des avis** : Un grand nombre d'avis 5 étoiles est le facteur #1 pour être premier localement.
+
+2.  **Citations Locales** :
+    *   Inscrivez-vous sur les Pages Jaunes, Yelp et les annuaires de la ville d'Aix-en-Provence.
+    *   L'information (Nom, Adresse, Tel) doit être **identique** partout.
+
+---
+
+## ✍️ 3. Stratégie de Contenu (Sémantique)
+Google classe les sites qui démontrent une expertise. Pour "matériel médical", vous devez :
+
+- **Blogs d'Expertise** : Publiez un article par mois sur des sujets comme :
+    *   "Comment choisir ses chaussures Scholl pour le travail ?"
+    *   "Le guide de la location de lit médicalisé à Aix-en-Provence."
+    *   "Pourquoi choisir une orthèse Gibaud ?"
+- **Mots-clés Longue Traîne** : Ne visez pas seulement "matériel médical". Visez "Vente fauteuil roulant Aix-en-Provence" ou "Spécialiste orthopédie Parc de la Duranne".
+
+---
+
+## 📈 4. Performance & Backlinks
+- **Rapidité** : Le site est construit avec Next.js, ce qui est excellent pour la vitesse (un facteur de classement).
+- **Backlinks** : Essayez d'obtenir des liens vers votre site depuis des sites de santé, des blogs de bien-être ou des sites locaux d'Aix-en-Provence.
+
+## Prochaines étapes suggérées :
+1. **Validation Search Console** : Je peux vous guider pour lier le site à Google Search Console afin de suivre votre position réelle.
+2. **Optimisation des Images** : Nous pouvons ajouter des descriptions (ALT) encore plus précises sur chaque produit du catalogue.
+
+> [!TIP]
+> Le SEO est un marathon. Les premiers résultats significatifs apparaissent généralement après **3 à 6 mois** de travail constant.

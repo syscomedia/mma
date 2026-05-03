@@ -4,14 +4,59 @@ import { Services } from "@/components/Services";
 import { siteData } from "@/data/site-data";
 import { CheckCircle2 } from "lucide-react";
 
-export const metadata = {
-  title: "Nos Expertises | Maison Médicale Aixoise",
-  description: "Découvrez nos solutions en orthopédie, matériel médical et maintien à domicile.",
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Matériel Médical & Orthopédie Aix-en-Provence — Nos Services",
+  description:
+    "Orthopédie, semelles sur mesure, location lit médicalisé, fauteuil roulant, monte-escalier et maintien à domicile à Aix-en-Provence. Marques Gibaud, Thuasne, Invacare, Scholl.",
+  keywords: [
+    "orthopédie Aix-en-Provence",
+    "location lit médicalisé 13100",
+    "fauteuil roulant Aix",
+    "semelles orthopédiques sur mesure Aix",
+    "monte-escalier Aix-en-Provence",
+    "maintien à domicile Aix",
+    "orthèse Gibaud Aix",
+    "orthèse Thuasne Aix",
+  ],
+  alternates: { canonical: "https://mmaixoise.fr/services" },
+  openGraph: {
+    title: "Matériel Médical & Services Orthopédiques — Maison Médicale Aixoise",
+    description:
+      "Tous nos services : orthopédie, lits médicalisés, fauteuils roulants, orthèses Gibaud/Thuasne à Aix-en-Provence.",
+    url: "https://mmaixoise.fr/services",
+    type: "website",
+  },
+};
+
+const servicesSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://mmaixoise.fr" },
+    { "@type": "ListItem", "position": 2, "name": "Nos Services", "item": "https://mmaixoise.fr/services" },
+  ],
+};
+
+const servicesItemsSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Services Maison Médicale Aixoise",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Orthopédie & Semelles sur Mesure Aix-en-Provence", "url": "https://mmaixoise.fr/services#orthopédie" },
+    { "@type": "ListItem", "position": 2, "name": "Location Lit Médicalisé Aix-en-Provence", "url": "https://mmaixoise.fr/services#location" },
+    { "@type": "ListItem", "position": 3, "name": "Vente Fauteuil Roulant Aix-en-Provence", "url": "https://mmaixoise.fr/services#fauteuil" },
+    { "@type": "ListItem", "position": 4, "name": "Maintien à Domicile 13100", "url": "https://mmaixoise.fr/services#domicile" },
+    { "@type": "ListItem", "position": 5, "name": "Chaussures Médicales Scholl SS26", "url": "https://mmaixoise.fr/services#scholl" },
+  ],
 };
 
 export default function ServicesPage() {
   return (
     <main className="min-h-screen pt-24 bg-sage-bg">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesItemsSchema) }} />
       <Navbar />
       <div className="py-20 text-center bg-medical-accent text-white">
          <h1 className="text-6xl md:text-8xl font-black uppercase tracking-tighter mb-6">Expertises</h1>

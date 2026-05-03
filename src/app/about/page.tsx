@@ -4,9 +4,25 @@ import { siteData } from "@/data/site-data";
 import { ShieldCheck, Target, Users, Award } from "lucide-react";
 import Image from "next/image";
 
-export const metadata = {
-  title: "Notre Engagement | Maison Médicale Aixoise",
-  description: "En savoir plus sur la Maison Médicale Aixoise et notre fondatrice Amira ABIDI.",
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "À Propos — Maison Médicale Aixoise, Spécialiste Orthopédie Aix",
+  description:
+    "Fondée en 2025 par Amira ABIDI, la Maison Médicale Aixoise est le spécialiste de référence en matériel médical et orthopédie au Parc de la Duranne, Aix-en-Provence. SIREN 939 690 657.",
+  keywords: [
+    "Maison Médicale Aixoise",
+    "Amira ABIDI orthopédie",
+    "spécialiste matériel médical Aix",
+    "pharmacie orthopédie Parc de la Duranne",
+  ],
+  alternates: { canonical: "https://mmaixoise.fr/about" },
+  openGraph: {
+    title: "À Propos — Maison Médicale Aixoise",
+    description: "Spécialiste en orthopédie et matériel médical au Parc de la Duranne depuis 2025.",
+    url: "https://mmaixoise.fr/about",
+    type: "website",
+  },
 };
 
 export default function AboutPage() {

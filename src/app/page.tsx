@@ -15,6 +15,125 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="bg-sage-bg min-h-screen text-medical-accent selection:bg-neon-green selection:text-medical-accent">
+      {/* MedicalBusiness schema */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": ["MedicalBusiness", "LocalBusiness"],
+        "name": "Maison Médicale Aixoise",
+        "alternateName": "MMA Aix-en-Provence",
+        "image": "https://mmaixoise.fr/assets/centre.png",
+        "@id": "https://mmaixoise.fr/#business",
+        "url": "https://mmaixoise.fr",
+        "telephone": siteData.phone,
+        "email": siteData.email,
+        "priceRange": "€€",
+        "currenciesAccepted": "EUR",
+        "paymentAccepted": "Cash, Credit Card, Chèque",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "70 Rue Alain Decaux",
+          "addressLocality": "Aix-en-Provence",
+          "addressRegion": "Bouches-du-Rhône",
+          "postalCode": "13100",
+          "addressCountry": "FR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 43.5297,
+          "longitude": 5.4474
+        },
+        "hasMap": "https://maps.google.com/?q=70+Rue+Alain+Decaux,+13100+Aix-en-Provence",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+            "opens": "09:00",
+            "closes": "18:30"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Saturday"],
+            "opens": "09:00",
+            "closes": "12:30"
+          }
+        ],
+        "sameAs": [
+          "https://www.google.com/maps?cid=VOTRE_CID_GOOGLE",
+          "https://www.pagesjaunes.fr/pro/maison-medicale-aixoise"
+        ],
+        "description": "Spécialiste en matériel médical, orthopédie et chaussures Scholl SS26 au Parc de la Duranne, Aix-en-Provence. Location lits médicalisés, fauteuils roulants, orthèses.",
+        "founder": {
+          "@type": "Person",
+          "name": "Amira ABIDI"
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Aix-en-Provence" },
+          { "@type": "City", "name": "Marseille" },
+          { "@type": "City", "name": "Gardanne" },
+          { "@type": "City", "name": "Pertuis" },
+          { "@type": "AdministrativeArea", "name": "Bouches-du-Rhône" }
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Matériel Médical & Orthopédie",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Location lit médicalisé Aix-en-Provence" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Vente fauteuil roulant Aix-en-Provence" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Semelles orthopédiques sur mesure" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Orthèses Gibaud et Thuasne" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Chaussures médicales Scholl SS26" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Monte-escalier Aix-en-Provence" } }
+          ]
+        }
+      }) }} />
+
+      {/* FAQPage schema — boosts rich snippets in Google */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Où trouver du matériel médical à Aix-en-Provence ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La Maison Médicale Aixoise, située au 70 Rue Alain Decaux, Parc de la Duranne, 13100 Aix-en-Provence, propose un large choix de matériel médical : lits médicalisés, fauteuils roulants, déambulateurs, orthèses et chaussures Scholl. Ouverte du lundi au vendredi de 9h à 18h30 et le samedi matin."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Peut-on louer un lit médicalisé à Aix-en-Provence ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Oui. La Maison Médicale Aixoise propose la location de lits médicalisés à Aix-en-Provence et dans toute la région PACA. La location peut être prise en charge par la Sécurité Sociale sous prescription médicale. Contactez-nous au +33 4 42 XX XX XX pour un devis."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Vendez-vous des chaussures Scholl à Aix-en-Provence ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Oui, nous sommes distributeur exclusif de la collection Scholl SS26 à Aix-en-Provence. Notre gamme comprend les lignes Pharma, Lifestyle Femme, Lifestyle Homme et Pharma Sneakers avec technologies Bioprint® et Memory Cushion®."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Proposez-vous des semelles orthopédiques sur mesure ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Oui. Nous réalisons des bilans podologiques complets et proposons des semelles orthopédiques sur mesure avec la technologie Scholl Bioprint®. Sur rendez-vous au Parc de la Duranne, Aix-en-Provence."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quelles marques d'orthèses proposez-vous ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nous distribuons les grandes marques d'orthopédie : Gibaud, Thuasne, Bauerfeind, Cizeta Medicali, ainsi que le matériel médical Drive DeVilbiss Healthcare, Invacare, Herdegen et Vermeiren."
+            }
+          }
+        ]
+      }) }} />
       <Navbar />
       
       <Hero />

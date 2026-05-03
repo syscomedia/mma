@@ -4,9 +4,26 @@ import { Contact } from "@/components/Contact";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import { siteData } from "@/data/site-data";
 
-export const metadata = {
-  title: "Contactez-nous | Maison Médicale Aixoise",
-  description: "Prenez rendez-vous ou demandez un devis pour votre matériel médical à Aix-en-Provence.",
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact — Matériel Médical Aix-en-Provence, 70 Rue Alain Decaux",
+  description:
+    "Contactez la Maison Médicale Aixoise au 70 Rue Alain Decaux, Parc de la Duranne, 13100 Aix-en-Provence. Rendez-vous orthopédie, devis location matériel médical. Lun-Ven 9h-18h30.",
+  keywords: [
+    "contact matériel médical Aix-en-Provence",
+    "rendez-vous orthopédie Aix",
+    "adresse Maison Médicale Aixoise",
+    "Parc de la Duranne médical",
+    "devis lit médicalisé Aix",
+  ],
+  alternates: { canonical: "https://mmaixoise.fr/contact" },
+  openGraph: {
+    title: "Contact — Maison Médicale Aixoise, Aix-en-Provence",
+    description: "70 Rue Alain Decaux, Parc de la Duranne, 13100 Aix-en-Provence. Ouvert Lun-Ven 9h-18h30, Sam 9h-12h30.",
+    url: "https://mmaixoise.fr/contact",
+    type: "website",
+  },
 };
 
 export default function ContactPage() {
@@ -29,12 +46,17 @@ export default function ContactPage() {
            <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
               <div className="bg-sage-bg p-12 rounded-[4rem] border-4 border-medical-accent/5">
                  <h2 className="text-4xl font-black text-medical-accent mb-12 uppercase tracking-tighter">Venir nous voir</h2>
-                 <div className="aspect-video bg-medical-accent/10 rounded-[3rem] border-2 border-neon-green/20 flex items-center justify-center mb-12 overflow-hidden relative">
-                    {/* Placeholder for Map - In real app would use Google Maps embed */}
-                    <div className="text-center p-12">
-                       <MapPin className="text-neon-green mx-auto mb-6" size={48} />
-                       <p className="text-medical-accent font-black text-xl uppercase tracking-widest">{siteData.address}</p>
-                    </div>
+                 <div className="aspect-video rounded-[3rem] border-2 border-neon-green/20 overflow-hidden mb-12">
+                    <iframe
+                      title="Localisation Maison Médicale Aixoise — 70 Rue Alain Decaux, Aix-en-Provence"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2894.5!2d5.4474!3d43.5297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s70+Rue+Alain+Decaux%2C+13100+Aix-en-Provence!5e0!3m2!1sfr!2sfr!4v1700000000000"
+                      width="100%"
+                      height="100%"
+                      style={{ border: 0 }}
+                      allowFullScreen
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                    />
                  </div>
                  <div className="grid grid-cols-2 gap-8">
                     <div>
