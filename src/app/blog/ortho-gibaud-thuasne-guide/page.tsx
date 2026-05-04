@@ -7,7 +7,7 @@ import { ArrowLeft, MapPin } from "lucide-react";
 export const metadata: Metadata = {
   title: "Orthèse Gibaud ou Thuasne : Laquelle Choisir ? Guide Expert Aix-en-Provence",
   description:
-    "Comparatif complet Gibaud vs Thuasne pour genouillères, chevillères, ceintures lombaires et poignets. Quel produit pour quelle pathologie ? Disponibles à Aix-en-Provence, Maison Médicale Aixoise.",
+    "Comparatif complet Gibaud vs Thuasne pour genouillères, chevillères, ceintures lombaires et poignets. Quel produit pour quelle pathologie ? Disponibles à Aix-en-Provence, Matériel Médical Aixoise.",
   keywords: [
     "orthèse Gibaud Aix-en-Provence",
     "orthèse Thuasne Aix",
@@ -32,10 +32,10 @@ const articleSchema = {
   "@type": "Article",
   "headline": "Pourquoi choisir une orthèse Gibaud ou Thuasne ?",
   "description": "Comparatif complet des marques Gibaud et Thuasne pour genouillères, chevillères et ceintures lombaires.",
-  "author": { "@type": "Organization", "name": "Maison Médicale Aixoise" },
+  "author": { "@type": "Organization", "name": "Matériel Médical Aixoise" },
   "publisher": {
     "@type": "Organization",
-    "name": "Maison Médicale Aixoise",
+    "name": "Matériel Médical Aixoise",
     "logo": { "@type": "ImageObject", "url": "https://mmaixoise.fr/assets/centre.png" },
   },
   "datePublished": "2025-04-29",
@@ -86,16 +86,16 @@ export default function ArticleOrtho() {
       }) }} />
 
       <div className="pt-32 pb-16 max-w-3xl mx-auto px-6">
-        <Link href="/blog" className="inline-flex items-center gap-2 text-neon-green font-black text-[10px] uppercase tracking-widest mb-12 hover:gap-4 transition-all">
+        <Link href="/blog" className="inline-flex items-center gap-2 text-medical-green font-black text-[10px] uppercase tracking-widest mb-12 hover:gap-4 transition-all">
           <ArrowLeft size={14} /> Retour au Blog
         </Link>
 
-        <div className="inline-block px-4 py-1.5 bg-neon-green/10 text-neon-green text-[9px] font-black uppercase tracking-widest rounded-full mb-8">
+        <div className="inline-block px-4 py-1.5 bg-medical-green/10 text-medical-green text-[9px] font-black uppercase tracking-widest rounded-full mb-8">
           Orthopédie
         </div>
 
         <h1 className="text-4xl sm:text-6xl font-black text-medical-accent uppercase tracking-tighter leading-tight mb-6">
-          Orthèse <span className="text-neon-green">Gibaud</span> ou <span className="text-neon-green">Thuasne</span> ?
+          Orthèse <span className="text-medical-green">Gibaud</span> ou <span className="text-medical-green">Thuasne</span> ?
         </h1>
         <p className="text-medical-accent/50 font-bold text-lg mb-16 leading-relaxed">
           Gibaud et Thuasne sont les deux références en orthopédie en France. Ce guide comparatif vous aide à choisir
@@ -111,11 +111,11 @@ export default function ArticleOrtho() {
               {comparison.map((item) => (
                 <div key={item.zone} className="bg-white rounded-[2rem] border-2 border-black/5 shadow-xl overflow-hidden">
                   <div className="bg-medical-accent px-10 py-5">
-                    <h3 className="text-neon-green font-black text-lg uppercase tracking-wider">{item.zone}</h3>
+                    <h3 className="text-medical-green font-black text-lg uppercase tracking-wider">{item.zone}</h3>
                   </div>
                   <div className="p-10 grid grid-cols-1 sm:grid-cols-2 gap-8">
                     <div>
-                      <p className="text-[9px] font-black uppercase tracking-widest text-neon-green mb-3">Gibaud</p>
+                      <p className="text-[9px] font-black uppercase tracking-widest text-medical-green mb-3">Gibaud</p>
                       <p className="text-medical-accent/70 font-bold text-sm leading-relaxed">{item.gibaud}</p>
                     </div>
                     <div>
@@ -142,11 +142,11 @@ export default function ArticleOrtho() {
             </p>
             <p className="text-medical-accent/60 font-bold leading-relaxed">
               Certaines mutuelles prennent en charge le reste à charge. Nos conseillers vous accompagnent dans les
-              démarches de remboursement chez la Maison Médicale Aixoise.
+              démarches de remboursement chez la Matériel Médical Aixoise.
             </p>
           </section>
 
-          <div className="bg-medical-accent text-white p-12 rounded-[3rem] border-4 border-neon-green/30">
+          <div className="bg-medical-accent text-white p-12 rounded-[3rem] border-4 border-medical-green/30">
             <h3 className="text-xl font-black uppercase tracking-tight mb-4">
               Essayez vos orthèses à Aix-en-Provence
             </h3>
@@ -157,7 +157,7 @@ export default function ArticleOrtho() {
             </p>
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 bg-neon-green text-medical-accent px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-white transition-all"
+              className="inline-flex items-center gap-2 bg-medical-green text-medical-accent px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-white transition-all"
             >
               <MapPin size={16} /> Nous rendre visite
             </Link>

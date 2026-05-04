@@ -31,10 +31,10 @@ const articleSchema = {
   "@type": "Article",
   "headline": "Comment choisir ses chaussures Scholl SS26 ?",
   "description": "Guide complet pour choisir entre les gammes Pharma, Lifestyle et Sneakers Scholl SS26 avec les technologies Bioprint® et Memory Cushion®.",
-  "author": { "@type": "Organization", "name": "Maison Médicale Aixoise" },
+  "author": { "@type": "Organization", "name": "Matériel Médical Aixoise" },
   "publisher": {
     "@type": "Organization",
-    "name": "Maison Médicale Aixoise",
+    "name": "Matériel Médical Aixoise",
     "logo": { "@type": "ImageObject", "url": "https://mmaixoise.fr/assets/centre.png" },
   },
   "datePublished": "2025-04-15",
@@ -59,16 +59,16 @@ export default function ArticleScholl() {
       }) }} />
 
       <div className="pt-32 pb-16 max-w-3xl mx-auto px-6">
-        <Link href="/blog" className="inline-flex items-center gap-2 text-neon-green font-black text-[10px] uppercase tracking-widest mb-12 hover:gap-4 transition-all">
+        <Link href="/blog" className="inline-flex items-center gap-2 text-medical-green font-black text-[10px] uppercase tracking-widest mb-12 hover:gap-4 transition-all">
           <ArrowLeft size={14} /> Retour au Blog
         </Link>
 
-        <div className="inline-block px-4 py-1.5 bg-neon-green/10 text-neon-green text-[9px] font-black uppercase tracking-widest rounded-full mb-8">
+        <div className="inline-block px-4 py-1.5 bg-medical-green/10 text-medical-green text-[9px] font-black uppercase tracking-widest rounded-full mb-8">
           Scholl &amp; Confort
         </div>
 
         <h1 className="text-4xl sm:text-6xl font-black text-medical-accent uppercase tracking-tighter leading-tight mb-6">
-          Comment choisir ses chaussures <span className="text-neon-green">Scholl SS26</span> ?
+          Comment choisir ses chaussures <span className="text-medical-green">Scholl SS26</span> ?
         </h1>
         <p className="text-medical-accent/50 font-bold text-lg mb-16 leading-relaxed">
           La collection Scholl SS26 regroupe plusieurs gammes aux usages bien distincts. Voici le guide de nos experts
@@ -86,8 +86,8 @@ export default function ArticleScholl() {
                 { name: "Memory Cushion®", desc: "Amorti à mémoire de forme. Distribue homogènement la pression. Parfait pour le quotidien et les longues marches." },
                 { name: "Biomechanics®", desc: "Contrôle du mouvement articulaire. Recommandé pour les personnes avec des douleurs de genoux ou de hanches." },
               ].map((tech) => (
-                <div key={tech.name} className="bg-white p-8 rounded-[2rem] border-2 border-neon-green/20 shadow-xl">
-                  <p className="text-neon-green font-black text-lg uppercase tracking-tight mb-3">{tech.name}</p>
+                <div key={tech.name} className="bg-white p-8 rounded-[2rem] border-2 border-medical-green/20 shadow-xl">
+                  <p className="text-medical-green font-black text-lg uppercase tracking-tight mb-3">{tech.name}</p>
                   <p className="text-medical-accent/60 font-bold text-sm leading-relaxed">{tech.desc}</p>
                 </div>
               ))}
@@ -119,7 +119,7 @@ export default function ArticleScholl() {
               ].map((item) => (
                 <div key={item.title} className="bg-white p-10 rounded-[2rem] border-2 border-black/5 shadow-xl">
                   <div className="flex items-start gap-4">
-                    <CheckCircle2 className="text-neon-green mt-1 shrink-0" size={22} />
+                    <CheckCircle2 className="text-medical-green mt-1 shrink-0" size={22} />
                     <div>
                       <h3 className="text-lg font-black text-medical-accent uppercase tracking-tight mb-3">{item.title}</h3>
                       <p className="text-medical-accent/60 font-bold text-sm leading-relaxed">{item.desc}</p>
@@ -140,14 +140,14 @@ export default function ArticleScholl() {
               choisissez la plus grande.
             </p>
             <p className="text-medical-accent/60 font-bold leading-relaxed">
-              Chez la Maison Médicale Aixoise, nos conseillers réalisent un bilan podologique complet pour vous
+              Chez la Matériel Médical Aixoise, nos conseillers réalisent un bilan podologique complet pour vous
               orienter vers le modèle le mieux adapté à votre morphologie.
             </p>
           </section>
 
-          <div className="bg-medical-accent text-white p-12 rounded-[3rem] border-4 border-neon-green/30">
+          <div className="bg-medical-accent text-white p-12 rounded-[3rem] border-4 border-medical-green/30">
             <div className="flex items-start gap-4">
-              <MapPin className="text-neon-green shrink-0 mt-1" size={28} />
+              <MapPin className="text-medical-green shrink-0 mt-1" size={28} />
               <div>
                 <h3 className="text-xl font-black uppercase tracking-tight mb-3">
                   Essayez les Scholl SS26 à Aix-en-Provence
@@ -158,7 +158,7 @@ export default function ArticleScholl() {
                 </p>
                 <Link
                   href="/contact"
-                  className="inline-flex items-center gap-2 bg-neon-green text-medical-accent px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-white transition-all"
+                  className="inline-flex items-center gap-2 bg-medical-green text-medical-accent px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-white transition-all"
                 >
                   Prendre rendez-vous
                 </Link>

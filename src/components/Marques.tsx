@@ -1,8 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { siteData } from "@/data/site-data";
-import { ShieldCheck, Activity } from "lucide-react";
+import { Activity } from "lucide-react";
 
 export function Marques() {
   return (
@@ -13,65 +14,75 @@ export function Marques() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="flex items-center gap-4 text-neon-green font-black uppercase tracking-[0.5em] text-[10px] mb-8"
+            className="flex items-center gap-4 text-medical-green font-black uppercase tracking-[0.5em] text-[10px] mb-8"
           >
-            <div className="w-12 h-px bg-neon-green" />
+            <div className="w-12 h-px bg-medical-green" />
             NOS PARTENAIRES & MARQUES
-            <div className="w-12 h-px bg-neon-green" />
+            <div className="w-12 h-px bg-medical-green" />
           </motion.div>
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
             className="text-4xl md:text-7xl font-black text-medical-accent uppercase tracking-tighter leading-none"
           >
-            L&apos;EXCELLENCE <br /> <span className="text-neon-green italic">PARTAGÉE.</span>
+            L&apos;EXCELLENCE <br /> <span className="text-medical-green italic">PARTAGÉE.</span>
           </motion.h2>
         </div>
 
-        <div className="space-y-32">
-          {siteData.brandCategories.map((category, catIndex) => (
+        <div className="space-y-24">
+          {siteData.brandCategories.map((category) => (
             <div key={category.id}>
-              <div className="flex items-center gap-6 mb-16">
-                 <div className="w-12 h-12 bg-medical-accent rounded-2xl flex items-center justify-center text-neon-green shadow-xl">
-                    <Activity size={24} />
-                 </div>
-                 <h3 className="text-2xl md:text-3xl font-black text-medical-accent uppercase tracking-tight">
-                    {category.name}
-                 </h3>
-                 <div className="flex-1 h-px bg-medical-accent/5" />
+              <div className="flex items-center gap-6 mb-12">
+                <div className="w-12 h-12 bg-medical-accent rounded-2xl flex items-center justify-center text-medical-green shadow-xl">
+                  <Activity size={24} />
+                </div>
+                <h3 className="text-2xl md:text-3xl font-black text-medical-accent uppercase tracking-tight">
+                  {category.name}
+                </h3>
+                <div className="flex-1 h-px bg-medical-accent/5" />
               </div>
 
-              <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6">
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
                 {category.brands.map((brand, i) => (
                   <motion.div
-                    key={brand}
+                    key={brand.name}
                     initial={{ opacity: 0, scale: 0.95 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
                     transition={{ delay: i * 0.05 }}
                     className="group relative"
                   >
-                    <div className="h-32 bg-sage-bg rounded-[2.5rem] border-2 border-medical-accent/5 hover:border-neon-green transition-all flex items-center justify-center p-8 text-center shadow-sm hover:shadow-2xl hover:-translate-y-2 duration-500">
-                      <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                        <ShieldCheck size={16} className="text-neon-green" />
-                      </div>
-                      <span className="text-medical-accent font-black text-xs sm:text-sm uppercase tracking-widest leading-tight group-hover:text-neon-green transition-colors">
-                        {brand}
-                      </span>
+                    <div className="h-28 bg-sage-bg rounded-[2rem] border-2 border-medical-accent/5 hover:border-medical-green transition-all flex items-center justify-center p-6 shadow-sm hover:shadow-2xl hover:-translate-y-2 duration-500">
+                      {brand.logo ? (
+                        <div className="relative w-full h-full">
+                          <img
+                            src={brand.logo}
+                            alt={`Logo ${brand.name}`}
+                            className="object-contain p-2 grayscale group-hover:grayscale-0 transition-all duration-500 w-full h-full"
+                          />
+                        </div>
+                      ) : (
+                        <span className="text-medical-accent font-black text-xs uppercase tracking-widest leading-tight text-center group-hover:text-medical-green transition-colors">
+                          {brand.name}
+                        </span>
+                      )}
                     </div>
+                    <p className="text-center text-[9px] font-black text-medical-accent/30 uppercase tracking-widest mt-3 group-hover:text-medical-green transition-colors">
+                      {brand.name}
+                    </p>
                   </motion.div>
                 ))}
               </div>
             </div>
           ))}
         </div>
-        
-        <div className="mt-32 p-12 bg-medical-accent rounded-[4rem] text-center border-4 border-neon-green/10">
-            <p className="text-white/40 font-bold text-xs sm:text-sm uppercase tracking-[0.4em] max-w-3xl mx-auto leading-relaxed">
-                Nous collaborons avec les leaders mondiaux de l&apos;orthopédie et du matériel médical pour vous garantir des solutions certifiées, durables et innovantes.
-            </p>
+
+        <div className="mt-24 p-12 bg-medical-accent rounded-[4rem] text-center border-4 border-medical-green/10">
+          <p className="text-white/40 font-bold text-xs sm:text-sm uppercase tracking-[0.4em] max-w-3xl mx-auto leading-relaxed">
+            Nous collaborons avec les leaders mondiaux de l&apos;orthopédie et du matériel médical pour vous garantir des solutions certifiées, durables et innovantes.
+          </p>
         </div>
       </div>
     </section>

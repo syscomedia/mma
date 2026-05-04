@@ -37,21 +37,21 @@ export function Navbar() {
     <>
       <nav className={cn(
         "fixed top-0 left-0 right-0 z-[100] transition-all duration-500",
-        scrolled || pathname !== "/" || isOpen ? "bg-sage-bg/95 backdrop-blur-2xl border-b border-neon-green/30 py-4 px-6" : "bg-transparent py-6 px-8"
+        scrolled || pathname !== "/" || isOpen ? "bg-sage-bg/95 backdrop-blur-2xl border-b border-medical-green/30 py-4 px-6" : "bg-transparent py-6 px-8"
       )}>
         <div className="max-w-7xl mx-auto flex justify-between items-center relative">
           {/* Logo Section */}
           <Link href="/" className="flex items-center gap-3 sm:gap-4 group z-[110]" onClick={() => setIsOpen(false)}>
-            <div className="w-10 h-10 sm:w-14 h-14 bg-medical-accent rounded-xl sm:rounded-2xl flex items-center justify-center border-2 border-neon-green shadow-2xl group-hover:scale-110 transition-transform">
-              <Activity className="text-neon-green sm:hidden" size={20} />
-              <Activity className="text-neon-green hidden sm:block" size={28} />
+            <div className="w-10 h-10 sm:w-14 h-14 bg-medical-accent rounded-xl sm:rounded-2xl flex items-center justify-center border-2 border-medical-green shadow-2xl group-hover:scale-110 transition-transform">
+              <Activity className="text-medical-green sm:hidden" size={20} />
+              <Activity className="text-medical-green hidden sm:block" size={28} />
             </div>
             <div className="flex flex-col">
-              <span className="text-lg sm:text-2xl font-black tracking-tighter text-medical-accent leading-none">
-                {siteData.shortName}
+              <span className="text-lg sm:text-xl font-black tracking-tighter text-medical-accent leading-none uppercase">
+                Matériel Médical
               </span>
-              <span className="text-[8px] sm:text-[10px] font-black text-neon-green uppercase tracking-[0.4em] mt-1">
-                Innovation 2025
+              <span className="text-[8px] sm:text-[10px] font-black text-medical-green uppercase tracking-[0.4em] mt-1">
+                Aixoise
               </span>
             </div>
           </Link>
@@ -63,8 +63,8 @@ export function Navbar() {
                 key={link.name} 
                 href={link.href}
                 className={cn(
-                  "text-xs font-black transition-all uppercase tracking-[0.3em] hover:text-neon-green",
-                  pathname === link.href ? "text-neon-green" : "text-medical-accent/40"
+                  "text-xs font-black transition-all uppercase tracking-[0.3em] hover:text-medical-green",
+                  pathname === link.href ? "text-medical-green" : "text-medical-accent/40"
                 )}
               >
                 {link.name}
@@ -72,7 +72,7 @@ export function Navbar() {
             ))}
             <Link
               href="/contact"
-              className="bg-medical-accent text-white px-10 py-4 rounded-full font-black text-[10px] uppercase tracking-[0.3em] flex items-center gap-2 hover:bg-neon-green hover:text-medical-accent transition-all neon-border shadow-2xl"
+              className="bg-medical-accent text-white px-10 py-4 rounded-full font-black text-[10px] uppercase tracking-[0.3em] flex items-center gap-2 hover:bg-medical-green hover:text-medical-accent transition-all neon-border shadow-2xl"
             >
               <Phone size={14} />
               Contact
@@ -82,7 +82,7 @@ export function Navbar() {
           {/* Mobile Toggle Button - EXPLICITLY VISIBLE */}
           <div className="lg:hidden flex items-center">
             <button 
-              className="relative w-12 h-12 sm:w-14 sm:h-14 bg-medical-accent rounded-xl sm:rounded-2xl flex items-center justify-center border-2 border-neon-green text-neon-green shadow-[0_0_20px_rgba(57,255,20,0.4)] z-[110] active:scale-95 transition-all" 
+              className="relative w-12 h-12 sm:w-14 sm:h-14 bg-medical-accent rounded-xl sm:rounded-2xl flex items-center justify-center border-2 border-medical-green text-medical-green shadow-[0_0_20px_rgba(57,255,20,0.4)] z-[110] active:scale-95 transition-all" 
               onClick={() => setIsOpen(!isOpen)}
               aria-label="Toggle Menu"
             >
@@ -104,8 +104,8 @@ export function Navbar() {
           >
             {/* Decorative Background Elements */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
-              <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-neon-green/10 rounded-full blur-[120px] animate-pulse" />
-              <div className="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-neon-green/5 rounded-full blur-[120px] animate-pulse delay-1000" />
+              <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-medical-green/10 rounded-full blur-[120px] animate-pulse" />
+              <div className="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-medical-green/5 rounded-full blur-[120px] animate-pulse delay-1000" />
             </div>
 
             <div className="flex-1 flex flex-col justify-center px-8 sm:px-12 pt-24 relative z-10">
@@ -121,11 +121,11 @@ export function Navbar() {
                         href={link.href}
                         className={cn(
                           "flex items-center gap-6 group",
-                          pathname === link.href ? "text-neon-green" : "text-white/60 hover:text-white"
+                          pathname === link.href ? "text-medical-green" : "text-white/60 hover:text-white"
                         )}
                         onClick={() => setIsOpen(false)}
                       >
-                        <span className="text-sm font-black text-neon-green/30 font-mono tracking-tighter">0{i + 1}</span>
+                        <span className="text-sm font-black text-medical-green/30 font-mono tracking-tighter">0{i + 1}</span>
                         <span className="text-5xl sm:text-7xl font-black uppercase tracking-tighter transition-all group-hover:translate-x-4">
                           {link.name}
                         </span>
@@ -144,7 +144,7 @@ export function Navbar() {
                  transition={{ delay: 0.6 }}
                  className="mt-16 sm:mt-24 pt-10 border-t border-white/10"
                >
-                  <p className="text-neon-green font-black text-[10px] uppercase tracking-[0.4em] mb-8 text-center sm:text-left">Connectez-vous</p>
+                  <p className="text-medical-green font-black text-[10px] uppercase tracking-[0.4em] mb-8 text-center sm:text-left">Connectez-vous</p>
                   <div className="flex justify-center sm:justify-start gap-6">
                      {[
                        { icon: Facebook, href: "#" },
@@ -154,7 +154,7 @@ export function Navbar() {
                        <a 
                          key={i} 
                          href={item.href}
-                         className="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center text-white/40 hover:text-neon-green hover:bg-white/10 hover:scale-110 transition-all border border-white/5"
+                         className="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center text-white/40 hover:text-medical-green hover:bg-white/10 hover:scale-110 transition-all border border-white/5"
                        >
                           <item.icon size={28} />
                        </a>
@@ -171,12 +171,12 @@ export function Navbar() {
             >
                <div className="flex flex-col">
                   <p className="text-white/20 text-[9px] font-black uppercase tracking-widest mb-1">© 2025 MMAIXOISE</p>
-                  <p className="text-neon-green font-black text-[9px] uppercase tracking-[0.3em]">Excellence Médicale Aix</p>
+                  <p className="text-medical-green font-black text-[9px] uppercase tracking-[0.3em]">Excellence Médicale Aix</p>
                </div>
                <Link 
                  href="/contact" 
                  onClick={() => setIsOpen(false)}
-                 className="bg-neon-green text-medical-accent p-4 rounded-xl hover:scale-110 transition-all shadow-[0_0_20px_rgba(57,255,20,0.3)]"
+                 className="bg-medical-green text-medical-accent p-4 rounded-xl hover:scale-110 transition-all shadow-[0_0_20px_rgba(57,255,20,0.3)]"
                >
                  <Phone size={20} />
                </Link>

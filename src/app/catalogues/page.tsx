@@ -19,18 +19,22 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://mmaixoise.fr/catalogues" },
   openGraph: {
-    title: "Catalogues Scholl SS26 — Maison Médicale Aixoise",
+    title: "Catalogues Scholl SS26 — Matériel Médical Aixoise",
     description: "300+ modèles Scholl SS26 disponibles à Aix-en-Provence. Pharma, Lifestyle, Sneakers avec Bioprint® et Memory Cushion®.",
     url: "https://mmaixoise.fr/catalogues",
     type: "website",
   },
 };
 
+import { Suspense } from "react";
+
 export default function CataloguesPage() {
   return (
     <main className="min-h-screen pt-24 bg-sage-bg">
       <Navbar />
-      <FullCatalog />
+      <Suspense fallback={<div className="min-h-screen flex items-center justify-center text-medical-accent font-black uppercase tracking-[0.5em]">Chargement du catalogue...</div>}>
+        <FullCatalog />
+      </Suspense>
       <Footer />
     </main>
   );

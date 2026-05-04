@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Services } from "@/components/Services";
 import { siteData } from "@/data/site-data";
 import { CheckCircle2 } from "lucide-react";
+import Image from "next/image";
 
 import type { Metadata } from "next";
 
@@ -22,7 +23,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://mmaixoise.fr/services" },
   openGraph: {
-    title: "Matériel Médical & Services Orthopédiques — Maison Médicale Aixoise",
+    title: "Matériel Médical & Services Orthopédiques — Matériel Médical Aixoise",
     description:
       "Tous nos services : orthopédie, lits médicalisés, fauteuils roulants, orthèses Gibaud/Thuasne à Aix-en-Provence.",
     url: "https://mmaixoise.fr/services",
@@ -42,7 +43,7 @@ const servicesSchema = {
 const servicesItemsSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  "name": "Services Maison Médicale Aixoise",
+  "name": "Services Matériel Médical Aixoise",
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "Orthopédie & Semelles sur Mesure Aix-en-Provence", "url": "https://mmaixoise.fr/services#orthopédie" },
     { "@type": "ListItem", "position": 2, "name": "Location Lit Médicalisé Aix-en-Provence", "url": "https://mmaixoise.fr/services#location" },
@@ -60,7 +61,7 @@ export default function ServicesPage() {
       <Navbar />
       <div className="py-20 text-center bg-medical-accent text-white">
          <h1 className="text-6xl md:text-8xl font-black uppercase tracking-tighter mb-6">Expertises</h1>
-         <p className="text-neon-green font-black uppercase tracking-[0.5em] text-xs">Solutions Médicales & Orthopédiques</p>
+         <p className="text-medical-green font-black uppercase tracking-[0.5em] text-xs">Solutions Médicales & Orthopédiques</p>
       </div>
       <Services />
       
@@ -76,11 +77,11 @@ export default function ServicesPage() {
                 { title: "Espace Scholl Pro", items: ["Chaussures certifiées Pharma", "Équipement pour blocs opératoires", "Hygiène et protection", "Gamme Energystep Active"] }
               ].map((box, i) => (
                 <div key={i} className="bg-sage-bg p-12 rounded-[3rem] border-4 border-medical-accent/5">
-                   <h3 className="text-2xl font-black text-medical-accent mb-8 uppercase tracking-tight italic underline decoration-neon-green decoration-4">{box.title}</h3>
+                   <h3 className="text-2xl font-black text-medical-accent mb-8 uppercase tracking-tight italic underline decoration-medical-green decoration-4">{box.title}</h3>
                    <ul className="space-y-4">
                       {box.items.map((item, j) => (
                         <li key={j} className="flex items-center gap-3 text-medical-accent/60 font-bold">
-                           <CheckCircle2 className="text-neon-green" size={20} />
+                           <CheckCircle2 className="text-medical-green" size={20} />
                            {item}
                         </li>
                       ))}
@@ -90,11 +91,15 @@ export default function ServicesPage() {
            </div>
 
            <div className="mt-32">
-              <h3 className="text-xl font-black text-neon-green mb-12 uppercase tracking-[0.4em] text-center italic">Marques & Partenaires Officiels</h3>
-              <div className="flex flex-wrap justify-center gap-4 sm:gap-8">
+              <h3 className="text-xl font-black text-medical-green mb-12 uppercase tracking-[0.4em] text-center italic">Marques & Partenaires Officiels</h3>
+              <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
                  {siteData.brandCategories.flatMap(cat => cat.brands).map((brand) => (
-                    <div key={brand} className="px-8 py-4 bg-medical-accent/5 rounded-2xl border-2 border-medical-accent/10 hover:border-neon-green transition-all group">
-                       <span className="text-medical-accent/40 font-black text-[10px] sm:text-xs uppercase tracking-widest group-hover:text-medical-accent transition-colors">{brand}</span>
+                    <div key={brand.name} className="h-16 px-6 bg-white rounded-2xl border-2 border-medical-accent/10 hover:border-medical-green transition-all group flex items-center justify-center shadow-sm hover:shadow-xl hover:-translate-y-1 duration-300" style={{ minWidth: 100 }}>
+                        {brand.logo ? (
+                          <img src={brand.logo} alt={`Logo ${brand.name}`} className="object-contain grayscale group-hover:grayscale-0 transition-all duration-300" style={{ width: 'auto', height: '30px' }} />
+                        ) : (
+                         <span className="text-medical-accent/40 font-black text-[10px] sm:text-xs uppercase tracking-widest group-hover:text-medical-accent transition-colors text-center">{brand.name}</span>
+                       )}
                     </div>
                  ))}
               </div>

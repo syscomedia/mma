@@ -7,7 +7,7 @@ import { ArrowLeft, CheckCircle2, MapPin, Phone } from "lucide-react";
 export const metadata: Metadata = {
   title: "Location Lit Médicalisé à Aix-en-Provence — Guide Complet Prix & Remboursement",
   description:
-    "Tout savoir sur la location d'un lit médicalisé à Aix-en-Provence : prix, remboursement Sécurité Sociale, délai de livraison, modèles disponibles. Maison Médicale Aixoise, Parc de la Duranne 13100.",
+    "Tout savoir sur la location d'un lit médicalisé à Aix-en-Provence : prix, remboursement Sécurité Sociale, délai de livraison, modèles disponibles. Matériel Médical Aixoise, Parc de la Duranne 13100.",
   keywords: [
     "location lit médicalisé Aix-en-Provence",
     "prix location lit médicalisé",
@@ -31,10 +31,10 @@ const articleSchema = {
   "@type": "Article",
   "headline": "Location lit médicalisé à Aix-en-Provence : le guide complet",
   "description": "Prix, remboursement Sécurité Sociale, délai de livraison et modèles disponibles pour la location d'un lit médicalisé à Aix-en-Provence.",
-  "author": { "@type": "Organization", "name": "Maison Médicale Aixoise" },
+  "author": { "@type": "Organization", "name": "Matériel Médical Aixoise" },
   "publisher": {
     "@type": "Organization",
-    "name": "Maison Médicale Aixoise",
+    "name": "Matériel Médical Aixoise",
     "logo": { "@type": "ImageObject", "url": "https://mmaixoise.fr/assets/centre.png" },
   },
   "datePublished": "2025-04-22",
@@ -58,16 +58,16 @@ export default function ArticleLitMedicalise() {
       }) }} />
 
       <div className="pt-32 pb-16 max-w-3xl mx-auto px-6">
-        <Link href="/blog" className="inline-flex items-center gap-2 text-neon-green font-black text-[10px] uppercase tracking-widest mb-12 hover:gap-4 transition-all">
+        <Link href="/blog" className="inline-flex items-center gap-2 text-medical-green font-black text-[10px] uppercase tracking-widest mb-12 hover:gap-4 transition-all">
           <ArrowLeft size={14} /> Retour au Blog
         </Link>
 
-        <div className="inline-block px-4 py-1.5 bg-neon-green/10 text-neon-green text-[9px] font-black uppercase tracking-widest rounded-full mb-8">
+        <div className="inline-block px-4 py-1.5 bg-medical-green/10 text-medical-green text-[9px] font-black uppercase tracking-widest rounded-full mb-8">
           Matériel Médical
         </div>
 
         <h1 className="text-4xl sm:text-6xl font-black text-medical-accent uppercase tracking-tighter leading-tight mb-6">
-          Location lit médicalisé à <span className="text-neon-green">Aix-en-Provence</span>
+          Location lit médicalisé à <span className="text-medical-green">Aix-en-Provence</span>
         </h1>
         <p className="text-medical-accent/50 font-bold text-lg mb-16 leading-relaxed">
           Guide complet : conditions, prix, remboursement Sécurité Sociale et démarches pour louer un lit médicalisé
@@ -94,9 +94,9 @@ export default function ArticleLitMedicalise() {
             <h2 className="text-3xl font-black text-medical-accent uppercase tracking-tight mb-6">
               Est-ce remboursé par la Sécurité Sociale ?
             </h2>
-            <div className="bg-white p-10 rounded-[2rem] border-2 border-neon-green/20 shadow-xl mb-6">
+            <div className="bg-white p-10 rounded-[2rem] border-2 border-medical-green/20 shadow-xl mb-6">
               <p className="text-medical-accent font-bold leading-relaxed mb-4">
-                <strong className="text-neon-green">Oui</strong>, la location d&apos;un lit médicalisé est prise en charge
+                <strong className="text-medical-green">Oui</strong>, la location d&apos;un lit médicalisé est prise en charge
                 à <strong>100% par l&apos;Assurance Maladie</strong> sous prescription médicale, selon la nomenclature
                 LPPR (Liste des Produits et Prestations Remboursables).
               </p>
@@ -113,7 +113,7 @@ export default function ArticleLitMedicalise() {
                 "Prise en charge des accessoires (matelas anti-escarres) sous conditions",
               ].map((item) => (
                 <div key={item} className="flex items-center gap-3 text-medical-accent/70 font-bold">
-                  <CheckCircle2 className="text-neon-green shrink-0" size={20} />
+                  <CheckCircle2 className="text-medical-green shrink-0" size={20} />
                   {item}
                 </div>
               ))}
@@ -125,7 +125,7 @@ export default function ArticleLitMedicalise() {
               Quel est le délai de livraison à Aix-en-Provence ?
             </h2>
             <p className="text-medical-accent/60 font-bold leading-relaxed mb-4">
-              La Maison Médicale Aixoise assure la livraison et l&apos;installation de vos lits médicalisés dans un
+              Matériel Médical Aixoise assure la livraison et l&apos;installation de vos lits médicalisés dans un
               délai de <strong className="text-medical-accent">24 à 48h</strong> à Aix-en-Provence et dans les
               communes alentour (Gardanne, Pertuis, Lambesc, Salon-de-Provence).
             </p>
@@ -148,7 +148,7 @@ export default function ArticleLitMedicalise() {
             </div>
           </section>
 
-          <div className="bg-medical-accent text-white p-12 rounded-[3rem] border-4 border-neon-green/30">
+          <div className="bg-medical-accent text-white p-12 rounded-[3rem] border-4 border-medical-green/30">
             <h3 className="text-xl font-black uppercase tracking-tight mb-4">
               Demandez un devis gratuit
             </h3>
@@ -159,7 +159,7 @@ export default function ArticleLitMedicalise() {
             <div className="flex flex-wrap gap-4">
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 bg-neon-green text-medical-accent px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-white transition-all"
+                className="inline-flex items-center gap-2 bg-medical-green text-medical-accent px-8 py-4 rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-white transition-all"
               >
                 <MapPin size={16} /> Nous trouver
               </Link>
