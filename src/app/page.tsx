@@ -61,28 +61,27 @@ export default function Home() {
           "https://www.google.com/maps?cid=VOTRE_CID_GOOGLE",
           "https://www.pagesjaunes.fr/pro/maison-medicale-aixoise"
         ],
-        "description": "Vente & location de matériel médical et orthopédique : fauteuils roulants, déambulateurs, rollators, orthèses, aides à la marche, incontinence, literie médicalisée et équipements de diagnostic à Aix-en-Provence.",
+        "description": "Magasin de matériel médical à Aix-en-Provence. Vente & location de matériel médical et orthopédique : lits médicalisés, fauteuils roulants, maintien à domicile, orthopédie et équipements médicaux à Aix-en-Provence.",
         "founder": {
           "@type": "Person",
           "name": "Amira ABIDI"
         },
         "areaServed": [
           { "@type": "City", "name": "Aix-en-Provence" },
-          { "@type": "City", "name": "Marseille" },
-          { "@type": "City", "name": "Gardanne" },
-          { "@type": "City", "name": "Pertuis" },
-          { "@type": "AdministrativeArea", "name": "Bouches-du-Rhône" }
+          { "@type": "City", "name": "La Duranne" },
+          { "@type": "City", "name": "Les Milles" },
+          { "@type": "City", "name": "Jas de Bouffan" },
+          { "@type": "City", "name": "Luynes" }
         ],
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
-          "name": "Matériel Médical & Orthopédie",
+          "name": "Matériel Médical & Orthopédie à Aix-en-Provence",
           "itemListElement": [
             { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Location lit médicalisé Aix-en-Provence" } },
             { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Vente fauteuil roulant Aix-en-Provence" } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Semelles orthopédiques sur mesure" } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Orthèses Gibaud et Thuasne" } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Chaussures médicales Scholl SS26" } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Monte-escalier Aix-en-Provence" } }
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Maintien à domicile Aix-en-Provence" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Orthopédie Aix-en-Provence" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Matériel infirmier Aix-en-Provence" } }
           ]
         }
       }) }} />
@@ -94,42 +93,42 @@ export default function Home() {
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "Où trouver du matériel médical à Aix-en-Provence ?",
+            "name": "Où acheter du matériel médical à Aix-en-Provence ?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Matériel Médical Aixoise, situé au 70 Rue Alain Decaux, Parc de la Duranne, 13100 Aix-en-Provence, propose un large choix de matériel médical : lits médicalisés, fauteuils roulants, déambulateurs, orthèses et chaussures Scholl. Ouverte du lundi au vendredi de 9h à 18h30 et le samedi matin."
+              "text": "Matériel Médical Aixoise, situé au 70 Rue Alain Decaux, Parc de la Duranne, 13100 Aix-en-Provence, est le meilleur magasin de matériel médical proche de vous. Nous proposons lits médicalisés, fauteuils roulants et maintien à domicile."
             }
           },
           {
             "@type": "Question",
-            "name": "Peut-on louer un lit médicalisé à Aix-en-Provence ?",
+            "name": "Faites-vous la location de matériel médical à Aix-en-Provence ?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Oui. Matériel Médical Aixoise propose la location de lits médicalisés à Aix-en-Provence et dans toute la région PACA. La location peut être prise en charge par la Sécurité Sociale sous prescription médicale. Contactez-nous au +33 4 42 XX XX XX pour un devis."
+              "text": "Oui. Matériel Médical Aixoise propose la location de matériel médical à Aix-en-Provence, incluant la location de lits médicalisés et de fauteuils roulants, avec un service de livraison rapide."
             }
           },
           {
             "@type": "Question",
-            "name": "Vendez-vous des chaussures Scholl à Aix-en-Provence ?",
+            "name": "Livrez-vous le matériel médical à domicile à Aix-en-Provence ?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Oui, nous sommes distributeur exclusif de la collection Scholl SS26 à Aix-en-Provence. Notre gamme comprend les lignes Pharma, Lifestyle Femme, Lifestyle Homme et Pharma Sneakers avec technologies Bioprint® et Memory Cushion®."
+              "text": "Absolument. Nous assurons la livraison de matériel médical à Aix-en-Provence, que ce soit au centre-ville, à La Duranne, Les Milles, Jas de Bouffan ou Luynes."
             }
           },
           {
             "@type": "Question",
-            "name": "Proposez-vous des semelles orthopédiques sur mesure ?",
+            "name": "Quel matériel médical pour une personne âgée en perte d'autonomie ?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Oui. Nous réalisons des bilans podologiques complets et proposons des semelles orthopédiques sur mesure avec la technologie Scholl Bioprint®. Sur rendez-vous au Parc de la Duranne, Aix-en-Provence."
+              "text": "Pour l'autonomie d'un senior à Aix-en-Provence, nous proposons des lits médicalisés, des déambulateurs, des fauteuils roulants pliables, des chaises de douche et des rampes PMR, adaptés au maintien à domicile."
             }
           },
           {
             "@type": "Question",
-            "name": "Quelles marques d'orthèses proposez-vous ?",
+            "name": "Êtes-vous un magasin médical près de La Duranne ?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Nous distribuons les grandes marques d'orthopédie : Gibaud, Thuasne, Bauerfeind, Cizeta Medicali, ainsi que le matériel médical Drive DeVilbiss Healthcare, Invacare, Herdegen et Vermeiren."
+              "text": "Oui, notre magasin est idéalement situé au cœur du Parc de la Duranne à Aix-en-Provence, offrant un accès facile pour tous vos besoins en matériel orthopédique et médical."
             }
           }
         ]

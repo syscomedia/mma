@@ -8,24 +8,56 @@ import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Matériel Médical & Orthopédie Aix-en-Provence — Nos Services",
+  title: "Matériel médical à Aix-en-Provence | Vente & location",
   description:
-    "Orthopédie, semelles sur mesure, location lit médicalisé, fauteuil roulant, monte-escalier et maintien à domicile à Aix-en-Provence. Marques Gibaud, Thuasne, Invacare, Scholl.",
+    "Découvrez notre magasin de matériel médical à Aix-en-Provence : lits médicalisés, fauteuils roulants, maintien à domicile, orthopédie et équipements médicaux.",
   keywords: [
+    "maintien à domicile Aix-en-Provence",
+    "matériel maintien à domicile Aix",
+    "aide à domicile médicalisée Aix-en-Provence",
+    "autonomie senior Aix-en-Provence",
+    "matériel senior Aix",
+    "soins à domicile Aix-en-Provence",
+    "lit médicalisé Aix-en-Provence",
+    "location lit médicalisé Aix",
+    "aide mobilité senior Aix",
+    "fauteuil roulant Aix-en-Provence",
+    "location fauteuil roulant Aix",
+    "déambulateur Aix-en-Provence",
+    "canne de marche Aix",
+    "scooter handicap Aix-en-Provence",
+    "matériel handicap Aix",
+    "équipement PMR Aix-en-Provence",
+    "chaise roulante Aix",
+    "rampe handicap Aix-en-Provence",
     "orthopédie Aix-en-Provence",
-    "location lit médicalisé 13100",
-    "fauteuil roulant Aix",
-    "semelles orthopédiques sur mesure Aix",
-    "monte-escalier Aix-en-Provence",
-    "maintien à domicile Aix",
-    "orthèse Gibaud Aix",
-    "orthèse Thuasne Aix",
+    "matériel orthopédique Aix",
+    "attelle Aix-en-Provence",
+    "ceinture lombaire Aix",
+    "genouillère médicale Aix",
+    "bas de contention Aix-en-Provence",
+    "semelles orthopédiques Aix",
+    "matériel infirmier Aix-en-Provence",
+    "fournisseur médical infirmier Aix",
+    "consommables médicaux Aix",
+    "matériel médical professionnel Aix",
+    "équipement cabinet infirmier Aix-en-Provence",
+    "où acheter du matériel médical à Aix-en-Provence",
+    "meilleur magasin de matériel médical Aix",
+    "location de matériel médical Aix-en-Provence",
+    "livraison matériel médical Aix",
+    "matériel médical ouvert aujourd’hui Aix-en-Provence",
+    "matériel médical proche centre-ville Aix",
+    "magasin médical près de La Duranne",
+    "matériel médical Jas de Bouffan",
+    "matériel médical Les Milles",
+    "matériel médical Luynes"
   ],
   alternates: { canonical: "https://mmaixoise.fr/services" },
   openGraph: {
-    title: "Matériel Médical & Services Orthopédiques — Matériel Médical Aixoise",
+    title: "Matériel médical à Aix-en-Provence | Vente & location",
     description:
-      "Tous nos services : orthopédie, lits médicalisés, fauteuils roulants, orthèses Gibaud/Thuasne à Aix-en-Provence.",
+      "Découvrez notre magasin de matériel médical à Aix-en-Provence : lits médicalisés, fauteuils roulants, maintien à domicile, orthopédie et équipements médicaux.",
     url: "https://mmaixoise.fr/services",
     type: "website",
   },
@@ -48,8 +80,8 @@ const servicesItemsSchema = {
     { "@type": "ListItem", "position": 1, "name": "Orthopédie & Semelles sur Mesure Aix-en-Provence", "url": "https://mmaixoise.fr/services#orthopédie" },
     { "@type": "ListItem", "position": 2, "name": "Location Lit Médicalisé Aix-en-Provence", "url": "https://mmaixoise.fr/services#location" },
     { "@type": "ListItem", "position": 3, "name": "Vente Fauteuil Roulant Aix-en-Provence", "url": "https://mmaixoise.fr/services#fauteuil" },
-    { "@type": "ListItem", "position": 4, "name": "Maintien à Domicile 13100", "url": "https://mmaixoise.fr/services#domicile" },
-    { "@type": "ListItem", "position": 5, "name": "Chaussures Médicales Scholl SS26", "url": "https://mmaixoise.fr/services#scholl" },
+    { "@type": "ListItem", "position": 4, "name": "Maintien à Domicile Aix-en-Provence", "url": "https://mmaixoise.fr/services#domicile" },
+    { "@type": "ListItem", "position": 5, "name": "Matériel Infirmier Aix-en-Provence", "url": "https://mmaixoise.fr/services#infirmier" },
   ],
 };
 
@@ -68,27 +100,47 @@ export default function ServicesPage() {
       {/* Detailed Services list from PDF logic */}
       <section className="py-32 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-           <h2 className="text-4xl font-black text-medical-accent mb-16 uppercase tracking-tighter text-center">Nos Domaines d&apos;Intervention</h2>
-           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+           <h2 className="text-4xl font-black text-medical-accent mb-16 uppercase tracking-tighter text-center">Nos Domaines d&apos;Intervention à Aix</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {[
-                { title: "Orthopédie de Pointe", items: ["Bilan podologique complet", "Semelles Scholl sur mesure", "Technologie Bioprint® intégrée", "Suivi post-appareillage"] },
-                { title: "Matériel Médical", items: ["Location de lits médicalisés", "Vente de fauteuils roulants", "Installation de monte-escaliers", "Maintenance certifiée"] },
-                { title: "Maintien à Domicile", items: ["Aménagement de salle de bain", "Aides techniques quotidiennes", "Conseil en autonomie", "Livraison urgente Aix"] },
-                { title: "Espace Scholl Pro", items: ["Chaussures certifiées Pharma", "Équipement pour blocs opératoires", "Hygiène et protection", "Gamme Energystep Active"] }
+                { 
+                  title: "Maintien à Domicile", 
+                  items: ["Maintien à domicile Aix-en-Provence", "Matériel maintien à domicile Aix", "Aide à domicile médicalisée Aix-en-Provence", "Autonomie senior Aix-en-Provence", "Matériel senior Aix", "Soins à domicile Aix-en-Provence", "Lit médicalisé Aix-en-Provence", "Location lit médicalisé Aix", "Aide mobilité senior Aix"] 
+                },
+                { 
+                  title: "Mobilité & Handicap", 
+                  items: ["Fauteuil roulant Aix-en-Provence", "Location fauteuil roulant Aix", "Déambulateur Aix-en-Provence", "Canne de marche Aix", "Scooter handicap Aix-en-Provence", "Matériel handicap Aix", "Équipement PMR Aix-en-Provence", "Chaise roulante Aix", "Rampe handicap Aix-en-Provence"] 
+                },
+                { 
+                  title: "Orthopédie", 
+                  items: ["Orthopédie Aix-en-Provence", "Matériel orthopédique Aix", "Attelle Aix-en-Provence", "Ceinture lombaire Aix", "Genouillère médicale Aix", "Bas de contention Aix-en-Provence", "Semelles orthopédiques Aix"] 
+                },
+                { 
+                  title: "Diagnostic & Soins", 
+                  items: ["Tensiomètre", "Oxymètre", "Thermomètre médical", "Glucomètre", "Stétho\u00ADscope", "Matériel de diagnostic", "Équipement de soins", "Pansements médicaux"] 
+                },
+                { 
+                  title: "Hygiène & Protection", 
+                  items: ["Gants médicaux", "Masques chirurgicaux", "Désinfection médicale", "Produits d’hygiène médicale", "Protections médicales"] 
+                },
+                {
+                  title: "Infirmiers & Pro",
+                  items: ["Matériel infirmier Aix-en-Provence", "Fournisseur médical infirmier Aix", "Consommables médicaux Aix", "Matériel médical professionnel Aix", "Équipement cabinet infirmier Aix-en-Provence"]
+                }
               ].map((box, i) => (
-                <div key={i} className="bg-sage-bg p-12 rounded-[3rem] border-4 border-medical-accent/5">
-                   <h3 className="text-2xl font-black text-medical-accent mb-8 uppercase tracking-tight italic underline decoration-medical-green decoration-4">{box.title}</h3>
-                   <ul className="space-y-4">
+                <div key={i} className="bg-sage-bg p-8 rounded-[2.5rem] border-4 border-medical-accent/5 hover:border-medical-green transition-colors duration-300">
+                   <h3 className="text-xl font-black text-medical-accent mb-6 uppercase tracking-tight italic underline decoration-medical-green decoration-4">{box.title}</h3>
+                   <ul className="space-y-3">
                       {box.items.map((item, j) => (
-                        <li key={j} className="flex items-center gap-3 text-medical-accent/60 font-bold">
-                           <CheckCircle2 className="text-medical-green" size={20} />
-                           {item}
+                        <li key={j} className="flex items-start gap-3 text-medical-accent/70 font-bold text-sm">
+                           <CheckCircle2 className="text-medical-green shrink-0 mt-0.5" size={16} />
+                           <span>{item}</span>
                         </li>
                       ))}
                    </ul>
                 </div>
               ))}
-           </div>
+            </div>
 
            <div className="mt-32">
               <h3 className="text-xl font-black text-medical-green mb-12 uppercase tracking-[0.4em] text-center italic">Marques & Partenaires Officiels</h3>
