@@ -4,15 +4,40 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Phone, Activity, ArrowRight, Instagram, Facebook, Linkedin } from "lucide-react";
+import { Menu, X, Phone, Activity, ArrowRight, Instagram, Facebook, Linkedin, ChevronDown, ChevronUp } from "lucide-react";
 import { siteData } from "@/data/site-data";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
   { name: "Accueil", href: "/" },
+  { 
+    name: "Location", 
+    href: "/location",
+    subLinks: [
+      { name: "Matériel médical", href: "/location/materiel-medical" },
+      { name: "Oxygénothérapie", href: "/location/oxygenotherapie" },
+      { name: "Services sur mesure", href: "/location/services-sur-mesure" },
+      { name: "La respiration", href: "/location/la-respiration" },
+      { name: "Tire lait", href: "/location/tire-lait" }
+    ]
+  },
+  { 
+    name: "Vente", 
+    href: "/vente",
+    subLinks: [
+      { name: "La marche", href: "/vente/la-marche" },
+      { name: "La mobilité", href: "/vente/la-mobilite" },
+      { name: "La respiration", href: "/vente/la-respiration" },
+      { name: "Autour du lit et repos", href: "/vente/autour-du-lit-et-repos" },
+      { name: "Hygiène", href: "/vente/hygiene" },
+      { name: "Incontinence", href: "/vente/incontinence" },
+      { name: "Aides techniques", href: "/vente/aides-techniques" },
+      { name: "Maintien postural", href: "/vente/maintien-postural" },
+      { name: "Au quotidien", href: "/vente/au-quotidien" },
+      { name: "Matériel professionnel", href: "/vente/materiel-professionnel" }
+    ]
+  },
   { name: "Expertises", href: "/services" },
-  { name: "Catalogues", href: "/catalogues" },
-  { name: "Blog", href: "/blog" },
   { name: "Engagement", href: "/about" },
   { name: "Contact", href: "/contact" },
 ];
@@ -20,7 +45,15 @@ const navLinks = [
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [openSubmenus, setOpenSubmenus] = useState<Record<string, boolean>>({});
   const pathname = usePathname();
+
+  const toggleSubmenu = (name: string) => {
+    setOpenSubmenus(prev => ({
+      ...prev,
+      [name]: !prev[name]
+    }));
+  };
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -59,16 +92,32 @@ export function Navbar() {
           {/* Desktop links */}
           <div className="hidden lg:flex items-center gap-10">
             {navLinks.map((link) => (
-              <Link 
-                key={link.name} 
-                href={link.href}
-                className={cn(
-                  "text-xs font-black transition-all uppercase tracking-[0.3em] hover:text-medical-green",
-                  pathname === link.href ? "text-medical-green" : "text-medical-accent/40"
+              <div key={link.name} className="relative group">
+                <Link 
+                  href={link.href}
+                  className={cn(
+                    "text-xs font-black transition-all uppercase tracking-[0.3em] hover:text-medical-green",
+                    pathname === link.href || (link.subLinks && pathname.startsWith(link.href)) ? "text-medical-green" : "text-medical-accent/40"
+                  )}
+                >
+                  {link.name}
+                </Link>
+                {link.subLinks && (
+                  <div className="absolute top-full left-0 mt-6 w-64 bg-white/95 backdrop-blur-md border-t-4 border-medical-green rounded-b-xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 before:absolute before:-top-6 before:left-0 before:w-full before:h-6">
+                    <div className="py-3">
+                      {link.subLinks.map(sub => (
+                        <Link
+                          key={sub.name}
+                          href={sub.href}
+                          className="block px-6 py-3 text-sm font-medium text-medical-accent/70 hover:text-medical-green hover:bg-medical-green/5 transition-colors"
+                        >
+                          {sub.name}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
                 )}
-              >
-                {link.name}
-              </Link>
+              </div>
             ))}
             <Link
               href="/contact"
@@ -100,7 +149,7 @@ export function Navbar() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[120] bg-medical-accent flex flex-col lg:hidden"
+            className="fixed inset-0 z-[120] bg-medical-accent flex flex-col lg:hidden overflow-y-auto"
           >
             {/* Decorative Background Elements */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -108,7 +157,7 @@ export function Navbar() {
               <div className="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-medical-green/5 rounded-full blur-[120px] animate-pulse delay-1000" />
             </div>
 
-            <div className="flex-1 flex flex-col justify-center px-8 sm:px-12 pt-24 relative z-10">
+            <div className="flex-1 flex flex-col justify-start px-8 sm:px-12 pt-28 pb-8 relative z-10">
                <div className="space-y-6 sm:space-y-8">
                   {navLinks.map((link, i) => (
                     <motion.div
@@ -116,24 +165,70 @@ export function Navbar() {
                       initial={{ opacity: 0, x: -50 }}
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ delay: 0.1 + i * 0.1, type: "spring", stiffness: 100 }}
+                      className="flex flex-col"
                     >
-                      <Link 
-                        href={link.href}
-                        className={cn(
-                          "flex items-center gap-6 group",
-                          pathname === link.href ? "text-medical-green" : "text-white/60 hover:text-white"
+                      {link.subLinks ? (
+                        <button
+                          onClick={() => toggleSubmenu(link.name)}
+                          className={cn(
+                            "flex items-center gap-6 group w-full text-left focus:outline-none",
+                            pathname.startsWith(link.href) ? "text-medical-green" : "text-white/60 hover:text-white"
+                          )}
+                        >
+                          <span className="text-sm font-black text-medical-green/30 font-mono tracking-tighter">0{i + 1}</span>
+                          <span className="text-4xl sm:text-6xl font-black uppercase tracking-tighter flex items-center gap-4">
+                            {link.name}
+                            <span className="inline-block transition-transform duration-300">
+                              {openSubmenus[link.name] ? (
+                                <ChevronUp className="w-8 h-8 sm:w-12 sm:h-12 text-medical-green" />
+                              ) : (
+                                <ChevronDown className="w-8 h-8 sm:w-12 sm:h-12 text-white/40 group-hover:text-white" />
+                              )}
+                            </span>
+                          </span>
+                        </button>
+                      ) : (
+                        <Link 
+                          href={link.href}
+                          className={cn(
+                            "flex items-center gap-6 group w-fit",
+                            pathname === link.href ? "text-medical-green" : "text-white/60 hover:text-white"
+                          )}
+                          onClick={() => setIsOpen(false)}
+                        >
+                          <span className="text-sm font-black text-medical-green/30 font-mono tracking-tighter">0{i + 1}</span>
+                          <span className="text-4xl sm:text-6xl font-black uppercase tracking-tighter transition-all group-hover:translate-x-4">
+                            {link.name}
+                          </span>
+                          <ArrowRight className={cn(
+                            "transition-all duration-500",
+                            pathname === link.href ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10 group-hover:opacity-100 group-hover:translate-x-0"
+                          )} size={40} />
+                        </Link>
+                      )}
+
+                      <AnimatePresence>
+                        {link.subLinks && openSubmenus[link.name] && (
+                          <motion.div
+                            initial={{ height: 0, opacity: 0 }}
+                            animate={{ height: "auto", opacity: 1 }}
+                            exit={{ height: 0, opacity: 0 }}
+                            transition={{ duration: 0.3, ease: "easeInOut" }}
+                            className="overflow-hidden pl-16 sm:pl-20 mt-4 flex flex-col gap-3"
+                          >
+                            {link.subLinks.map(sub => (
+                              <Link
+                                key={sub.name}
+                                href={sub.href}
+                                onClick={() => setIsOpen(false)}
+                                className="text-lg sm:text-xl font-medium text-white/50 hover:text-medical-green transition-colors py-1"
+                              >
+                                {sub.name}
+                              </Link>
+                            ))}
+                          </motion.div>
                         )}
-                        onClick={() => setIsOpen(false)}
-                      >
-                        <span className="text-sm font-black text-medical-green/30 font-mono tracking-tighter">0{i + 1}</span>
-                        <span className="text-5xl sm:text-7xl font-black uppercase tracking-tighter transition-all group-hover:translate-x-4">
-                          {link.name}
-                        </span>
-                        <ArrowRight className={cn(
-                          "transition-all duration-500",
-                          pathname === link.href ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10 group-hover:opacity-100 group-hover:translate-x-0"
-                        )} size={40} />
-                      </Link>
+                      </AnimatePresence>
                     </motion.div>
                   ))}
                </div>
@@ -142,9 +237,9 @@ export function Navbar() {
                  initial={{ opacity: 0, y: 30 }}
                  animate={{ opacity: 1, y: 0 }}
                  transition={{ delay: 0.6 }}
-                 className="mt-16 sm:mt-24 pt-10 border-t border-white/10"
+                 className="mt-12 sm:mt-16 pt-8 border-t border-white/10"
                >
-                  <p className="text-medical-green font-black text-[10px] uppercase tracking-[0.4em] mb-8 text-center sm:text-left">Connectez-vous</p>
+                  <p className="text-medical-green font-black text-[10px] uppercase tracking-[0.4em] mb-6 text-center sm:text-left">Connectez-vous</p>
                   <div className="flex justify-center sm:justify-start gap-6">
                      {[
                        { icon: Facebook, href: "#" },
@@ -154,9 +249,10 @@ export function Navbar() {
                        <a 
                          key={i} 
                          href={item.href}
-                         className="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center text-white/40 hover:text-medical-green hover:bg-white/10 hover:scale-110 transition-all border border-white/5"
+                         className="w-12 h-12 sm:w-16 sm:h-16 bg-white/5 rounded-2xl flex items-center justify-center text-white/40 hover:text-medical-green hover:bg-white/10 hover:scale-110 transition-all border border-white/5"
                        >
-                          <item.icon size={28} />
+                          <item.icon size={20} className="sm:hidden" />
+                          <item.icon size={28} className="hidden sm:block" />
                        </a>
                      ))}
                   </div>
@@ -167,7 +263,7 @@ export function Navbar() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.8 }}
-              className="p-8 sm:p-12 bg-black/20 flex items-center justify-between relative z-10"
+              className="p-8 sm:p-12 bg-black/20 flex items-center justify-between relative z-10 mt-auto"
             >
                <div className="flex flex-col">
                   <p className="text-white/20 text-[9px] font-black uppercase tracking-widest mb-1">© 2025 MMAIXOISE</p>

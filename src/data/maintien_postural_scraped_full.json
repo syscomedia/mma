@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Brassière de maintien postural",
+    "link": "/produit/brassiere-de-maintien-postural",
+    "image": "/assets/scraped/03winnsave_brassiere_de_securite_zjpg-450x450.jpg",
+    "original_image": "/assets/scraped/03winnsave_brassiere_de_securite_zjpg-450x450.jpg"
+  },
+  {
+    "name": "Ceinture pelvienne",
+    "link": "/produit/ceinture-pelvienne",
+    "image": "/assets/scraped/04winnsave_ceinture_pelvienne_classique_zjpg-450x450.jpg",
+    "original_image": "/assets/scraped/04winnsave_ceinture_pelvienne_classique_zjpg-450x450.jpg"
+  },
+  {
+    "name": "Maintien pelvien",
+    "link": "/produit/maintien-pelvien",
+    "image": "/assets/scraped/01winnsave_brassiere_pelvienne_classique_zjpg-450x450.jpg",
+    "original_image": "/assets/scraped/01winnsave_brassiere_pelvienne_classique_zjpg-450x450.jpg"
+  }
+]

@@ -1,0 +1,3689 @@
+{
+  "categories": [
+    {
+      "id": 93,
+      "name": "Aérosol manosonique",
+      "slug": "aerosol-manosonique",
+      "parent": 0
+    },
+    {
+      "id": 31,
+      "name": "Aérosol Pneumatique à La Vente",
+      "slug": "aerosol-pneumatique-a-la-vente",
+      "parent": 40
+    },
+    {
+      "id": 34,
+      "name": "Aérosol Ultrasonique à La Vente",
+      "slug": "aerosol-ultrasonique-a-la-vente",
+      "parent": 40
+    },
+    {
+      "id": 96,
+      "name": "Aide technique à la posture",
+      "slug": "aide-technique-a-la-posture",
+      "parent": 0
+    },
+    {
+      "id": 26,
+      "name": "Aides Techniques",
+      "slug": "aides-techniques",
+      "parent": 19
+    },
+    {
+      "id": 42,
+      "name": "Au quotidien",
+      "slug": "au-quotidien",
+      "parent": 19
+    },
+    {
+      "id": 39,
+      "name": "Autour du lit et repos",
+      "slug": "autour-du-lit-et-repos",
+      "parent": 19
+    },
+    {
+      "id": 29,
+      "name": "Autre Matériel Médical à La Vente",
+      "slug": "autre-materiel-medical-a-la-vente",
+      "parent": 42
+    },
+    {
+      "id": 20,
+      "name": "Cannes à La Vente",
+      "slug": "cannes-a-la-vente",
+      "parent": 37
+    },
+    {
+      "id": 90,
+      "name": "Chaise garde-robe",
+      "slug": "chaise-garde-robe",
+      "parent": 49
+    },
+    {
+      "id": 24,
+      "name": "Coussins De Positionnement",
+      "slug": "coussins-de-positionnement",
+      "parent": 39
+    },
+    {
+      "id": 62,
+      "name": "Déambulateur",
+      "slug": "deambulateur",
+      "parent": 37
+    },
+    {
+      "id": 23,
+      "name": "Déambulateur Et Rollator à La Vente",
+      "slug": "deambulateur-et-rollator-a-la-vente",
+      "parent": 37
+    },
+    {
+      "id": 53,
+      "name": "Electrothérapie",
+      "slug": "electrotherapie",
+      "parent": 26
+    },
+    {
+      "id": 89,
+      "name": "Fauteuil de confort",
+      "slug": "fauteuil-de-confort",
+      "parent": 39
+    },
+    {
+      "id": 91,
+      "name": "Fauteuil roulant électrique",
+      "slug": "fauteuil-roulant-electrique",
+      "parent": 38
+    },
+    {
+      "id": 92,
+      "name": "Fauteuil roulant enfant",
+      "slug": "fauteuil-roulant-enfant",
+      "parent": 0
+    },
+    {
+      "id": 104,
+      "name": "fauteuil roulant manuel",
+      "slug": "fauteuil-roulant-manuel",
+      "parent": 0
+    },
+    {
+      "id": 46,
+      "name": "Fauteuils à pousser",
+      "slug": "fauteuils-a-pousser",
+      "parent": 38
+    },
+    {
+      "id": 21,
+      "name": "Fauteuils Roulants Et Sièges Coquilles à La Vente",
+      "slug": "fauteuils-roulants-et-sieges-coquilles-a-la-vente",
+      "parent": 38
+    },
+    {
+      "id": 41,
+      "name": "Hygiène",
+      "slug": "hygiene",
+      "parent": 19
+    },
+    {
+      "id": 35,
+      "name": "INCONTINENCE",
+      "slug": "incontinence",
+      "parent": 41
+    },
+    {
+      "id": 94,
+      "name": "incontinence",
+      "slug": "incontinence-2",
+      "parent": 0
+    },
+    {
+      "id": 37,
+      "name": "La Marche",
+      "slug": "la-marche",
+      "parent": 29
+    },
+    {
+      "id": 38,
+      "name": "La mobilité",
+      "slug": "la-mobilite",
+      "parent": 19
+    },
+    {
+      "id": 40,
+      "name": "La respiration",
+      "slug": "la-respiration",
+      "parent": 19
+    },
+    {
+      "id": 98,
+      "name": "La respiration en location",
+      "slug": "la-respiration-en-location",
+      "parent": 17
+    },
+    {
+      "id": 27,
+      "name": "Le Bain",
+      "slug": "le-bain",
+      "parent": 42
+    },
+    {
+      "id": 47,
+      "name": "Les accessoires",
+      "slug": "les-accessoires",
+      "parent": 39
+    },
+    {
+      "id": 48,
+      "name": "Les fauteuils releveurs",
+      "slug": "les-fauteuils-releveurs",
+      "parent": 39
+    },
+    {
+      "id": 99,
+      "name": "Lit",
+      "slug": "lit",
+      "parent": 0
+    },
+    {
+      "id": 25,
+      "name": "Literie Médicale à La Vente",
+      "slug": "literie-medicale-a-la-vente",
+      "parent": 39
+    },
+    {
+      "id": 212,
+      "name": "Maintien postural",
+      "slug": "maintien-postural",
+      "parent": 0
+    },
+    {
+      "id": 50,
+      "name": "Matériel de protection individuelle et de désinfection",
+      "slug": "materiel-de-protection-individuelle-et-de-desinfection",
+      "parent": 41
+    },
+    {
+      "id": 19,
+      "name": "Matériel Médical à La Vente",
+      "slug": "materiel-medical-a-la-vente",
+      "parent": 0
+    },
+    {
+      "id": 17,
+      "name": "Matériel Médical à Louer",
+      "slug": "materiel-medical-a-louer",
+      "parent": 0
+    },
+    {
+      "id": 18,
+      "name": "Matériel Médical En Location",
+      "slug": "materiel-medical-en-location",
+      "parent": 17
+    },
+    {
+      "id": 22,
+      "name": "Matériel Médical Pour L&#8217;hygiène à La Vente",
+      "slug": "materiel-medical-pour-lhygiene-a-la-vente",
+      "parent": 19
+    },
+    {
+      "id": 28,
+      "name": "Matériel Pour Lit Médicalisé à La Vente",
+      "slug": "materiel-pour-lit-medicalise-a-la-vente",
+      "parent": 19
+    },
+    {
+      "id": 102,
+      "name": "Matériel professionnel",
+      "slug": "materiel-professionnel",
+      "parent": 0
+    },
+    {
+      "id": 15,
+      "name": "Non classé",
+      "slug": "non-classe",
+      "parent": 0
+    },
+    {
+      "id": 44,
+      "name": "Oxygénothérapie",
+      "slug": "oxygenotherapie",
+      "parent": 17
+    },
+    {
+      "id": 52,
+      "name": "Oxymètre",
+      "slug": "oxymetre",
+      "parent": 26
+    },
+    {
+      "id": 56,
+      "name": "Pinces de préhension",
+      "slug": "pinces-de-prehension",
+      "parent": 42
+    },
+    {
+      "id": 54,
+      "name": "Planche de bain",
+      "slug": "planche-de-bain",
+      "parent": 27
+    },
+    {
+      "id": 45,
+      "name": "Services sur-mesure",
+      "slug": "services-sur-mesure",
+      "parent": 17
+    },
+    {
+      "id": 105,
+      "name": "Table",
+      "slug": "table",
+      "parent": 0
+    },
+    {
+      "id": 55,
+      "name": "Tabouret de bain",
+      "slug": "tabouret-de-bain",
+      "parent": 27
+    },
+    {
+      "id": 32,
+      "name": "Talonnières",
+      "slug": "talonnieres",
+      "parent": 19
+    },
+    {
+      "id": 51,
+      "name": "Tensiomètre",
+      "slug": "tensiometre",
+      "parent": 26
+    },
+    {
+      "id": 95,
+      "name": "Tire lait",
+      "slug": "tire-lait",
+      "parent": 26
+    },
+    {
+      "id": 97,
+      "name": "Tire lait en location",
+      "slug": "tire-lait-en-location",
+      "parent": 17
+    },
+    {
+      "id": 49,
+      "name": "Toilette et bain",
+      "slug": "toilette-et-bain",
+      "parent": 41
+    }
+  ],
+  "products": [
+    {
+      "id": 4571,
+      "name": "Fauteuil Carbone pliable",
+      "slug": "fauteuil-carbone-pliable",
+      "categories": [
+        "Fauteuil roulant électrique",
+        "La mobilité"
+      ],
+      "price": "0",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/fauteuilelectriquecarboneaerocarbonjpg",
+        "/assets/scraped/fauteuilelectriquecarboneaerocarbonpliejpg",
+        "/assets/scraped/fauteuilelectriquecarboneaerocarbonjoystickjpg"
+      ],
+      "short_description": "AeroCarbon_2026_01",
+      "permalink": "/produit/fauteuil-carbone-pliable"
+    },
+    {
+      "id": 4545,
+      "name": "Ceinture pelvienne",
+      "slug": "ceinture-pelvienne",
+      "categories": [
+        "Maintien postural"
+      ],
+      "price": "7975",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/04winnsave_ceinture_pelvienne_classique_zjpg"
+      ],
+      "short_description": "fiche produit (2)",
+      "permalink": "/produit/ceinture-pelvienne"
+    },
+    {
+      "id": 4541,
+      "name": "Maintien pelvien",
+      "slug": "maintien-pelvien",
+      "categories": [
+        "Maintien postural"
+      ],
+      "price": "7965",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/01winnsave_brassiere_pelvienne_classique_zjpg"
+      ],
+      "short_description": "fiche produit",
+      "permalink": "/produit/maintien-pelvien"
+    },
+    {
+      "id": 4537,
+      "name": "Brassière de maintien postural",
+      "slug": "brassiere-de-maintien-postural",
+      "categories": [
+        "Maintien postural"
+      ],
+      "price": "7685",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/03winnsave_brassiere_de_securite_zjpg"
+      ],
+      "short_description": "fiche produit (1)",
+      "permalink": "/produit/brassiere-de-maintien-postural"
+    },
+    {
+      "id": 4529,
+      "name": "Acquisition d'un fauteuil roulant",
+      "slug": "acquisition-dun-fauteuil-roulant",
+      "categories": [
+        "Fauteuil roulant électrique",
+        "fauteuil roulant manuel",
+        "Services sur-mesure"
+      ],
+      "price": "0",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/istockphoto2199822768612x612jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/acquisition-dun-fauteuil-roulant"
+    },
+    {
+      "id": 4519,
+      "name": "Pince Adson sans griffe",
+      "slug": "pince-adson-sans-griffe",
+      "categories": [
+        "Matériel professionnel"
+      ],
+      "price": "195",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/pinceadson.png"
+      ],
+      "short_description": "tarif unitaire",
+      "permalink": "/produit/pince-adson-sans-griffe"
+    },
+    {
+      "id": 4351,
+      "name": "Chaise garde-robe Candy 155",
+      "slug": "chaise-garde-robe-candy-155-2",
+      "categories": [
+        "Au quotidien",
+        "Toilette et bain"
+      ],
+      "price": "10262",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/candy-155.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/chaise-garde-robe-candy-155-2"
+    },
+    {
+      "id": 4429,
+      "name": "Chaise haute de cuisine Kizine",
+      "slug": "chaise-haute-de-cuisine-kizine",
+      "categories": [
+        "Au quotidien"
+      ],
+      "price": "8959",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/kizine-trois-quart.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/chaise-haute-de-cuisine-kizine"
+    },
+    {
+      "id": 4395,
+      "name": "TALONNIERE stabilisatrice",
+      "slug": "talonniere-stabilisatrice",
+      "categories": [
+        "Aide technique à la posture",
+        "Talonnières"
+      ],
+      "price": "12958",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/v_talonniere_stabilisatrice_vdt45a_cic.jpg",
+        "/assets/scraped/v_talonniere_stabilisatrice_housse_cic.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/talonniere-stabilisatrice"
+    },
+    {
+      "id": 3201,
+      "name": "Canne Derby (8 MOTIFS)",
+      "slug": "canne-derby-8-motifs",
+      "categories": [
+        "Cannes à La Vente",
+        "La Marche"
+      ],
+      "price": "0",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/canne-derby-8-modeles-herdegen.webp",
+        "/assets/scraped/canne-derby-8-modeles-herdegen-1.webp"
+      ],
+      "short_description": "",
+      "permalink": "/produit/canne-derby-8-motifs"
+    },
+    {
+      "id": 4335,
+      "name": "Cannes anglaises grande taille",
+      "slug": "cannes-anglaises-grande-taille",
+      "categories": [
+        "Cannes à La Vente",
+        "La Marche"
+      ],
+      "price": "2125",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/726-1.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/cannes-anglaises-grande-taille"
+    },
+    {
+      "id": 4236,
+      "name": "Chaise garde robe Invacare Omega pliante H407",
+      "slug": "chaise-garde-robe-omega-invacare",
+      "categories": [
+        "Chaise garde-robe",
+        "Hygiène"
+      ],
+      "price": "14355",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/omega_pliante.jpg"
+      ],
+      "short_description": "DSAL008074_CHAISES TOILETTES OMEGA 23FR",
+      "permalink": "/produit/chaise-garde-robe-omega-invacare"
+    },
+    {
+      "id": 4195,
+      "name": "Table de lit ajustable avec roulettes",
+      "slug": "table-de-lit-ajustable-avec-roulettes",
+      "categories": [
+        "Matériel Pour Lit Médicalisé à La Vente",
+        "Table"
+      ],
+      "price": "10800",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/table-de-lit-ajustable-avec-roulettes-livree-a-plat-homecraft.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/table-de-lit-ajustable-avec-roulettes"
+    },
+    {
+      "id": 4190,
+      "name": "Lit ALDRYS",
+      "slug": "lit-aldrys",
+      "categories": [
+        "Lit",
+        "Matériel Médical En Location"
+      ],
+      "price": "0",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/aldrys_1_3.jpeg",
+        "/assets/scraped/aldrys_repose_jambes_en_bas.jpg"
+      ],
+      "short_description": "aldrys_fiche-1",
+      "permalink": "/produit/lit-aldrys"
+    },
+    {
+      "id": 4185,
+      "name": "ONTEX-ID Expert Belt large Maxi",
+      "slug": "ontex-id-expert-belt-large-maxi",
+      "categories": [
+        "INCONTINENCE"
+      ],
+      "price": "1955",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/ontex-id-expert-belt-l-maxi.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/ontex-id-expert-belt-large-maxi"
+    },
+    {
+      "id": 4156,
+      "name": "FAUTEUIL roulant manuel hémiplégique",
+      "slug": "fauteuil-roulant-manuel-hemiplegique",
+      "categories": [
+        "fauteuil roulant manuel",
+        "La mobilité"
+      ],
+      "price": "0",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/fauteuil-roulant-manuel-de-transfert-action-r-4-ng-dual-hr-double-main-courante-.jpg"
+      ],
+      "short_description": "INVACARE ACTION 4 DUAL HRDSAL008196_4P Propulsion_Hemiplegique_FR",
+      "permalink": "/produit/fauteuil-roulant-manuel-hemiplegique"
+    },
+    {
+      "id": 4120,
+      "name": "CHAMPS STERILES FOLIODRAPE",
+      "slug": "champs-steriles-foliodrape",
+      "categories": [
+        "Matériel professionnel"
+      ],
+      "price": "4995",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/foliodrape.webp",
+        "/assets/scraped/foliodrape.jpg"
+      ],
+      "short_description": "boîte de 40 unités\n75X90 cm",
+      "permalink": "/produit/champs-steriles-foliodrape"
+    },
+    {
+      "id": 4140,
+      "name": "MEDELA Set double Symphony",
+      "slug": "medela-set-double-symphony-3",
+      "categories": [
+        "Tire lait"
+      ],
+      "price": "3696",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/kit-21-mm-p10.webp"
+      ],
+      "short_description": "Set complet pour le tire-lait électrique MEDELA",
+      "permalink": "/produit/medela-set-double-symphony-3"
+    },
+    {
+      "id": 4137,
+      "name": "MEDELA Set double Symphony",
+      "slug": "medela-set-double-symphony-2",
+      "categories": [
+        "Tire lait"
+      ],
+      "price": "3696",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/kit-21-mm-p10.webp",
+        "/assets/scraped/pump-kit-with-bottles.d2a0db8b.webp"
+      ],
+      "short_description": "Set complet pour tire-lait électrique MEDELA",
+      "permalink": "/produit/medela-set-double-symphony-2"
+    },
+    {
+      "id": 4123,
+      "name": "MEDELA Set double Symphony",
+      "slug": "medela-set-double-symphony",
+      "categories": [
+        "Tire lait"
+      ],
+      "price": "3696",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/medela-set-double-symphony-personnalfit-plus-21-mm.webp",
+        "/assets/scraped/pump-kit-with-bottles.d2a0db8b.webp"
+      ],
+      "short_description": "Set complet pour tire-lait électrique MEDELA",
+      "permalink": "/produit/medela-set-double-symphony"
+    },
+    {
+      "id": 4113,
+      "name": "Gant nitrile PEHA SOFT FINO",
+      "slug": "gant-nitrile-peha-soft-fino",
+      "categories": [
+        "Matériel de protection individuelle et de désinfection",
+        "Matériel professionnel"
+      ],
+      "price": "855",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/gants-s.jpg",
+        "/assets/scraped/gants.jpg"
+      ],
+      "short_description": "boîte de 150 unités",
+      "permalink": "/produit/gant-nitrile-peha-soft-fino"
+    },
+    {
+      "id": 4106,
+      "name": "ROLLATOR et UN FAUTEUIL DE TRANSFERT",
+      "slug": "rollator-et-un-fauteuil-de-transfert",
+      "categories": [
+        "Au quotidien",
+        "La mobilité"
+      ],
+      "price": "0",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/rollator-diamond-deluxe-3-cb39099a.jpg"
+      ],
+      "short_description": "DIAMOND DELUXE 2 en 1",
+      "permalink": "/produit/rollator-et-un-fauteuil-de-transfert"
+    },
+    {
+      "id": 4100,
+      "name": "TRAVELITE",
+      "slug": "travelite",
+      "categories": [
+        "fauteuil roulant manuel",
+        "La mobilité"
+      ],
+      "price": "0",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/travelite-fr-fc99e939.jpg"
+      ],
+      "short_description": "Fauteuil de voyage",
+      "permalink": "/produit/travelite"
+    },
+    {
+      "id": 4097,
+      "name": "REHAUSSE-WC TSE 150 PLUS",
+      "slug": "rehausse-wc-nouveaute",
+      "categories": [
+        "Au quotidien",
+        "Toilette et bain"
+      ],
+      "price": "9885",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/rs2373_5201000_hauptbild_marmlehne-copie-a27dc73d.jpg"
+      ],
+      "short_description": "NOUVEAUTE",
+      "permalink": "/produit/rehausse-wc-nouveaute"
+    },
+    {
+      "id": 4077,
+      "name": "CHANGE COMPLET MAXI +",
+      "slug": "change-complet-maxi",
+      "categories": [
+        "INCONTINENCE"
+      ],
+      "price": "1825",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/soffisof-slip-maxi-plus.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/change-complet-maxi"
+    },
+    {
+      "id": 3959,
+      "name": "CANNE SIEGE PLIANT 3 PIEDS",
+      "slug": "canne-siege-pliant-3-pieds",
+      "categories": [
+        "Cannes à La Vente",
+        "La Marche"
+      ],
+      "price": "3210",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/preview-1.jpg",
+        "/assets/scraped/canne-siege-1.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/canne-siege-pliant-3-pieds"
+    },
+    {
+      "id": 4007,
+      "name": "CHARLOTTE",
+      "slug": "charlotte-haddley-cooper",
+      "categories": [
+        "Matériel professionnel"
+      ],
+      "price": "499",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/charlotte-jetable-en-tnt-bleue.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/charlotte-haddley-cooper"
+    },
+    {
+      "id": 4002,
+      "name": "Surblouse jetable médical non tissé",
+      "slug": "surblouse-jetable-medical-non-tisse-35g-et-25g",
+      "categories": [
+        "Matériel professionnel"
+      ],
+      "price": "5755",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/surblouse-jetable-1-1.jpg"
+      ],
+      "short_description": "Bénéficiez de tarifs dégressifs selon la quantité commandée.",
+      "permalink": "/produit/surblouse-jetable-medical-non-tisse-35g-et-25g"
+    },
+    {
+      "id": 3999,
+      "name": "Détergent désinfectant de surface Surfa’safe premium 750 ml",
+      "slug": "detergent-desinfectant-de-surface-surfasafe-premium-750-ml-2",
+      "categories": [
+        "Matériel professionnel"
+      ],
+      "price": "980",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/desinfectant-toutes-surfaces-anios-surfa-safe-premium-.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/detergent-desinfectant-de-surface-surfasafe-premium-750-ml-2"
+    },
+    {
+      "id": 3996,
+      "name": "Distributeur de gel automatique sur pied",
+      "slug": "3996",
+      "categories": [
+        "Matériel professionnel"
+      ],
+      "price": "23900",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/distributeur-de-gel-sur-pied.jpg",
+        "/assets/scraped/distributeur-de-gel-sur-pied1.jpg",
+        "/assets/scraped/distributeur-de-gel-sur-pied4.jpg"
+      ],
+      "short_description": "100% hygiénique\nAutomatique, aucun contact n’est nécessaire\nÉconomique, il distribue la juste dose de solution (1ml)\nNe nécessite pas l’utilisation d’eau\nAlimentation par piles",
+      "permalink": "/produit/3996"
+    },
+    {
+      "id": 3968,
+      "name": "Déambulateur Miami (pliant)",
+      "slug": "deambulateur-miami-pliant",
+      "categories": [
+        "Déambulateur",
+        "La Marche"
+      ],
+      "price": "5381",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/deambulateur-pliant-miami-4dcdf39a-1.jpg",
+        "/assets/scraped/deambulateur-pliant-miami-plie-27cea434.jpg"
+      ],
+      "short_description": "Largueur entre poignées : 43 cm\nLargueur hors-tout : 59 cm\nHauteur poignées : 79 à 91,5 cm\nProfondeur maxi : 50,5 cm\nDiamètre du tube : 2,5 cm\nMatière : Aluminium\nCouleur : Gris métallisé/noir\nPoids : 2,5 kg\nPoids maxi supporté : 100 kg",
+      "permalink": "/produit/deambulateur-miami-pliant"
+    },
+    {
+      "id": 3917,
+      "name": "TABLE de LIT à vérin",
+      "slug": "table-de-lit-a-verin",
+      "categories": [
+        "Matériel Médical à La Vente",
+        "Table"
+      ],
+      "price": "7590",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/ta-3904-e1733152545980.jpg"
+      ],
+      "short_description": "TA3904 &#8211; FP6 (1)",
+      "permalink": "/produit/table-de-lit-a-verin"
+    },
+    {
+      "id": 3888,
+      "name": "TASSE EROGONOMIQUE",
+      "slug": "tasse-erogonomique",
+      "categories": [
+        "Au quotidien"
+      ],
+      "price": "1090",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/tasse_ergonomique_ergo.jpg",
+        "/assets/scraped/tasse-1-1.jpg",
+        "/assets/scraped/yasse-bleu.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/tasse-erogonomique"
+    },
+    {
+      "id": 3856,
+      "name": "Elévateur de bain Aquatec Orca",
+      "slug": "elevateur-de-bain-aquatec-orca",
+      "categories": [
+        "Au quotidien",
+        "Le Bain"
+      ],
+      "price": "54900",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/elevateur-de-bain_orca-cv02.jpg",
+        "/assets/scraped/1658241096_mpic003233_orca3_800x800.jpg",
+        "/assets/scraped/1658241096_high000976_orca_f_vonhinten-neukl.jpg"
+      ],
+      "short_description": "DSAL008178_ORCA 23FR",
+      "permalink": "/produit/elevateur-de-bain-aquatec-orca"
+    },
+    {
+      "id": 3837,
+      "name": "DISPOSITIF ANTIVIRAL ET ANTI-MOUSTIQUES",
+      "slug": "dispositif-antiviral-et-anti-moustiques-2",
+      "categories": [
+        "Aides Techniques",
+        "Autre Matériel Médical à La Vente"
+      ],
+      "price": "11500",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/1211082000-2-768x676-1.jpg",
+        "/assets/scraped/1211082000-2-768x676-1.jpg",
+        "/assets/scraped/1211082000-1-768x506-1.jpg"
+      ],
+      "short_description": "1211082000 FT FAMILY1 AERIASHIELD FAMILY1 15M2",
+      "permalink": "/produit/dispositif-antiviral-et-anti-moustiques-2"
+    },
+    {
+      "id": 3828,
+      "name": "DISPOSITIF ANTIVIRAL et ANTI-MOUSTIQUES",
+      "slug": "dispositif-antiviral-et-anti-moustiques",
+      "categories": [
+        "Aides Techniques"
+      ],
+      "price": "9455",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/aeriashield-travel-1-480x777-1.jpg",
+        "/assets/scraped/aeriashield-travel-2-150x150-1.jpg",
+        "/assets/scraped/institue-pasteur.jpg"
+      ],
+      "short_description": "1211081000 FT TRAVEL AERIASHIELD TRAVEL 5M2",
+      "permalink": "/produit/dispositif-antiviral-et-anti-moustiques"
+    },
+    {
+      "id": 3824,
+      "name": "Neurostimulateur transcutané Tens éco 2",
+      "slug": "neurostimulateur-transcutane-tens-eco-2",
+      "categories": [
+        "Aides Techniques",
+        "Electrothérapie"
+      ],
+      "price": "21510",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/2neurostimulateur-transcutane-tens-eco-2-1.jpg",
+        "/assets/scraped/2neurostimulateur-transcutane-tens-eco-2.jpg",
+        "/assets/scraped/neurostimulateur-transcutane-tens-eco-2-1.jpg"
+      ],
+      "short_description": "ouiiiii",
+      "permalink": "/produit/neurostimulateur-transcutane-tens-eco-2"
+    },
+    {
+      "id": 3815,
+      "name": "Protections barrières de lit",
+      "slug": "protections-barrieres-de-lit",
+      "categories": [
+        "Autre Matériel Médical à La Vente"
+      ],
+      "price": "7485",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/capture.jpg"
+      ],
+      "short_description": "vendu à l&#8217;unité.",
+      "permalink": "/produit/protections-barrieres-de-lit"
+    },
+    {
+      "id": 3771,
+      "name": "CONCENTRATEUR d'oxygène portable",
+      "slug": "concentrateur-doxygene-portable",
+      "categories": [
+        "La respiration",
+        "Oxygénothérapie"
+      ],
+      "price": "0",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/concentrateur-portatif.jpg",
+        "/assets/scraped/o2.2-1.jpg",
+        "/assets/scraped/o2.21.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/concentrateur-doxygene-portable"
+    },
+    {
+      "id": 3712,
+      "name": "CHANGE COMPLET SUPER XL SOFFISOF",
+      "slug": "change-complet-super-xl-soffisof",
+      "categories": [
+        "INCONTINENCE",
+        "incontinence"
+      ],
+      "price": "1955",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/soffisof-slip-super-xl-1.jpg"
+      ],
+      "short_description": "sachets de 15 unités",
+      "permalink": "/produit/change-complet-super-xl-soffisof"
+    },
+    {
+      "id": 3697,
+      "name": "VERSO fauteuil démontable VERMEIREN",
+      "slug": "verso-fauteuil-demontable-vermeiren",
+      "categories": [
+        "Fauteuil roulant électrique",
+        "La mobilité"
+      ],
+      "price": "0",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/verso-black-frame-orange-forks-3q-view.jpg",
+        "/assets/scraped/verso-24_22-wheels-side-view.jpg",
+        "/assets/scraped/verso-split-and-folded.jpg",
+        "/assets/scraped/web_verso-black-frame-blue-forks-3q-view.jpg",
+        "/assets/scraped/verso-detail-adjustable-handles.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/verso-fauteuil-demontable-vermeiren"
+    },
+    {
+      "id": 3673,
+      "name": "GRENOUILLERE MAMYNETT",
+      "slug": "grenouillere-mamynett",
+      "categories": [
+        "INCONTINENCE",
+        "incontinence"
+      ],
+      "price": "6488",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/grenouillere-incontinence-lourde-mamynett-modele-unisexe.jpg",
+        "/assets/scraped/fermetures-e1702482161601.jpg"
+      ],
+      "short_description": "Modèle unisexe",
+      "permalink": "/produit/grenouillere-mamynett"
+    },
+    {
+      "id": 3177,
+      "name": "Fauteuil roulant pour enfant",
+      "slug": "fauteuil-roulant-pour-enfant",
+      "categories": [
+        "Fauteuil roulant enfant",
+        "La mobilité",
+        "Matériel Médical En Location"
+      ],
+      "price": "0",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/fauteuil-enfant-aa.jpg",
+        "/assets/scraped/fauteuil-enfant-bb.png"
+      ],
+      "short_description": "Fauteuil Roulant Enfant",
+      "permalink": "/produit/fauteuil-roulant-pour-enfant"
+    },
+    {
+      "id": 3660,
+      "name": "SIEGE de bain pivotant EDORA",
+      "slug": "siege-de-bain-pivotant-edora",
+      "categories": [
+        "Toilette et bain"
+      ],
+      "price": "12986",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/siege-bain-pivotant-accoudoirs-relevables-edora-33153300.jpg",
+        "/assets/scraped/siege-bain-pivotant-accoudoirs-relevables-edora-face.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/siege-de-bain-pivotant-edora"
+    },
+    {
+      "id": 3629,
+      "name": "QUICKIE Q 50 R Carbon",
+      "slug": "quickie-q-50-r-carbon",
+      "categories": [
+        "Fauteuil roulant électrique",
+        "La mobilité"
+      ],
+      "price": "0",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/q-50-r-.jpg",
+        "/assets/scraped/orange.jpg",
+        "/assets/scraped/purple.jpg",
+        "/assets/scraped/red.jpg"
+      ],
+      "short_description": "fiche Q 50 R",
+      "permalink": "/produit/quickie-q-50-r-carbon"
+    },
+    {
+      "id": 3611,
+      "name": "Canne poignée T",
+      "slug": "canne-poigee-t",
+      "categories": [
+        "Cannes à La Vente",
+        "La Marche"
+      ],
+      "price": "1455",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/4-ter.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/canne-poigee-t"
+    },
+    {
+      "id": 3570,
+      "name": "NITRO rollator pliant",
+      "slug": "nitro-rollator-pliant",
+      "categories": [
+        "Déambulateur Et Rollator à La Vente",
+        "La Marche"
+      ],
+      "price": "35955",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/nitro.jpg"
+      ],
+      "short_description": "Fiche produit Nitro (2)\n2 coloris, noir et blanc",
+      "permalink": "/produit/nitro-rollator-pliant"
+    },
+    {
+      "id": 3535,
+      "name": "MASQUE pour aérosol MANOSONIQUE",
+      "slug": "3535",
+      "categories": [
+        "Aérosol manosonique",
+        "La respiration"
+      ],
+      "price": "0",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/ms1ae-2.png"
+      ],
+      "short_description": "ATOMISOR &#8211; PURENEB\n&nbsp;",
+      "permalink": "/produit/3535"
+    },
+    {
+      "id": 3199,
+      "name": "Canne de marche repliable aluminium",
+      "slug": "canne-de-marche-repliable-aluminium",
+      "categories": [
+        "Cannes à La Vente",
+        "La Marche"
+      ],
+      "price": "1220",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/ref-c43-2.jpg",
+        "/assets/scraped/ref-c43-1.jpg",
+        "/assets/scraped/capture.png"
+      ],
+      "short_description": "",
+      "permalink": "/produit/canne-de-marche-repliable-aluminium"
+    },
+    {
+      "id": 3458,
+      "name": "Déambulateur Angelo adulte",
+      "slug": "deambulateur-angelo-adulte",
+      "categories": [
+        "Déambulateur",
+        "La Marche"
+      ],
+      "price": "8676",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/angelo-100-adulte.jpg",
+        "/assets/scraped/label-origine-france-garantie-vilgo.jpg",
+        "/assets/scraped/garantie-2-fr.jpg"
+      ],
+      "short_description": "Déambulateur à roues, réglables en hauteur, pliant, poignées standard.\n&nbsp;",
+      "permalink": "/produit/deambulateur-angelo-adulte"
+    },
+    {
+      "id": 3412,
+      "name": "CHANGE COMPLET MAXI XXL SOFFISOF",
+      "slug": "change-complet-maxi-xxl-soffisof",
+      "categories": [
+        "INCONTINENCE"
+      ],
+      "price": "2195",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/soffisof-slip-maxi-xxl.jpg"
+      ],
+      "short_description": "sachet de 14 unités",
+      "permalink": "/produit/change-complet-maxi-xxl-soffisof"
+    },
+    {
+      "id": 3404,
+      "name": "Siège de douche Spidra 1000",
+      "slug": "siege-de-douche-spidra-1000",
+      "categories": [
+        "Le Bain",
+        "Toilette et bain"
+      ],
+      "price": "17355",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/spidra-1000.jpg"
+      ],
+      "short_description": "Siège de douche pivotant, avec accoudoir escamotable, (livré en kit).\nRéglable en hauteur.\nLarge coque composite confortable et enveloppante.\nPoids maxi 120 kg",
+      "permalink": "/produit/siege-de-douche-spidra-1000"
+    },
+    {
+      "id": 3290,
+      "name": "Coussin ALOVA GALBE",
+      "slug": "coussin-alova-galbe",
+      "categories": [
+        "Aide technique à la posture"
+      ],
+      "price": "8100",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/coussin-a.jpg",
+        "/assets/scraped/coussin-d.jpg",
+        "/assets/scraped/coussin-c.jpg",
+        "/assets/scraped/coussin-fiche-pdf.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/coussin-alova-galbe"
+    },
+    {
+      "id": 3282,
+      "name": "Fauteuil de confort INOVYS II",
+      "slug": "fauteuil-de-confort-inovys-ii",
+      "categories": [
+        "Fauteuil de confort",
+        "La mobilité"
+      ],
+      "price": "0",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/web_inovys-ii-evo-l58c-c89-200x30-3q-view.jpg",
+        "/assets/scraped/inovys2.jpg",
+        "/assets/scraped/inovys-ii-3.jpg",
+        "/assets/scraped/inovys-evo-1-pdf.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/fauteuil-de-confort-inovys-ii"
+    },
+    {
+      "id": 3300,
+      "name": "Coussin KINERIS",
+      "slug": "coussin-kineris",
+      "categories": [
+        "Aide technique à la posture"
+      ],
+      "price": "0",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/kineris-1.jpg",
+        "/assets/scraped/kineris_fiche-1-pdf.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/coussin-kineris"
+    },
+    {
+      "id": 3311,
+      "name": "SURMATELAS AXTAIR AUTOMORPHO PLUS",
+      "slug": "surmatelas-axtair-automorpho-plus",
+      "categories": [
+        "Autour du lit et repos",
+        "Matériel Médical En Location"
+      ],
+      "price": "0",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/matelas.jpg",
+        "/assets/scraped/matelas-1.jpg",
+        "/assets/scraped/matelas-2.jpg",
+        "/assets/scraped/matelas-3.jpg",
+        "/assets/scraped/matelas-4.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/surmatelas-axtair-automorpho-plus"
+    },
+    {
+      "id": 3304,
+      "name": "TABLE A MANGER EVILENCE 1 plateau",
+      "slug": "table-a-manger-evilence-et-conforlence",
+      "categories": [
+        "Table"
+      ],
+      "price": "23465",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/table-2.jpg",
+        "/assets/scraped/table-1.jpg",
+        "/assets/scraped/table-4.jpg"
+      ],
+      "short_description": "tables_fiche",
+      "permalink": "/produit/table-a-manger-evilence-et-conforlence"
+    },
+    {
+      "id": 3272,
+      "name": "Fauteuil Roulant Enfant",
+      "slug": "fauteuil-roulant-enfant",
+      "categories": [
+        "Fauteuil roulant enfant",
+        "La mobilité"
+      ],
+      "price": "0",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/fauteuil-enfant-aa.jpg",
+        "/assets/scraped/fauteuil-enfant-bb.png",
+        "/assets/scraped/fauteuil-enfant.png",
+        "/assets/scraped/fauteuil-roulant-enfant-pdf.jpg"
+      ],
+      "short_description": "Fauteuil Roulant Enfant",
+      "permalink": "/produit/fauteuil-roulant-enfant"
+    },
+    {
+      "id": 2898,
+      "name": "Tensiomètre Manuel au bras BK2006",
+      "slug": "tensiometre-manuel-au-bras-bk2006",
+      "categories": [
+        "Aides Techniques",
+        "Tensiomètre"
+      ],
+      "price": "1770",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/tensiometre-manuel-au-bras-robuste-bk2006-powerscan.png"
+      ],
+      "short_description": "",
+      "permalink": "/produit/tensiometre-manuel-au-bras-bk2006"
+    },
+    {
+      "id": 2608,
+      "name": "Chaises garde-robe GR 50",
+      "slug": "chaises-garde-robe-gr-50",
+      "categories": [
+        "Chaise garde-robe",
+        "Hygiène"
+      ],
+      "price": "18830",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/gr-50-52.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/chaises-garde-robe-gr-50"
+    },
+    {
+      "id": 2915,
+      "name": "Chaise de douche avec poignée",
+      "slug": "chaise-de-douche-avec-poignee",
+      "categories": [
+        "Le Bain"
+      ],
+      "price": "6265",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/chaise-oceane-av-poignees-3quart-8413cd69.jpg",
+        "/assets/scraped/oceane-2018-profil.jpg",
+        "/assets/scraped/oceane-2018-dos.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/chaise-de-douche-avec-poignee"
+    },
+    {
+      "id": 3137,
+      "name": "Réhausse WC Clipper III",
+      "slug": "rehausse-wc-clipper-iii",
+      "categories": [
+        "Toilette et bain"
+      ],
+      "price": "3880",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/500400.jpg",
+        "/assets/scraped/500410.jpg",
+        "/assets/scraped/500411.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/rehausse-wc-clipper-iii"
+    },
+    {
+      "id": 3144,
+      "name": "TSE 120 – RÉHAUSSE-WC AVEC ACCOUDOIRS RELEVABLES",
+      "slug": "tse-120-rehausse-wc-avec-accoudoirs-relevables",
+      "categories": [
+        "Toilette et bain"
+      ],
+      "price": "7685",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/rehausse-wc-tse-120-trois-quart-en-situ-1744e6b1.jpg",
+        "/assets/scraped/rehausse-wc-tse-120-trois-quart.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/tse-120-rehausse-wc-avec-accoudoirs-relevables"
+    },
+    {
+      "id": 3141,
+      "name": "Réhausse WC TICCO 2G",
+      "slug": "rehausse-wc-ticco-2g",
+      "categories": [
+        "Hygiène",
+        "Matériel de protection individuelle et de désinfection",
+        "Toilette et bain"
+      ],
+      "price": "3985",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/ticco-couvercle.jpg",
+        "/assets/scraped/ticco-sans-couvercle.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/rehausse-wc-ticco-2g"
+    },
+    {
+      "id": 3150,
+      "name": "Réhausse-WC en mousse",
+      "slug": "rehausse-wc-en-mousse-joleti",
+      "categories": [
+        "Toilette et bain"
+      ],
+      "price": "6585",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/rehausse-wc-en-mousse-joleti.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/rehausse-wc-en-mousse-joleti"
+    },
+    {
+      "id": 2894,
+      "name": "Tensiomètre Manuel au bras BK2015",
+      "slug": "tensiometre-manuel-au-bras-bk2015",
+      "categories": [
+        "Aides Techniques",
+        "Tensiomètre"
+      ],
+      "price": "2265",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/tensiometre-manuel-au-bras-large-ecran-bk2015-powerscan-1.png",
+        "/assets/scraped/tensiometre-manuel-au-bras-large-ecran-bk2015-powerscan.png"
+      ],
+      "short_description": "",
+      "permalink": "/produit/tensiometre-manuel-au-bras-bk2015"
+    },
+    {
+      "id": 3133,
+      "name": "Talonnière anti-escarre en mousse viscoélastique",
+      "slug": "talonniere-anti-escarre-en-mousse-viscoelastique-pharma-form",
+      "categories": [
+        "Aide technique à la posture",
+        "Talonnières"
+      ],
+      "price": "0",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/default.jpeg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/talonniere-anti-escarre-en-mousse-viscoelastique-pharma-form"
+    },
+    {
+      "id": 2906,
+      "name": "Stéthoscope BK3001",
+      "slug": "stethoscope-bk3001",
+      "categories": [
+        "Aides Techniques",
+        "Matériel professionnel"
+      ],
+      "price": "1085",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/sethoscope-bk3001-powerscan.png"
+      ],
+      "short_description": "",
+      "permalink": "/produit/stethoscope-bk3001"
+    },
+    {
+      "id": 2919,
+      "name": "Siège pivotant pour baignoire",
+      "slug": "siege-pivotant-pour-baignoire",
+      "categories": [
+        "Le Bain"
+      ],
+      "price": "11965",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/siege-bain-pivotant-dakara-32097de6.jpg",
+        "/assets/scraped/siege-bain-pivotant-dakara-baignoire.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/siege-pivotant-pour-baignoire"
+    },
+    {
+      "id": 2930,
+      "name": "Poignée de sortie de lit",
+      "slug": "poignee-de-sortie-de-lit",
+      "categories": [
+        "Autour du lit et repos"
+      ],
+      "price": "5765",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/barre-d-appui-stand-up-5050996024721.jpg",
+        "/assets/scraped/poignee-de-sortie-de-lit.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/poignee-de-sortie-de-lit"
+    },
+    {
+      "id": 2938,
+      "name": "GEL HYDROALCOOLIQUE 75ML ANIOSGEL 85 carton de 20 flacons",
+      "slug": "gel-hydroalcoolique-75ml-aniosgel-85",
+      "categories": [
+        "Hygiène",
+        "Matériel de protection individuelle et de désinfection"
+      ],
+      "price": "125",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/aniosgel-85-npc-gel-hydroalcoolique.jpg"
+      ],
+      "short_description": "Tarif unitaire\nCommande minimum de 20 flacons.",
+      "permalink": "/produit/gel-hydroalcoolique-75ml-aniosgel-85"
+    },
+    {
+      "id": 2819,
+      "name": "CHANGE COMPLET SUPER L SOFFISOF",
+      "slug": "change-complet-super-l-soffisof",
+      "categories": [
+        "INCONTINENCE"
+      ],
+      "price": "1595",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/00963_pme_super_l.jpg"
+      ],
+      "short_description": "sachet de 15 unités",
+      "permalink": "/produit/change-complet-super-l-soffisof"
+    },
+    {
+      "id": 2822,
+      "name": "CHANGE COMPLET SUPER M SOFFISOF",
+      "slug": "change-complet-super-m-soffisof",
+      "categories": [
+        "INCONTINENCE"
+      ],
+      "price": "1506",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/fralda-soffisof-super-m-600x737-1.jpg"
+      ],
+      "short_description": "sachet de 15 unités",
+      "permalink": "/produit/change-complet-super-m-soffisof"
+    },
+    {
+      "id": 2847,
+      "name": "Fauteuil roulant manuel Novo Light",
+      "slug": "fauteuil-roulant-manuel-novo-light",
+      "categories": [
+        "fauteuil roulant manuel",
+        "La mobilité"
+      ],
+      "price": "0",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/a-10025092-fauteuil-roulant-manuel-novo-light-alu.webp",
+        "/assets/scraped/a-10025092-fauteuil-roulant-manuel-novo-light-alu-1.webp",
+        "/assets/scraped/a-10025092-fauteuil-roulant-manuel-novo-light-alu-2.webp"
+      ],
+      "short_description": "",
+      "permalink": "/produit/fauteuil-roulant-manuel-novo-light"
+    },
+    {
+      "id": 2844,
+      "name": "FAUTEUIL DE TRANSFERT Stan’Up",
+      "slug": "fauteuil-de-transfert-stanup",
+      "categories": [
+        "fauteuil roulant manuel",
+        "La mobilité"
+      ],
+      "price": "0",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/fauteuil-transfert.webp",
+        "/assets/scraped/81nceowbw.webp"
+      ],
+      "short_description": "",
+      "permalink": "/produit/fauteuil-de-transfert-stanup"
+    },
+    {
+      "id": 2835,
+      "name": "FAUTEUIL ROULANT ELECTRIQUE INVACARE STORM 4X-plore",
+      "slug": "fauteuil-roulant-electrique-invacare-storm-4x-plore",
+      "categories": [
+        "Fauteuil roulant électrique",
+        "La mobilité"
+      ],
+      "price": "0",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/1651701905_mpic013247_storm4-xplore-cv06.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/fauteuil-roulant-electrique-invacare-storm-4x-plore"
+    },
+    {
+      "id": 2780,
+      "name": "CHANGE COMPLET MAXI XXXL SOFFISOF",
+      "slug": "change-complet-maxi-soffisof",
+      "categories": [
+        "INCONTINENCE"
+      ],
+      "price": "2625",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/soffisif-maxi-xxl.jpg"
+      ],
+      "short_description": "sachet de 14 unités\n&nbsp;\n&nbsp;",
+      "permalink": "/produit/change-complet-maxi-soffisof"
+    },
+    {
+      "id": 2767,
+      "name": "ALESES 60×60 cm",
+      "slug": "2767",
+      "categories": [
+        "INCONTINENCE"
+      ],
+      "price": "785",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/alese-60x60-1.jpg"
+      ],
+      "short_description": "sachet de 15 unités",
+      "permalink": "/produit/2767"
+    },
+    {
+      "id": 2709,
+      "name": "FAUTEUIL ROULANT ELECTRIQUE FOREST 3",
+      "slug": "fauteuil-roulant-electrique-forest-3",
+      "categories": [
+        "Fauteuil roulant électrique"
+      ],
+      "price": "0",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/forest-3-c85-side-view.jpg",
+        "/assets/scraped/forest-flat.jpg",
+        "/assets/scraped/forest-3-c73-lift-upwards.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/fauteuil-roulant-electrique-forest-3"
+    },
+    {
+      "id": 2682,
+      "name": "OXYMETRE de pouls",
+      "slug": "oxymetre-de-pouls",
+      "categories": [
+        "Matériel professionnel",
+        "Oxymètre"
+      ],
+      "price": "1665",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/lk87-oxymetre-de-pouls-du-bout-des-doigts-capteur-d-oxygene-portable.jpg"
+      ],
+      "short_description": "Utilisation ultra rapide et simple.",
+      "permalink": "/produit/oxymetre-de-pouls"
+    },
+    {
+      "id": 2618,
+      "name": "Fauteuil garde-robe à roulettes GR 30",
+      "slug": "fauteuil-garde-robe-a-roulettes-gr-30",
+      "categories": [
+        "Chaise garde-robe",
+        "Hygiène"
+      ],
+      "price": "16965",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/oip-1.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/fauteuil-garde-robe-a-roulettes-gr-30"
+    },
+    {
+      "id": 2611,
+      "name": "Chaise garde-robe Candy 155",
+      "slug": "chaise-garde-robe-candy-155",
+      "categories": [
+        "Chaise garde-robe",
+        "Hygiène"
+      ],
+      "price": "10262",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/candy-155.jpg",
+        "/assets/scraped/seau-montauban-ergonomique.jpeg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/chaise-garde-robe-candy-155"
+    },
+    {
+      "id": 2583,
+      "name": "Gant nitrile",
+      "slug": "gant-nitrile",
+      "categories": [
+        "Matériel de protection individuelle et de désinfection"
+      ],
+      "price": "1365",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/ecoshi.jpeg"
+      ],
+      "short_description": "Minimum de commande : 10 boites",
+      "permalink": "/produit/gant-nitrile"
+    },
+    {
+      "id": 2576,
+      "name": "Gant vinyle TITANS MEDICAL",
+      "slug": "gant-vinyle",
+      "categories": [
+        "Matériel de protection individuelle et de désinfection"
+      ],
+      "price": "595",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/telechargement.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/gant-vinyle"
+    },
+    {
+      "id": 2573,
+      "name": "Gants latex sans poudre EUROTEX",
+      "slug": "gants-latex-sans-poudre-eurotex",
+      "categories": [
+        "Matériel de protection individuelle et de désinfection",
+        "Matériel Médical à La Vente"
+      ],
+      "price": "785",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/285001_1_b.jpg"
+      ],
+      "short_description": "&nbsp;\nBénéficiez de tarifs dégressifs selon la quantité commandée.\n&nbsp;\n&nbsp;\n&nbsp;",
+      "permalink": "/produit/gants-latex-sans-poudre-eurotex"
+    },
+    {
+      "id": 2550,
+      "name": "Masque chirurgical MULTICOLOR",
+      "slug": "masque-chirurgical-multicolor",
+      "categories": [
+        "Matériel de protection individuelle et de désinfection"
+      ],
+      "price": "695",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/masqueschirurgicauxmulticolorestypeiir5couleurspaquetsde10masquesen-146832019-bleu_rose_jaune_orange_gris_600x.jpg"
+      ],
+      "short_description": "Minimum de commande : 4 boites",
+      "permalink": "/produit/masque-chirurgical-multicolor"
+    },
+    {
+      "id": 2560,
+      "name": "Fauteuil roulant manuel V500 30°",
+      "slug": "fauteuil-roulant-manuel-v500-30",
+      "categories": [
+        "Fauteuils Roulants Et Sièges Coquilles à La Vente",
+        "La mobilité"
+      ],
+      "price": "0",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/v500-30-c80-3q-view.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/fauteuil-roulant-manuel-v500-30"
+    },
+    {
+      "id": 2527,
+      "name": "Coussin de positionnement semi-flowler",
+      "slug": "coussin-de-positionnement-semi-flowler",
+      "categories": [
+        "Aide technique à la posture",
+        "Coussins De Positionnement"
+      ],
+      "price": "0",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/askle.png"
+      ],
+      "short_description": "",
+      "permalink": "/produit/coussin-de-positionnement-semi-flowler"
+    },
+    {
+      "id": 2536,
+      "name": "Coussin petits et moyens tout usage",
+      "slug": "coussin-petits-et-moyens-tout-usage",
+      "categories": [
+        "Aide technique à la posture",
+        "Coussins De Positionnement"
+      ],
+      "price": "0",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/petit.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/coussin-petits-et-moyens-tout-usage"
+    },
+    {
+      "id": 2532,
+      "name": "Coussin de positionnement latéral",
+      "slug": "coussin-de-positionnement-lateral-askle",
+      "categories": [
+        "Coussins De Positionnement"
+      ],
+      "price": "17379",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/capture.png"
+      ],
+      "short_description": "",
+      "permalink": "/produit/coussin-de-positionnement-lateral-askle"
+    },
+    {
+      "id": 2508,
+      "name": "Fauteuil ultra confortable et multi-position NOSTRESS",
+      "slug": "fauteuil-ultra-confortable-et-multi-position-nostress",
+      "categories": [
+        "Fauteuil de confort"
+      ],
+      "price": "0",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/nostress-pupvc-framboise-2.png"
+      ],
+      "short_description": "",
+      "permalink": "/produit/fauteuil-ultra-confortable-et-multi-position-nostress"
+    },
+    {
+      "id": 2489,
+      "name": "Fauteuil releveur électrique ultra confortable, COCOON",
+      "slug": "fauteuil-releveur-electrique-ultra-confortable-cocoon",
+      "categories": [
+        "Les fauteuils releveurs"
+      ],
+      "price": "0",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/cocoong2veloursgrege5jpg_617a6b2485571.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/fauteuil-releveur-electrique-ultra-confortable-cocoon"
+    },
+    {
+      "id": 2485,
+      "name": "Fauteuil à pousser électrique l’aide au transfert debout",
+      "slug": "fauteuil-a-pousser-electrique-et-aide-au-transfert-debout",
+      "categories": [
+        "Fauteuils à pousser"
+      ],
+      "price": "0",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/starleviivelourschocoed05jpg_6193c1f896c84-1.jpg",
+        "/assets/scraped/starleviimarronchine01jpg_6193c1f7aa2ec.jpg"
+      ],
+      "short_description": "STARLEVE II",
+      "permalink": "/produit/fauteuil-a-pousser-electrique-et-aide-au-transfert-debout"
+    },
+    {
+      "id": 2477,
+      "name": "Fauteuil à pousser LIBERTY II ultra maniable",
+      "slug": "fauteuil-a-pousser-liberty-ii-ultra-maniable",
+      "categories": [
+        "Fauteuils à pousser"
+      ],
+      "price": "0",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/libertymanuelgrischine03jpg_6193bc0508ce2-1.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/fauteuil-a-pousser-liberty-ii-ultra-maniable"
+    },
+    {
+      "id": 2369,
+      "name": "LUNETTE A OXYGENE",
+      "slug": "lunette-a-oxygene",
+      "categories": [
+        "Matériel Médical à La Vente",
+        "Oxygénothérapie"
+      ],
+      "price": "195",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/lunette-a-oxygene-adulte.png"
+      ],
+      "short_description": "",
+      "permalink": "/produit/lunette-a-oxygene"
+    },
+    {
+      "id": 2358,
+      "name": "HUMIDIFICATEUR SALTERLABS",
+      "slug": "humidificateur-salterlabs",
+      "categories": [
+        "Matériel Médical à La Vente"
+      ],
+      "price": "690",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/bocal-humidificateur-o2.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/humidificateur-salterlabs"
+    },
+    {
+      "id": 2325,
+      "name": "DEFIBRILLATEURS (SEMI-AUTOMATIQUE)",
+      "slug": "defibrillateurs-semi-automatique",
+      "categories": [
+        "Matériel Médical à La Vente"
+      ],
+      "price": "154888",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/defibrillateur-semi-automatique-def-i.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/defibrillateurs-semi-automatique"
+    },
+    {
+      "id": 2332,
+      "name": "BARRE D&#8217;APPUI",
+      "slug": "barra-dappui-rabattable-devon",
+      "categories": [
+        "Au quotidien"
+      ],
+      "price": "6950",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/barre-dappui-pour-toilettes-rabattable-avec-pied.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/barra-dappui-rabattable-devon"
+    },
+    {
+      "id": 2310,
+      "name": "COUSSIN BOOMERANG",
+      "slug": "coussin-boomerang",
+      "categories": [
+        "Autour du lit et repos",
+        "Matériel Médical à La Vente"
+      ],
+      "price": "17379",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/coussin-boomerang-e1633434227507.jpeg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/coussin-boomerang"
+    },
+    {
+      "id": 2307,
+      "name": "COUSSIN DÉCUBITUS SEMI LATÉRAL",
+      "slug": "coussin-decubitus-semi-lateral",
+      "categories": [
+        "Aide technique à la posture",
+        "Coussins De Positionnement"
+      ],
+      "price": "17379",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/coussin-decubitus-semi-lateral.jpeg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/coussin-decubitus-semi-lateral"
+    },
+    {
+      "id": 2301,
+      "name": "CHAISE MOBILE DE DOUCHE ET DE TOILETTES MAHINA",
+      "slug": "chaise-mobile-de-douche-et-de-toilettes-mahina",
+      "categories": [
+        "Hygiène",
+        "Matériel Médical à La Vente"
+      ],
+      "price": "15880",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/chaise-mobile-douche-toilette-mahina.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/chaise-mobile-de-douche-et-de-toilettes-mahina"
+    },
+    {
+      "id": 2281,
+      "name": "Serviette longue",
+      "slug": "serviette-longue",
+      "categories": [
+        "Matériel Médical à La Vente"
+      ],
+      "price": "1450",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/serviette-longue.jpeg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/serviette-longue"
+    },
+    {
+      "id": 2144,
+      "name": "CUVETTE LAVE-TÊTE",
+      "slug": "cuvette-lave-tete",
+      "categories": [
+        "Au quotidien"
+      ],
+      "price": "6490",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/cuvette-lave-tete.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/cuvette-lave-tete"
+    },
+    {
+      "id": 2071,
+      "name": "TENSIOMETRE AUTOMATIQUE AU BRAS BLUETOOTH",
+      "slug": "tensiometre-automatique-au-bras-bluetooth",
+      "categories": [
+        "Aides Techniques",
+        "Autre Matériel Médical à La Vente",
+        "Matériel Médical à La Vente"
+      ],
+      "price": "3396",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/2powerscan-tensiometre-bras-cs80b-e1633611709770.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/tensiometre-automatique-au-bras-bluetooth"
+    },
+    {
+      "id": 2065,
+      "name": "Lingettes Nettoyantes Désinfectantes",
+      "slug": "lingettes-nettoyantes-desinfectantes",
+      "categories": [
+        "Autre Matériel Médical à La Vente",
+        "Hygiène"
+      ],
+      "price": "390",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/lingettes-nettoyantes-desinfectantes-sleepy.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/lingettes-nettoyantes-desinfectantes"
+    },
+    {
+      "id": 2057,
+      "name": "Masque de protection à usage unique 3 plis TYPE IIR",
+      "slug": "masque-de-protection-a-usage-unique-3-plis-type-iir",
+      "categories": [
+        "Hygiène",
+        "Matériel de protection individuelle et de désinfection",
+        "Matériel Médical Pour L'hygiène à La Vente"
+      ],
+      "price": "495",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/masques-chirurgicaux-type-2r.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/masque-de-protection-a-usage-unique-3-plis-type-iir"
+    },
+    {
+      "id": 1989,
+      "name": "GRENOUILLÈRE OUESSANT",
+      "slug": "grenouillere-ouessant",
+      "categories": [
+        "Au quotidien"
+      ],
+      "price": "4960",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/grenouillere-ouessant_web-8x6-1-e1614261469810.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/grenouillere-ouessant"
+    },
+    {
+      "id": 1844,
+      "name": "Thermomètre Sans Contact Powerscan Scan Color",
+      "slug": "thermometre-sans-contact-powerscan-scan-color",
+      "categories": [
+        "Aides Techniques",
+        "Matériel Médical à La Vente"
+      ],
+      "price": "2890",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/powerscan-test-800x600-1.png"
+      ],
+      "short_description": "",
+      "permalink": "/produit/thermometre-sans-contact-powerscan-scan-color"
+    },
+    {
+      "id": 1822,
+      "name": "Produit test pour passerelle de paiement",
+      "slug": "produit-test-pour-passerelle-de-paiement",
+      "categories": [],
+      "price": "100",
+      "currency_symbol": "€",
+      "images": [],
+      "short_description": "",
+      "permalink": "/produit/produit-test-pour-passerelle-de-paiement"
+    },
+    {
+      "id": 1756,
+      "name": "Tire-lait électrique simple ou double pompage MINIKIT PRO",
+      "slug": "tire-lait-electrique-simple-ou-double-pompage-minikit-pro",
+      "categories": [
+        "Autre Matériel Médical à La Vente",
+        "Tire lait"
+      ],
+      "price": "21000",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/minikit-duo-1.jpg",
+        "/assets/scraped/hqdefault.jpg",
+        "/assets/scraped/minikit-duo-2.jpg"
+      ],
+      "short_description": "Tire-lait électrique simple ou double pompage\nCompact et léger (250 g), il est facile à transporter.\nSilencieux, il se fait discret lors de son utilisation\nGrâce à son clip ceinture, vous pouvez vous déplacer pendant l’utilisation de l’appareil.\nSon cycle automatique pour un allaitement adapter et confortable. 4 niveaux de stimulation et 5 niveaux d’expression vous permettent une utilisation adaptée à vos besoins et à votre ressenti.",
+      "permalink": "/produit/tire-lait-electrique-simple-ou-double-pompage-minikit-pro"
+    },
+    {
+      "id": 1700,
+      "name": "Distributeur de gel automatique sur pied",
+      "slug": "distributeur-de-gel-automatique-sur-pied",
+      "categories": [
+        "Matériel de protection individuelle et de désinfection",
+        "Matériel Médical à La Vente"
+      ],
+      "price": "23900",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/distributeur-de-gel-sur-pied.jpg",
+        "/assets/scraped/distributeur-de-gel-sur-pied1.jpg",
+        "/assets/scraped/distributeur-de-gel-sur-pied4.jpg"
+      ],
+      "short_description": "100% hygiénique\nAutomatique, aucun contact n’est nécessaire\nÉconomique, il distribue la juste dose de solution (1ml)\nNe nécessite pas l’utilisation d’eau\nAlimentation par piles",
+      "permalink": "/produit/distributeur-de-gel-automatique-sur-pied"
+    },
+    {
+      "id": 1676,
+      "name": "CONCENTRATEUR OXYGÈNE 525 KS",
+      "slug": "concentrateur-oxygene-525-ks",
+      "categories": [
+        "Matériel Médical à La Vente",
+        "Oxygénothérapie"
+      ],
+      "price": "0",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/525ks-new.jpg",
+        "/assets/scraped/525ks-new-2.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/concentrateur-oxygene-525-ks"
+    },
+    {
+      "id": 1528,
+      "name": "Masque de protection pour enfant",
+      "slug": "masque-de-protection-a-usage-unique-3-plis-pour-enfant",
+      "categories": [
+        "Au quotidien",
+        "Hygiène",
+        "Matériel de protection individuelle et de désinfection"
+      ],
+      "price": "345",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/masque-fille-800x600d-1.png",
+        "/assets/scraped/masque-enfant-garcon_edited.jpg"
+      ],
+      "short_description": "Bénéficiez de tarifs dégressifs selon la quantité commandée.",
+      "permalink": "/produit/masque-de-protection-a-usage-unique-3-plis-pour-enfant"
+    },
+    {
+      "id": 1390,
+      "name": "AEROSOL ULTRASONIQUE AirProjet Plus – En location",
+      "slug": "aerosol-ultrasonique-airprojet-plus-en-location",
+      "categories": [
+        "La respiration en location"
+      ],
+      "price": "0",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/aerosol-ultrasonique-airprojet-plus-1.jpg",
+        "/assets/scraped/aerosol-ultrasonique-airprojet-plus-2.jpg",
+        "/assets/scraped/aerosol-ultrasonique-airprojet-plus-3.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/aerosol-ultrasonique-airprojet-plus-en-location"
+    },
+    {
+      "id": 1300,
+      "name": "Gel SAVYL 1L",
+      "slug": "gel-savyl-1l",
+      "categories": [
+        "Matériel de protection individuelle et de désinfection",
+        "Matériel Médical à La Vente"
+      ],
+      "price": "1180",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/gel-500-1l-avec-pompe.jpg"
+      ],
+      "short_description": "Bénéficiez de tarifs dégressifs selon la quantité commandée.",
+      "permalink": "/produit/gel-savyl-1l"
+    },
+    {
+      "id": 1294,
+      "name": "Surblouse jetable médical non tissé 35g et 25g",
+      "slug": "blouse-jetable-medical-non-tisse-35-g-et-25-g",
+      "categories": [
+        "Hygiène",
+        "Matériel de protection individuelle et de désinfection",
+        "Matériel Médical à La Vente"
+      ],
+      "price": "198",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/s-blouse-800x600-d.png"
+      ],
+      "short_description": "Bénéficiez de tarifs dégressifs selon la quantité commandée.",
+      "permalink": "/produit/blouse-jetable-medical-non-tisse-35-g-et-25-g"
+    },
+    {
+      "id": 1156,
+      "name": "Lingettes Multi-Usages Désinfectante",
+      "slug": "lingettes-multi-usages-desinfectante-avec-antibacterien",
+      "categories": [
+        "Hygiène",
+        "Matériel de protection individuelle et de désinfection",
+        "Matériel Médical à La Vente",
+        "Matériel Médical Pour L'hygiène à La Vente"
+      ],
+      "price": "2840",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/lingettes-biogenyamultiusages.jpg"
+      ],
+      "short_description": "Tarif : 1,775 TTC Unitaire boite de 16",
+      "permalink": "/produit/lingettes-multi-usages-desinfectante-avec-antibacterien"
+    },
+    {
+      "id": 1144,
+      "name": "Masque de protection à usage unique 3 plis",
+      "slug": "masque-de-protection-a-usage-unique-3-plis",
+      "categories": [
+        "Hygiène",
+        "Matériel de protection individuelle et de désinfection",
+        "Matériel Médical Pour L'hygiène à La Vente"
+      ],
+      "price": "420",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/masque-800x600d.png"
+      ],
+      "short_description": "Bénéficiez de tarifs dégressifs selon la quantité commandée.",
+      "permalink": "/produit/masque-de-protection-a-usage-unique-3-plis"
+    },
+    {
+      "id": 1142,
+      "name": "Visière de protection transparente",
+      "slug": "visiere-de-protection-transparente",
+      "categories": [
+        "Hygiène",
+        "Matériel de protection individuelle et de désinfection",
+        "Matériel Médical Pour L'hygiène à La Vente"
+      ],
+      "price": "2286",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/visiere-face-shield.jpg"
+      ],
+      "short_description": "Tarif : 3,81 TTC Unitaire\nBoite de 6\nBénéficiez de tarifs dégressifs selon la quantité commandée.",
+      "permalink": "/produit/visiere-de-protection-transparente"
+    },
+    {
+      "id": 697,
+      "name": "CHANGE COMPLET MAXI  L SOFFISOF",
+      "slug": "changes-comples-maxi-l-soffisof-air-dry",
+      "categories": [
+        "INCONTINENCE"
+      ],
+      "price": "1485",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/changes-comples-maxi-l-soffisof-air-dry-1.jpg"
+      ],
+      "short_description": "Tarif : 14,95 TTC Unitaire (4X15)\nMinimum de commande : 4 sachets de 15 unités",
+      "permalink": "/produit/changes-comples-maxi-l-soffisof-air-dry"
+    },
+    {
+      "id": 695,
+      "name": "Alèses",
+      "slug": "aleses",
+      "categories": [
+        "INCONTINENCE"
+      ],
+      "price": "795",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/alese-60x90cm.jpg",
+        "/assets/scraped/aleses-1.jpg"
+      ],
+      "short_description": "Minimum de commande : 2 sachets de 15 unités",
+      "permalink": "/produit/aleses"
+    },
+    {
+      "id": 692,
+      "name": "COUCHE DROITE SOFFISOF",
+      "slug": "couche-droite-soffisof",
+      "categories": [
+        "INCONTINENCE"
+      ],
+      "price": "1085",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/couches-droites-soffisof-traversable-midi-super-e1613384047458.jpg"
+      ],
+      "short_description": "sachet de 30 unités",
+      "permalink": "/produit/couche-droite-soffisof"
+    },
+    {
+      "id": 690,
+      "name": "CHANGE COMPLET MAXI  M SOFFISOF",
+      "slug": "changes-comples-maxi-m-soffisof-air-dry",
+      "categories": [
+        "INCONTINENCE"
+      ],
+      "price": "1485",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/changes-comples-maxi-m-soffisof-air-dry-1.jpg",
+        "/assets/scraped/changes-comples-maxi-m-soffisof-air-dry-2.jpg",
+        "/assets/scraped/changes-comples-maxi-m-soffisof-air-dry-3.jpg"
+      ],
+      "short_description": "Minimum de commande : 4 sachets de 15 unités chacun",
+      "permalink": "/produit/changes-comples-maxi-m-soffisof-air-dry"
+    },
+    {
+      "id": 679,
+      "name": "AEROSOL ULTRASONIQUE AirProjet Plus",
+      "slug": "aerosol-ultrasonique-airprojet-plus",
+      "categories": [
+        "Aérosol Ultrasonique à La Vente",
+        "La respiration"
+      ],
+      "price": "0",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/aerosol-ultrasonique-airprojet-plus-1.jpg",
+        "/assets/scraped/aerosol-ultrasonique-airprojet-plus-2.jpg",
+        "/assets/scraped/aerosol-ultrasonique-airprojet-plus-3.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/aerosol-ultrasonique-airprojet-plus"
+    },
+    {
+      "id": 673,
+      "name": "Kit et accessoires pour les aérosols à ultrasons AirProjet",
+      "slug": "kit-et-accessoires-pour-les-aerosols-a-ultrasons-airprojet",
+      "categories": [
+        "Aérosol Ultrasonique à La Vente",
+        "La respiration"
+      ],
+      "price": "0",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/kit-et-accessoires-pour-les-aerosols-a-ultrasons-airprojet-1.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/kit-et-accessoires-pour-les-aerosols-a-ultrasons-airprojet"
+    },
+    {
+      "id": 671,
+      "name": "Chaise garde-robe GR50 Fortissimo HMS-VILGO",
+      "slug": "chaise-garde-robe-gr50-fortissimo-hms-vilgo",
+      "categories": [
+        "Chaise garde-robe",
+        "Matériel Médical à La Vente",
+        "Toilette et bain"
+      ],
+      "price": "46885",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/chaise-garde-robe-gr50-fortissimo-hms-vilgo-1.jpg"
+      ],
+      "short_description": "GR50-52 Fortissimo &#8211; FP9",
+      "permalink": "/produit/chaise-garde-robe-gr50-fortissimo-hms-vilgo"
+    },
+    {
+      "id": 669,
+      "name": "Chaise garde-robe GR10 Fortissimo",
+      "slug": "chaise-garde-robe-gr10-fortissimo-hms-vilgo",
+      "categories": [
+        "Chaise garde-robe",
+        "Hygiène"
+      ],
+      "price": "25965",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/chaise-garde-robe-gr10-fortissimo-hms-vilgo-1.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/chaise-garde-robe-gr10-fortissimo-hms-vilgo"
+    },
+    {
+      "id": 667,
+      "name": "Rollator Fortissimo 4 roues réglable",
+      "slug": "rollator-4-roues-fortissimo-hms-vilgo",
+      "categories": [
+        "Déambulateur Et Rollator à La Vente",
+        "La Marche"
+      ],
+      "price": "21060",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/rollator-4-roues-fortissimo-hms-vilgo-1.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/rollator-4-roues-fortissimo-hms-vilgo"
+    },
+    {
+      "id": 665,
+      "name": "Rollator Fortissimo 2 roues réglable",
+      "slug": "rollator-2-roues-fortissimo-hms-vilgo",
+      "categories": [
+        "Déambulateur Et Rollator à La Vente",
+        "La Marche"
+      ],
+      "price": "7830",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/rollator-2-roues-fortissimo-hms-vilgo-1.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/rollator-2-roues-fortissimo-hms-vilgo"
+    },
+    {
+      "id": 662,
+      "name": "Déambulateur Fortissimo pliant",
+      "slug": "deambulateur-pliant-fortissimo-hms-vilgo",
+      "categories": [
+        "Déambulateur",
+        "La Marche",
+        "Matériel Médical à La Vente"
+      ],
+      "price": "9255",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/deambulateur-pliant-fortissimo-hms-vilgo-1.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/deambulateur-pliant-fortissimo-hms-vilgo"
+    },
+    {
+      "id": 658,
+      "name": "Talonnières anti-escarre peau de mouton synthétique (la paire)",
+      "slug": "talonnieres-anti-escarre-peau-de-mouton-synthetique-la-paire-pharmaouest",
+      "categories": [
+        "Au quotidien",
+        "Matériel Médical à La Vente",
+        "Talonnières"
+      ],
+      "price": "3765",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/talonnieres-anti-escarre-peau-de-mouton-synthetique-la-paire-pharmaouest-1.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/talonnieres-anti-escarre-peau-de-mouton-synthetique-la-paire-pharmaouest"
+    },
+    {
+      "id": 652,
+      "name": "Talonnière anti-escarres Pharma fibres Pharmaouest",
+      "slug": "talonniere-anti-escarres-pharma-fibres-pharmaouest",
+      "categories": [
+        "Au quotidien",
+        "Matériel Médical à La Vente",
+        "Talonnières"
+      ],
+      "price": "1601",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/talonniere-anti-escarres-pharma-fibres-pharmaouest-1.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/talonniere-anti-escarres-pharma-fibres-pharmaouest"
+    },
+    {
+      "id": 650,
+      "name": "Aérosol pneumatique Anycare",
+      "slug": "aerosol-pneumatique-anycare",
+      "categories": [
+        "Aérosol Pneumatique à La Vente",
+        "La respiration"
+      ],
+      "price": "0",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/aerosol-pneumatique-anycare-4.jpg",
+        "/assets/scraped/aerosol-pneumatique-anycare-2.jpg",
+        "/assets/scraped/aerosol-pneumatique-anycare-3.jpg",
+        "/assets/scraped/aerosol-pneumatique-anycare-4.jpg",
+        "/assets/scraped/aerosol-pneumatique-anycare-5.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/aerosol-pneumatique-anycare"
+    },
+    {
+      "id": 644,
+      "name": "Kit Sidestream pour aérosol pneumatique",
+      "slug": "kit-sidestream-pour-aerosol-pneumatique",
+      "categories": [
+        "Aérosol Pneumatique à La Vente",
+        "La respiration"
+      ],
+      "price": "0",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/kit-sidestream-pour-aerosol-pneumatique-1.jpg",
+        "/assets/scraped/kit-sidestream-pour-aerosol-pneumatique-2.jpg",
+        "/assets/scraped/kit-sidestream-pour-aerosol-pneumatique-3.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/kit-sidestream-pour-aerosol-pneumatique"
+    },
+    {
+      "id": 640,
+      "name": "Aérosol pneumatique à commande automatique",
+      "slug": "aerosol-pneumatique-a-commande-automatique",
+      "categories": [
+        "Aérosol Pneumatique à La Vente",
+        "La respiration"
+      ],
+      "price": "0",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/aerosol-pneumatique-a-commande-automatique-1.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/aerosol-pneumatique-a-commande-automatique"
+    },
+    {
+      "id": 636,
+      "name": "Tire Lait B to B",
+      "slug": "tire-lait-b-to-b",
+      "categories": [
+        "Autre Matériel Médical à La Vente"
+      ],
+      "price": "13900",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/tire-lait-b-to-b-1.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/tire-lait-b-to-b"
+    },
+    {
+      "id": 631,
+      "name": "Assise SITSMART POSTURE +",
+      "slug": "assise-sitsmart-posture",
+      "categories": [
+        "Autre Matériel Médical à La Vente"
+      ],
+      "price": "5990",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/assise-sitsmart-posture-200x200-1.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/assise-sitsmart-posture"
+    },
+    {
+      "id": 629,
+      "name": "Kit double pompage pour tire-lait SYMPHONY",
+      "slug": "kit-double-pompage-pour-tire-lait-symphony",
+      "categories": [
+        "Autre Matériel Médical à La Vente"
+      ],
+      "price": "4590",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/kit-double-pompage-pour-tire-lait-symphony-1.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/kit-double-pompage-pour-tire-lait-symphony"
+    },
+    {
+      "id": 627,
+      "name": "Coussin coccyx SITFIT plus",
+      "slug": "coussin-coccyx-sitfit-plus",
+      "categories": [
+        "Autre Matériel Médical à La Vente"
+      ],
+      "price": "3279",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/coussin-coccyx-sitfit-plus-1.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/coussin-coccyx-sitfit-plus"
+    },
+    {
+      "id": 625,
+      "name": "PROTEGE OREILLE POUR LUNETTES A OXYGENE",
+      "slug": "protege-oreille-pour-lunettes-a-oxygene",
+      "categories": [
+        "Autre Matériel Médical à La Vente"
+      ],
+      "price": "2465",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/protege-oreille-pour-lunettes-a-oxygene-2x2-1.png",
+        "/assets/scraped/protege-oreille-pour-lunettes-a-oxygene-2.jpg",
+        "/assets/scraped/protege-oreille-pour-lunettes-a-oxygene.jpg"
+      ],
+      "short_description": "Vendu par 10 paires",
+      "permalink": "/produit/protege-oreille-pour-lunettes-a-oxygene"
+    },
+    {
+      "id": 621,
+      "name": "Pinces de préhension légères aimantées Libra",
+      "slug": "pinces-de-prehension-legeres-aimantees-libra",
+      "categories": [
+        "Au quotidien",
+        "Autre Matériel Médical à La Vente",
+        "Pinces de préhension"
+      ],
+      "price": "1195",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/pince-de-prehension-standart-60-cm-pharmaouest-2x2-1.jpg",
+        "/assets/scraped/pince-prehension-libra.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/pinces-de-prehension-legeres-aimantees-libra"
+    },
+    {
+      "id": 619,
+      "name": "BALLES DE REEDUCATION",
+      "slug": "balles-de-reeducation",
+      "categories": [
+        "Autre Matériel Médical à La Vente"
+      ],
+      "price": "695",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/balles-de-reeducation-1.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/balles-de-reeducation"
+    },
+    {
+      "id": 617,
+      "name": "Potence sur pied Invacare",
+      "slug": "potence-sur-pied-invacare",
+      "categories": [
+        "Autour du lit et repos",
+        "Les accessoires",
+        "Matériel Pour Lit Médicalisé à La Vente"
+      ],
+      "price": "13200",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/potence-sur-pied-invacare-1.jpg",
+        "/assets/scraped/potence-sur-pied-invacare-2.jpg",
+        "/assets/scraped/potence-sur-pied-invacare-3.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/potence-sur-pied-invacare"
+    },
+    {
+      "id": 613,
+      "name": "Pied à sérum DeVilbiss réglable en hauteur",
+      "slug": "pied-a-serum-devilbiss-reglable-en-hauteur",
+      "categories": [
+        "Autour du lit et repos",
+        "Les accessoires",
+        "Matériel Pour Lit Médicalisé à La Vente"
+      ],
+      "price": "7927",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/pied-a-serum-drive-600x600-1.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/pied-a-serum-devilbiss-reglable-en-hauteur"
+    },
+    {
+      "id": 611,
+      "name": "Table de lit médicalisé Liftis réglable en hauteur automatique",
+      "slug": "table-de-lit-medicalise-liftis-reglable-en-hauteur-automatique",
+      "categories": [
+        "Autour du lit et repos",
+        "Les accessoires",
+        "Matériel Pour Lit Médicalisé à La Vente"
+      ],
+      "price": "9285",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/table-de-lit-medicalise-liftis-reglable-en-hauteur-automatique-1.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/table-de-lit-medicalise-liftis-reglable-en-hauteur-automatique"
+    },
+    {
+      "id": 608,
+      "name": "Table de lit médicalisé à roulettes Vilgo",
+      "slug": "table-de-lit-medicalise-a-roulettes-vilgo",
+      "categories": [
+        "Matériel Médical à La Vente",
+        "Table"
+      ],
+      "price": "5600",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/table-3909.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/table-de-lit-medicalise-a-roulettes-vilgo"
+    },
+    {
+      "id": 604,
+      "name": "Relève-buste Appui dos manuel avec têtière",
+      "slug": "releve-buste-appui-dos-manuel-avec-tetiere",
+      "categories": [
+        "Autour du lit et repos",
+        "Les accessoires",
+        "Matériel Pour Lit Médicalisé à La Vente"
+      ],
+      "price": "3790",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/releve-buste-appui-dos-manuel-avec-tetiere-1.jpg",
+        "/assets/scraped/releve-buste-appui-dos-manuel-avec-tetiere-2.jpg",
+        "/assets/scraped/releve-buste-appui-dos-manuel-avec-tetiere-3.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/releve-buste-appui-dos-manuel-avec-tetiere"
+    },
+    {
+      "id": 600,
+      "name": "Arceau de lit Invacare réglable",
+      "slug": "arceau-de-lit-invacare-reglable",
+      "categories": [
+        "Autour du lit et repos",
+        "Les accessoires",
+        "Matériel Pour Lit Médicalisé à La Vente"
+      ],
+      "price": "1389",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/arceau-lit-200x200-1.jpg",
+        "/assets/scraped/arceau-de-lit-invacare-reglable-1.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/arceau-de-lit-invacare-reglable"
+    },
+    {
+      "id": 598,
+      "name": "Siège élévateur de bain électrique Bellavita",
+      "slug": "siege-elevateur-de-bain-electrique-bellavita",
+      "categories": [
+        "Au quotidien",
+        "Hygiène",
+        "Le Bain"
+      ],
+      "price": "48000",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/siege-elevateur-de-bain-electrique-bellavita-1.jpg",
+        "/assets/scraped/siege-elevateur-de-bain-electrique-bellavita-2.jpg",
+        "/assets/scraped/siege-elevateur-de-bain-electrique-bellavita-3.jpg",
+        "/assets/scraped/siege-elevateur-de-bain-electrique-bellavita-4.jpg",
+        "/assets/scraped/siege-elevateur-de-bain-electrique-bellavita-5.jpg",
+        "/assets/scraped/siege-elevateur-de-bain-electrique-bellavita-6.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/siege-elevateur-de-bain-electrique-bellavita"
+    },
+    {
+      "id": 591,
+      "name": "Siège de bain pivotant Alisé H3000 Invacare",
+      "slug": "siege-de-bain-pivotant-alise-h3000-invacare",
+      "categories": [
+        "Au quotidien",
+        "Hygiène",
+        "Le Bain"
+      ],
+      "price": "12040",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/siege-de-bain-pivotant-alise-h3000-invacare-1.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/siege-de-bain-pivotant-alise-h3000-invacare"
+    },
+    {
+      "id": 589,
+      "name": "TABOURET DE DOUCHE INSPIRATION BOIS Drive DeVilbiss",
+      "slug": "tabouret-de-douche-inspiration-bois-drive-devilbiss",
+      "categories": [
+        "Au quotidien",
+        "Hygiène",
+        "Le Bain",
+        "Matériel Médical à La Vente",
+        "Tabouret de bain"
+      ],
+      "price": "5600",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/tabouret-de-douche-inspiration-bois-drive-devilbiss-1.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/tabouret-de-douche-inspiration-bois-drive-devilbiss"
+    },
+    {
+      "id": 587,
+      "name": "Tabouret de douche réglable en hauteur Pacific",
+      "slug": "tabouret-de-douche-reglable-en-hauteur-pacific",
+      "categories": [
+        "Au quotidien",
+        "Hygiène",
+        "Le Bain",
+        "Matériel Médical à La Vente",
+        "Tabouret de bain"
+      ],
+      "price": "4200",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/tabouret-de-douche-reglable-en-hauteur-pacific-1.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/tabouret-de-douche-reglable-en-hauteur-pacific"
+    },
+    {
+      "id": 585,
+      "name": "Planche de bain Benny et Benny XL",
+      "slug": "planche-de-bain-benny-et-benny-xl",
+      "categories": [
+        "Au quotidien",
+        "Autre Matériel Médical à La Vente",
+        "Hygiène",
+        "Le Bain",
+        "Matériel Médical à La Vente",
+        "Planche de bain",
+        "Toilette et bain"
+      ],
+      "price": "3740",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/planche-bain-benny-drive-200x200p.jpg",
+        "/assets/scraped/planche-de-bain-benny-et-benny-xl-2.jpg",
+        "/assets/scraped/planche-de-bain-benny-et-benny-xl-3.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/planche-de-bain-benny-et-benny-xl"
+    },
+    {
+      "id": 581,
+      "name": "Tabouret de bain Eco",
+      "slug": "tabouret-de-bain-eco",
+      "categories": [
+        "Hygiène",
+        "Le Bain",
+        "Tabouret de bain"
+      ],
+      "price": "2800",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/tabouret-de-bain-eco-1.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/tabouret-de-bain-eco"
+    },
+    {
+      "id": 578,
+      "name": "Tapis de bain et de douche antidérapant",
+      "slug": "tapis-de-bain-et-de-douche-antiderapant",
+      "categories": [
+        "Au quotidien",
+        "Hygiène",
+        "Le Bain",
+        "Matériel Médical à La Vente",
+        "Toilette et bain"
+      ],
+      "price": "1080",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/tapis-de-bain-et-de-douche-antiderapant-1.jpg",
+        "/assets/scraped/tapis-de-bain-et-de-douche-antiderapant-2.jpg",
+        "/assets/scraped/tapis-de-bain-et-de-douche-antiderapant-3.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/tapis-de-bain-et-de-douche-antiderapant"
+    },
+    {
+      "id": 570,
+      "name": "Oxymètre de pouls Oxypad au doigt Colson",
+      "slug": "oxymetre-de-pouls-oxypad-au-doigt-colson",
+      "categories": [
+        "Aides Techniques",
+        "Matériel Médical à La Vente",
+        "Oxymètre"
+      ],
+      "price": "6000",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/oxymetre-de-pouls-oxypad-home2-800x600-d.jpg",
+        "/assets/scraped/oxymetre-de-pouls-oxypad-au-doigt-colson-3.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/oxymetre-de-pouls-oxypad-au-doigt-colson"
+    },
+    {
+      "id": 566,
+      "name": "Tensiomètre brassard manopoire Holtex Easy 2",
+      "slug": "tensiometre-brassard-manopoire-holtex-easy-2",
+      "categories": [
+        "Aides Techniques",
+        "Tensiomètre"
+      ],
+      "price": "5100",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/tensiometre-brassard-manopoire-holtex-easy-2-1.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/tensiometre-brassard-manopoire-holtex-easy-2"
+    },
+    {
+      "id": 564,
+      "name": "Tensiometre automatique au bras POWERSCAN",
+      "slug": "tensiometre-automatique-au-bras-powerscan",
+      "categories": [
+        "Aides Techniques",
+        "Matériel Médical à La Vente",
+        "Tensiomètre"
+      ],
+      "price": "3495",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/tensiometre-automatique-au-bras-powerscan-1.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/tensiometre-automatique-au-bras-powerscan"
+    },
+    {
+      "id": 562,
+      "name": "Tensiomètre automatique au bras",
+      "slug": "tensometre-automatique-au-bras",
+      "categories": [
+        "Aides Techniques",
+        "Matériel Médical à La Vente"
+      ],
+      "price": "2685",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/tensometre-automatique-au-bras-1.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/tensometre-automatique-au-bras"
+    },
+    {
+      "id": 560,
+      "name": "Tensiomètre automatique au poignet POWERSCAN",
+      "slug": "tensiometre-automatique-au-poignet-powerscan",
+      "categories": [
+        "Aides Techniques",
+        "Matériel Médical à La Vente",
+        "Tensiomètre"
+      ],
+      "price": "1980",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/tensiometre-automatique-au-poignet-powerscan-1.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/tensiometre-automatique-au-poignet-powerscan"
+    },
+    {
+      "id": 558,
+      "name": "Tensiométre automatique Powerscan",
+      "slug": "tensiometre-automatique-powerscan",
+      "categories": [
+        "Aides Techniques",
+        "Matériel Médical à La Vente",
+        "Tensiomètre"
+      ],
+      "price": "1950",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/tensiometre-automatique-powerscan-1.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/tensiometre-automatique-powerscan"
+    },
+    {
+      "id": 556,
+      "name": "Matelas anti-escarres en mousse visco élastique classe 3",
+      "slug": "matelas-anti-escarres-en-mousse-visco-elastique-classe-3",
+      "categories": [
+        "Autour du lit et repos",
+        "Literie Médicale à La Vente"
+      ],
+      "price": "39549",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/matelas-anti-escarres-en-mousse-visco-elastique-classe-3-1.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/matelas-anti-escarres-en-mousse-visco-elastique-classe-3"
+    },
+    {
+      "id": 554,
+      "name": "Matelas anti-escarres en mousse visco élastique classe 2",
+      "slug": "matelas-anti-escarres-en-mousse-visco-elastique-classe-2",
+      "categories": [
+        "Autour du lit et repos",
+        "Literie Médicale à La Vente"
+      ],
+      "price": "29662",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/matelas-anti-escarres-en-mousse-visco-elastique-classe-2-1.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/matelas-anti-escarres-en-mousse-visco-elastique-classe-2"
+    },
+    {
+      "id": 551,
+      "name": "Coussin anti-escarres en mousse visco élastique classe 2",
+      "slug": "coussin-anti-escarres-en-mousse-visco-elastique-classe-2",
+      "categories": [
+        "Autour du lit et repos",
+        "Literie Médicale à La Vente"
+      ],
+      "price": "6900",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/coussinprimaform-pharmaouest-2x2-1.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/coussin-anti-escarres-en-mousse-visco-elastique-classe-2"
+    },
+    {
+      "id": 549,
+      "name": "Coussin bouée percé rond",
+      "slug": "coussin-bouee-perce-rond",
+      "categories": [
+        "Autour du lit et repos",
+        "Literie Médicale à La Vente"
+      ],
+      "price": "5990",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/coussin-bouee-perce-rond-1.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/coussin-bouee-perce-rond"
+    },
+    {
+      "id": 547,
+      "name": "Matelas à air avec compresseur CAIRFLOW  PM100A EVO",
+      "slug": "matelas-a-air-avec-compresseur-cairflow-pm100a-evo",
+      "categories": [
+        "Matériel Médical En Location"
+      ],
+      "price": "0",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/matelas-pm-100-a-evo-pharmaouest-4x4-1.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/matelas-a-air-avec-compresseur-cairflow-pm100a-evo"
+    },
+    {
+      "id": 538,
+      "name": "Rollator 3 roues pliant avec panier Madrid",
+      "slug": "deambulateur-3-roues-pliant-avec-panier-madrid",
+      "categories": [
+        "Déambulateur Et Rollator à La Vente",
+        "La Marche"
+      ],
+      "price": "7975",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/rollator-pliant-madrid-3-roues-.jpg",
+        "/assets/scraped/deambulateur-3-roues-pliant-avec-panier-madrid-1.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/deambulateur-3-roues-pliant-avec-panier-madrid"
+    },
+    {
+      "id": 536,
+      "name": "Rollator 4 roues Road pliable avec siège et panier",
+      "slug": "deambulateur-4-roues-road-pliable-avec-siege-et-panier",
+      "categories": [
+        "Déambulateur Et Rollator à La Vente",
+        "La Marche"
+      ],
+      "price": "9855",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/deambulateur-4-roues-road-pliable-avec-siege-et-panier-1.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/deambulateur-4-roues-road-pliable-avec-siege-et-panier"
+    },
+    {
+      "id": 534,
+      "name": "Rollator Londres 2 roues pliable avec siège",
+      "slug": "rollator-dupont-londres-2-roues-pliable-avec-siege",
+      "categories": [
+        "Déambulateur Et Rollator à La Vente",
+        "La Marche"
+      ],
+      "price": "5381",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/rollator-pliant-londres-drive-2x2-1.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/rollator-dupont-londres-2-roues-pliable-avec-siege"
+    },
+    {
+      "id": 532,
+      "name": "Déambulateur fixe ultra léger et réglable",
+      "slug": "deambulateur-fixe-ultra-leger-reglable-en-hauteur-brighton",
+      "categories": [
+        "Déambulateur",
+        "La Marche"
+      ],
+      "price": "5381",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/deambulateur-fixe-ultra-leger-reglable-en-hauteur-brighton-1.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/deambulateur-fixe-ultra-leger-reglable-en-hauteur-brighton"
+    },
+    {
+      "id": 530,
+      "name": "Chaise garde robe Osiris DeVilbiss bleue",
+      "slug": "chaise-garde-robe-osiris-devilbiss-bleue",
+      "categories": [
+        "Hygiène",
+        "Matériel Médical Pour L'hygiène à La Vente"
+      ],
+      "price": "13685",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/chaise-garde-robe-osiris-devilbiss-bleue-1.jpg",
+        "/assets/scraped/chaise-garde-robe-osiris-devilbiss-bleue-2.jpg",
+        "/assets/scraped/chaise-garde-robe-osiris-devilbiss-bleue-3.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/chaise-garde-robe-osiris-devilbiss-bleue"
+    },
+    {
+      "id": 526,
+      "name": "Chaise garde-robe remboursée sécurité sociale Sitis",
+      "slug": "chaise-garde-robe-remboursee-securite-sociale-sitis",
+      "categories": [
+        "Hygiène",
+        "Matériel Médical Pour L'hygiène à La Vente"
+      ],
+      "price": "10262",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/chaise-garde-robe-remboursee-securite-sociale-sitis-1.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/chaise-garde-robe-remboursee-securite-sociale-sitis"
+    },
+    {
+      "id": 523,
+      "name": "Marche pied double de baignoire",
+      "slug": "marche-pied-double-de-baignoire-dupont-medical",
+      "categories": [
+        "Hygiène",
+        "Matériel Médical Pour L'hygiène à La Vente",
+        "Toilette et bain"
+      ],
+      "price": "8150",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/marche-pied-double-de-baignoire-dupont-medical-1-e1614011457966.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/marche-pied-double-de-baignoire-dupont-medical"
+    },
+    {
+      "id": 521,
+      "name": "Rehausse wc surélévateur de toilettes",
+      "slug": "rehausse-wc-surelevateur-de-toilettes-rehofix-7-cm",
+      "categories": [
+        "Hygiène",
+        "Matériel Médical Pour L'hygiène à La Vente",
+        "Toilette et bain"
+      ],
+      "price": "2699",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/rehausse-wc-surelevateur-de-toilettes-rehofix-7-cm-1-e1607078164551.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/rehausse-wc-surelevateur-de-toilettes-rehofix-7-cm"
+    },
+    {
+      "id": 519,
+      "name": "DRAPS D’EXAMEN",
+      "slug": "draps-dexamen",
+      "categories": [
+        "Hygiène",
+        "Matériel professionnel"
+      ],
+      "price": "6320",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/draps-d-examen-1.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/draps-dexamen"
+    },
+    {
+      "id": 517,
+      "name": "GEL HYDROALCOOLIQUE 1L ANIOSGEL 85",
+      "slug": "gel-hydroalcoolique-1l-aniosgel-85",
+      "categories": [
+        "Hygiène",
+        "Matériel de protection individuelle et de désinfection",
+        "Matériel Médical Pour L'hygiène à La Vente"
+      ],
+      "price": "1395",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/gel-hydroalcoolique-1l-aniosgel-85-1.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/gel-hydroalcoolique-1l-aniosgel-85"
+    },
+    {
+      "id": 515,
+      "name": "Détergent désinfectant de surface Surfa’safe premium 750 ml",
+      "slug": "detergent-desinfectant-de-surface-surfasafe-premium-750-ml",
+      "categories": [
+        "Matériel de protection individuelle et de désinfection",
+        "Matériel Médical Pour L'hygiène à La Vente"
+      ],
+      "price": "980",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/desinfectant-toutes-surfaces-anios-surfa-safe-premium-.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/detergent-desinfectant-de-surface-surfasafe-premium-750-ml"
+    },
+    {
+      "id": 513,
+      "name": "Lingettes nettoyantes désinfectantes WIP’ANIOS",
+      "slug": "lingettes-nettoyantes-desinfectantes-wipanios",
+      "categories": [
+        "Hygiène",
+        "Matériel Médical Pour L'hygiène à La Vente"
+      ],
+      "price": "950",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/lingettes-nettoyantes-desinfectantes-wip-anios-1.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/lingettes-nettoyantes-desinfectantes-wipanios"
+    },
+    {
+      "id": 511,
+      "name": "Gant de toilette à usage unique MEDILIS",
+      "slug": "gant-de-toilette-a-usage-unique-medilis",
+      "categories": [
+        "Hygiène",
+        "Matériel Médical Pour L'hygiène à La Vente",
+        "Toilette et bain"
+      ],
+      "price": "390",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/gant-de-toilette-a-usage-unique-medilis-1.jpg"
+      ],
+      "short_description": "Bénéficiez de tarifs dégressifs selon la quantité commandée.",
+      "permalink": "/produit/gant-de-toilette-a-usage-unique-medilis"
+    },
+    {
+      "id": 505,
+      "name": "Fauteuils releveurs électriques 2 moteurs",
+      "slug": "fauteuils-releveurs-electriques-2-moteurs",
+      "categories": [
+        "Autour du lit et repos",
+        "Les fauteuils releveurs",
+        "Literie Médicale à La Vente",
+        "Matériel Médical à La Vente"
+      ],
+      "price": "68495",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/fauteuils-releveurs-electriques-2-moteurs-1.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/fauteuils-releveurs-electriques-2-moteurs"
+    },
+    {
+      "id": 502,
+      "name": "Fauteuils roulants PLURIEL enfant DRIVE de VILBISS",
+      "slug": "fauteuils-roulants-pluriel-enfant-drivedevilbiss",
+      "categories": [
+        "Fauteuils Roulants Et Sièges Coquilles à La Vente",
+        "La mobilité"
+      ],
+      "price": "61365",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/fauteuils-roulants-pluriel-enfant-drivedevilbiss-1.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/fauteuils-roulants-pluriel-enfant-drivedevilbiss"
+    },
+    {
+      "id": 500,
+      "name": "Fauteuils roulants manuels pliants NOVO ET ALTO",
+      "slug": "fauteuils-roulants-manuels-pliants-novo-et-alto",
+      "categories": [
+        "Fauteuils Roulants Et Sièges Coquilles à La Vente",
+        "La mobilité"
+      ],
+      "price": "60365",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/fauteuils-roulants-manuels-pliants-novo-et-alto-1.jpg",
+        "/assets/scraped/fauteuils-roulants-manuels-pliants-novo-et-alto-2.jpg",
+        "/assets/scraped/fauteuils-roulants-manuels-pliants-novo-et-alto-3.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/fauteuils-roulants-manuels-pliants-novo-et-alto"
+    },
+    {
+      "id": 496,
+      "name": "Fauteuil roulant de transfert pliant Stan",
+      "slug": "fauteuil-roulant-de-transfert-pliant-stan",
+      "categories": [
+        "Fauteuils Roulants Et Sièges Coquilles à La Vente",
+        "La mobilité"
+      ],
+      "price": "35694",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/fauteuil-roulant-de-transfert-pliant-stan-1.jpg",
+        "/assets/scraped/fauteuil-roulant-de-transfert-pliant-stan-2.jpg",
+        "/assets/scraped/fauteuil-roulant-de-transfert-pliant-stan-3.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/fauteuil-roulant-de-transfert-pliant-stan"
+    },
+    {
+      "id": 492,
+      "name": "LIBERTY OU LIBERTY e INNOV’ SA",
+      "slug": "liberty-ou-liberty-e-innov-sa",
+      "categories": [
+        "Fauteuils à pousser",
+        "La mobilité"
+      ],
+      "price": "0",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/liberty-ou-liberty-e-innov-sa-1.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/liberty-ou-liberty-e-innov-sa"
+    },
+    {
+      "id": 490,
+      "name": "Fauteuils releveurs électriques 1 ou 2 moteurs Relax Touch",
+      "slug": "fauteuils-releveurs-electriques-1-ou-2-moteurs-relax-touch",
+      "categories": [
+        "Autour du lit et repos",
+        "Les fauteuils releveurs",
+        "Matériel Médical à La Vente"
+      ],
+      "price": "0",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/fauteuils-releveurs-electriques-1-ou-2-moteurs-relax-touch-1.jpg",
+        "/assets/scraped/fauteuils-releveurs-electriques-1-ou-2-moteurs-relax-touch-2.jpg",
+        "/assets/scraped/fauteuils-releveurs-electriques-1-ou-2-moteurs-relax-touch-3.jpg",
+        "/assets/scraped/fauteuils-releveurs-electriques-1-ou-2-moteurs-relax-touch-4.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/fauteuils-releveurs-electriques-1-ou-2-moteurs-relax-touch"
+    },
+    {
+      "id": 478,
+      "name": "Béquille Vilgo sous axillaire",
+      "slug": "bequille-sous-axillaire-vilgo",
+      "categories": [
+        "Cannes à La Vente",
+        "La Marche"
+      ],
+      "price": "3545",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/bequille-sous-axillaire-vilgo-1.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/bequille-sous-axillaire-vilgo"
+    },
+    {
+      "id": 474,
+      "name": "Canne tout-terrain",
+      "slug": "canne-tout-terrain",
+      "categories": [
+        "Cannes à La Vente",
+        "La Marche"
+      ],
+      "price": "1890",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/canne-tout-terrain-1.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/canne-tout-terrain"
+    },
+    {
+      "id": 472,
+      "name": "Cannes de marche design",
+      "slug": "cannes-de-marche-design",
+      "categories": [
+        "Cannes à La Vente",
+        "La Marche"
+      ],
+      "price": "1490",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/3693-canne-design-fixe-reglable-aluminium_edited.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/cannes-de-marche-design"
+    },
+    {
+      "id": 469,
+      "name": "Canne DeVilbiss anatomique réglable",
+      "slug": "canne-anatomique-reglable-de-marque-devilbiss",
+      "categories": [
+        "Cannes à La Vente",
+        "La Marche"
+      ],
+      "price": "1220",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/canne-anatomique-reglable-hauteur.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/canne-anatomique-reglable-de-marque-devilbiss"
+    },
+    {
+      "id": 467,
+      "name": "Canne Vilgo en T pliante et réglable",
+      "slug": "canne-en-t-pliante-et-reglable-vilgo",
+      "categories": [
+        "Cannes à La Vente",
+        "La Marche"
+      ],
+      "price": "1220",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/canne-metalliques-pliante-vilgo-2x2-1.png",
+        "/assets/scraped/canne-en-t-pliante-et-reglable-vilgo-2.jpg",
+        "/assets/scraped/canne-en-t-pliante-et-reglable-vilgo-3.jpg",
+        "/assets/scraped/canne-en-t-pliante-et-reglable-vilgo-4.jpg",
+        "/assets/scraped/canne-en-t-pliante-et-reglable-vilgo-5.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/canne-en-t-pliante-et-reglable-vilgo"
+    },
+    {
+      "id": 461,
+      "name": "Béquille Vilgo poignée anatomique",
+      "slug": "bequille-reglable-en-hauteur-en-aluminium-canne-anglaise-adulte-reglables-en-hauteur-vilgo-couleur-noir-vendue-a-lunite-ou-par-paire",
+      "categories": [
+        "Cannes à La Vente",
+        "La Marche"
+      ],
+      "price": "1220",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/canne-anglaises-reglables-en-hauteur.jpg"
+      ],
+      "short_description": "Vendue à l’unité ou par paire",
+      "permalink": "/produit/bequille-reglable-en-hauteur-en-aluminium-canne-anglaise-adulte-reglables-en-hauteur-vilgo-couleur-noir-vendue-a-lunite-ou-par-paire"
+    },
+    {
+      "id": 459,
+      "name": "Table a manger",
+      "slug": "table-a-manger",
+      "categories": [
+        "Au quotidien",
+        "Autour du lit et repos"
+      ],
+      "price": "5985",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/table-a-manger-1.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/table-a-manger"
+    },
+    {
+      "id": 457,
+      "name": "Tire-lait FISIO PRO",
+      "slug": "tire-lait-fisio-pro",
+      "categories": [
+        "Tire lait",
+        "Tire lait en location"
+      ],
+      "price": "0",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/tire-lait-fisio-pro-1.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/tire-lait-fisio-pro"
+    },
+    {
+      "id": 454,
+      "name": "Aérosol manosonique pour traitement tubo-tympaniques",
+      "slug": "aerosol-manosonique-pour-traitement-otite-et-sinusite-en-vente-a-marseille",
+      "categories": [
+        "Aérosol Pneumatique à La Vente",
+        "La respiration"
+      ],
+      "price": "0",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/aerosol-manosonique-pour-traitement-otite-et-sinusite-en-vente-a-marseille-1.jpg",
+        "/assets/scraped/aerosol-manosonique-pour-traitement-otite-et-sinusite-en-vente-a-marseille-2.jpg",
+        "/assets/scraped/aerosol-manosonique-pour-traitement-otite-et-sinusite-en-vente-a-marseille-3.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/aerosol-manosonique-pour-traitement-otite-et-sinusite-en-vente-a-marseille"
+    },
+    {
+      "id": 450,
+      "name": "Obus d'oxygène médical Linde Healthcare",
+      "slug": "obus-doxygene-medical-linde-healthcare",
+      "categories": [
+        "Matériel professionnel",
+        "Oxygénothérapie"
+      ],
+      "price": "0",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/obus-oxygene-2x2-1.png",
+        "/assets/scraped/obus-d-oxygene-medical-linde-healthcare-2.jpg",
+        "/assets/scraped/obus-d-oxygene-medical-linde-healthcare-3.jpg",
+        "/assets/scraped/obus-d-oxygene-medical-linde-healthcare-4.jpg",
+        "/assets/scraped/obus-d-oxygene-medical-linde-healthcare-5.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/obus-doxygene-medical-linde-healthcare"
+    },
+    {
+      "id": 444,
+      "name": "Lit médicalisé Alzheimer Cinétis DeVilbiss",
+      "slug": "lit-medicalise-alzheimer-cinetis-devilbiss",
+      "categories": [
+        "Matériel Médical En Location"
+      ],
+      "price": "0",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/lit-location-ecofit-alzheimer.jpg",
+        "/assets/scraped/lit-medicalise-alzheimer-cinetis-devilbiss-2.jpg",
+        "/assets/scraped/lit-medicalise-alzheimer-cinetis-devilbiss-3.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/lit-medicalise-alzheimer-cinetis-devilbiss"
+    },
+    {
+      "id": 437,
+      "name": "Soulève-malade électrique Samsoft 175",
+      "slug": "souleve-malade-electrique-samsoft-175",
+      "categories": [
+        "Autour du lit et repos",
+        "Matériel Médical En Location"
+      ],
+      "price": "0",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/leve-patient-samsoft-200x200-1.jpg",
+        "/assets/scraped/souleve-malade-electrique-samsoft-175-2.jpg",
+        "/assets/scraped/souleve-malade-electrique-samsoft-175-3.jpg",
+        "/assets/scraped/souleve-malade-electrique-samsoft-175-4.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/souleve-malade-electrique-samsoft-175"
+    },
+    {
+      "id": 430,
+      "name": "Aspirateur de mucosité  VACUAIDE QSU",
+      "slug": "aspirateur-tracheal-de-mucosites-portable-flaem",
+      "categories": [
+        "La respiration en location",
+        "Matériel Médical En Location"
+      ],
+      "price": "0",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/aspirateur-de-mucosite-vacuaide-qsu.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/aspirateur-tracheal-de-mucosites-portable-flaem"
+    },
+    {
+      "id": 427,
+      "name": "Pied à sérum Dupont réglable en hauteur",
+      "slug": "pied-a-serum-dupont-reglable-en-hauteur",
+      "categories": [
+        "Autour du lit et repos",
+        "Matériel Médical En Location"
+      ],
+      "price": "0",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/pied-a-serum-dupont-reglable-en-hauteur-1.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/pied-a-serum-dupont-reglable-en-hauteur"
+    },
+    {
+      "id": 425,
+      "name": "Oxymètre de pouls au doigt",
+      "slug": "oxymetre-de-pouls-au-doigt",
+      "categories": [
+        "Matériel Médical à La Vente",
+        "Oxymètre"
+      ],
+      "price": "2990",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/oxymetre-de-pouls-8000x600-d.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/oxymetre-de-pouls-au-doigt"
+    },
+    {
+      "id": 419,
+      "name": "Tire-lait MEDELA Symphony électrique",
+      "slug": "tire-lait-medela-symphony-electrique",
+      "categories": [
+        "Tire lait",
+        "Tire lait en location"
+      ],
+      "price": "0",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/tir-lait-symphony.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/tire-lait-medela-symphony-electrique"
+    },
+    {
+      "id": 415,
+      "name": "Lit médicalisé électrique",
+      "slug": "lit-medicalise-electrique",
+      "categories": [
+        "Lit",
+        "Services sur-mesure"
+      ],
+      "price": "0",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/lit-medicalise-aldrys-90-cm-3-fonctions-2.jpg",
+        "/assets/scraped/lit-medicalise-aldrys-90-cm-3-fonctions-2.jpg"
+      ],
+      "short_description": "Brochure Aerys &#8211; v2.i",
+      "permalink": "/produit/lit-medicalise-electrique"
+    },
+    {
+      "id": 413,
+      "name": "Fauteuils roulants Médical ,manuels et pliant location et vent a Marseille",
+      "slug": "fauteuils-roulants-medical-manuels-et-pliant-location-et-vent-a-marseille",
+      "categories": [
+        "La mobilité",
+        "Matériel Médical En Location"
+      ],
+      "price": "0",
+      "currency_symbol": "€",
+      "images": [
+        "/assets/scraped/fauteuils-roulants-medical-manuels-et-pliant-location-et-vent-a-marseille-1.jpg"
+      ],
+      "short_description": "",
+      "permalink": "/produit/fauteuils-roulants-medical-manuels-et-pliant-location-et-vent-a-marseille"
+    }
+  ]
+}

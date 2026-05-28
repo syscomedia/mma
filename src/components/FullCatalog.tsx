@@ -8,6 +8,8 @@ import { siteData } from "@/data/site-data";
 import { cn } from "@/lib/utils";
 
 import { useSearchParams } from "next/navigation";
+import Link from "next/link";
+import { getProductSlug } from "@/lib/slug";
 
 const brandLogos: Record<string, string> = {
   Scholl: "/assets/logos/scholl.png",
@@ -134,57 +136,58 @@ export function FullCatalog() {
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.9 }}
                   transition={{ duration: 0.4, delay: i * 0.05 }}
-                  onClick={() => {
-                    setSelectedProduct(product);
-                    setCurrentImageIndex(0);
-                  }}
-                  className="bg-white rounded-[4rem] border-4 border-medical-accent/5 hover:border-medical-green transition-all shadow-2xl group overflow-hidden flex flex-col cursor-pointer"
+                  className="flex flex-col"
                 >
-                  <div className="relative aspect-square bg-sage-dark overflow-hidden">
-                    <Image
-                      src={product.image}
-                      alt={product.name}
-                      fill
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                      className="object-cover group-hover:scale-110 transition-transform duration-1000"
-                    />
-                    <div className="absolute inset-0 bg-medical-accent/5 group-hover:bg-transparent transition-all" />
+                  <Link
+                    href={`/produit/${getProductSlug(product.name)}`}
+                    className="bg-white rounded-[4rem] border-4 border-medical-accent/5 hover:border-medical-green transition-all shadow-2xl group overflow-hidden flex flex-col cursor-pointer h-full"
+                  >
+                    <div className="relative aspect-square bg-sage-dark overflow-hidden w-full">
+                      <Image
+                        src={product.image}
+                        alt={product.name}
+                        fill
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        className="object-cover group-hover:scale-110 transition-transform duration-1000"
+                      />
+                      <div className="absolute inset-0 bg-medical-accent/5 group-hover:bg-transparent transition-all" />
 
-                    {/* Tech Badge */}
-                    <div className="absolute top-8 left-8 flex flex-col gap-2">
-                      <span className="px-4 py-1.5 bg-black text-medical-green rounded-full text-[8px] font-black uppercase tracking-widest shadow-2xl w-fit">
-                        {product.tech}
-                      </span>
-                    </div>
-                  </div>
-
-                  <div className="p-8 sm:p-10 flex flex-col flex-1">
-                    <div className="flex justify-between items-start mb-6">
-                      <div className="flex flex-col gap-2">
-                        {brandLogos[product.brand] ? (
-                          <img src={brandLogos[product.brand]} alt={product.brand} className="object-contain" style={{ width: 'auto', height: '20px' }} />
-                        ) : (
-                          <span className="text-[10px] font-black text-medical-green uppercase tracking-widest">{product.brand}</span>
-                        )}
-                        <h3 className="text-xl sm:text-2xl font-black text-medical-accent group-hover:text-medical-green transition-colors leading-tight uppercase">
-                          {product.name}
-                        </h3>
-                      </div>
-                      <Info className="text-medical-accent/10" size={20} />
-                    </div>
-
-                    <div className="space-y-4 mb-10 flex-1">
-                      <div className="flex flex-col">
-                        <span className="text-[9px] font-black text-medical-accent/20 uppercase tracking-widest mb-1">Matière / Type</span>
-                        <span className="text-[11px] sm:text-xs font-bold text-medical-accent/60 uppercase">{product.material}</span>
+                      {/* Tech Badge */}
+                      <div className="absolute top-8 left-8 flex flex-col gap-2">
+                        <span className="px-4 py-1.5 bg-black text-medical-green rounded-full text-[8px] font-black uppercase tracking-widest shadow-2xl w-fit">
+                          {product.tech}
+                        </span>
                       </div>
                     </div>
 
-                    <button className="w-full bg-sage-bg text-medical-accent py-4 sm:py-5 rounded-[1.5rem] sm:rounded-[2rem] font-black text-[10px] uppercase tracking-[0.2em] hover:bg-medical-green hover:shadow-[0_15px_30px_-10px_rgba(57,255,20,0.5)] transition-all flex items-center justify-center gap-2 group/btn">
-                      <CheckCircle2 className="text-medical-green group-hover/btn:text-medical-accent" size={16} />
-                      Voir Détails
-                    </button>
-                  </div>
+                    <div className="p-8 sm:p-10 flex flex-col flex-1">
+                      <div className="flex justify-between items-start mb-6">
+                        <div className="flex flex-col gap-2">
+                          {brandLogos[product.brand] ? (
+                            <img src={brandLogos[product.brand]} alt={product.brand} className="object-contain" style={{ width: 'auto', height: '20px' }} />
+                          ) : (
+                            <span className="text-[10px] font-black text-medical-green uppercase tracking-widest">{product.brand}</span>
+                          )}
+                          <h3 className="text-xl sm:text-2xl font-black text-medical-accent group-hover:text-medical-green transition-colors leading-tight uppercase">
+                            {product.name}
+                          </h3>
+                        </div>
+                        <Info className="text-medical-accent/10" size={20} />
+                      </div>
+
+                      <div className="space-y-4 mb-10 flex-1">
+                        <div className="flex flex-col">
+                          <span className="text-[9px] font-black text-medical-accent/20 uppercase tracking-widest mb-1">Matière / Type</span>
+                          <span className="text-[11px] sm:text-xs font-bold text-medical-accent/60 uppercase">{product.material}</span>
+                        </div>
+                      </div>
+
+                      <div className="w-full bg-sage-bg text-medical-accent py-4 sm:py-5 rounded-[1.5rem] sm:rounded-[2rem] font-black text-[10px] uppercase tracking-[0.2em] group-hover:bg-medical-green hover:shadow-[0_15px_30px_-10px_rgba(57,255,20,0.5)] transition-all flex items-center justify-center gap-2 group/btn">
+                        <CheckCircle2 className="text-medical-green group-hover/btn:text-medical-accent" size={16} />
+                        Voir Détails
+                      </div>
+                    </div>
+                  </Link>
                 </motion.div>
               ))}
             </AnimatePresence>
