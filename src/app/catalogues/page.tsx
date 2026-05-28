@@ -17,11 +17,11 @@ export const metadata: Metadata = {
     "chaussures orthopédiques Aix",
     "Pescura Scholl France",
   ],
-  alternates: { canonical: "https://mmaixoise.fr/catalogues" },
+  alternates: { canonical: "https://maisonmedicaleaixoise.com/catalogues" },
   openGraph: {
     title: "Catalogues Scholl SS26 — Matériel Médical Aixoise",
     description: "300+ modèles Scholl SS26 disponibles à Aix-en-Provence. Pharma, Lifestyle, Sneakers avec Bioprint® et Memory Cushion®.",
-    url: "https://mmaixoise.fr/catalogues",
+    url: "https://maisonmedicaleaixoise.com/catalogues",
     type: "website",
   },
 };

@@ -17,11 +17,11 @@ export const metadata: Metadata = {
     "Memory Cushion Scholl",
     "semelles Scholl confort",
   ],
-  alternates: { canonical: "https://mmaixoise.fr/blog/comment-choisir-chaussures-scholl" },
+  alternates: { canonical: "https://maisonmedicaleaixoise.com/blog/comment-choisir-chaussures-scholl" },
   openGraph: {
     title: "Comment Choisir ses Chaussures Scholl SS26 ?",
     description: "Guide expert sur les gammes Scholl SS26 avec les technologies Bioprint® et Memory Cushion®. Disponibles à Aix-en-Provence.",
-    url: "https://mmaixoise.fr/blog/comment-choisir-chaussures-scholl",
+    url: "https://maisonmedicaleaixoise.com/blog/comment-choisir-chaussures-scholl",
     type: "article",
   },
 };
@@ -35,12 +35,12 @@ const articleSchema = {
   "publisher": {
     "@type": "Organization",
     "name": "Matériel Médical Aixoise",
-    "logo": { "@type": "ImageObject", "url": "https://mmaixoise.fr/assets/centre.png" },
+    "logo": { "@type": "ImageObject", "url": "https://maisonmedicaleaixoise.com/assets/centre.png" },
   },
   "datePublished": "2025-04-15",
   "dateModified": "2025-04-15",
-  "url": "https://mmaixoise.fr/blog/comment-choisir-chaussures-scholl",
-  "mainEntityOfPage": "https://mmaixoise.fr/blog/comment-choisir-chaussures-scholl",
+  "url": "https://maisonmedicaleaixoise.com/blog/comment-choisir-chaussures-scholl",
+  "mainEntityOfPage": "https://maisonmedicaleaixoise.com/blog/comment-choisir-chaussures-scholl",
 };
 
 export default function ArticleScholl() {
@@ -48,15 +48,17 @@ export default function ArticleScholl() {
     <main className="min-h-screen bg-sage-bg">
       <Navbar />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://mmaixoise.fr" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://mmaixoise.fr/blog" },
-          { "@type": "ListItem", "position": 3, "name": "Choisir ses Chaussures Scholl SS26", "item": "https://mmaixoise.fr/blog/comment-choisir-chaussures-scholl" },
-        ],
-      }) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://maisonmedicaleaixoise.com" },
+            { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://maisonmedicaleaixoise.com/blog" },
+            { "@type": "ListItem", "position": 3, "name": "Choisir ses Chaussures Scholl SS26", "item": "https://maisonmedicaleaixoise.com/blog/comment-choisir-chaussures-scholl" },
+          ],
+        })
+      }} />
 
       <div className="pt-32 pb-16 max-w-3xl mx-auto px-6">
         <Link href="/blog" className="inline-flex items-center gap-2 text-medical-green font-black text-[10px] uppercase tracking-widest mb-12 hover:gap-4 transition-all">
@@ -154,7 +156,7 @@ export default function ArticleScholl() {
                 </h3>
                 <p className="text-white/60 font-bold leading-relaxed mb-6">
                   Tous les modèles Scholl SS26 sont disponibles en magasin au <strong className="text-white">70 Rue Alain Decaux,
-                  Parc de la Duranne, 13100 Aix-en-Provence</strong>. Venez essayer et bénéficier du conseil de nos experts.
+                    Parc de la Duranne, 13100 Aix-en-Provence</strong>. Venez essayer et bénéficier du conseil de nos experts.
                 </p>
                 <Link
                   href="/contact"

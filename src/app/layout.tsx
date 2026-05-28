@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const BASE_URL = "https://mmaixoise.fr";
+const BASE_URL = "https://maisonmedicaleaixoise.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),

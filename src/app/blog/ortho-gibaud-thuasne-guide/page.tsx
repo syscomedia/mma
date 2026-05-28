@@ -18,11 +18,11 @@ export const metadata: Metadata = {
     "Gibaud vs Thuasne comparatif",
     "orthèse poignet Aix",
   ],
-  alternates: { canonical: "https://mmaixoise.fr/blog/ortho-gibaud-thuasne-guide" },
+  alternates: { canonical: "https://maisonmedicaleaixoise.com/blog/ortho-gibaud-thuasne-guide" },
   openGraph: {
     title: "Orthèse Gibaud ou Thuasne ? Guide Comparatif Expert",
     description: "Comparatif Gibaud vs Thuasne : genouillères, chevillères, lombaires. Disponibles à Aix-en-Provence.",
-    url: "https://mmaixoise.fr/blog/ortho-gibaud-thuasne-guide",
+    url: "https://maisonmedicaleaixoise.com/blog/ortho-gibaud-thuasne-guide",
     type: "article",
   },
 };
@@ -36,11 +36,11 @@ const articleSchema = {
   "publisher": {
     "@type": "Organization",
     "name": "Matériel Médical Aixoise",
-    "logo": { "@type": "ImageObject", "url": "https://mmaixoise.fr/assets/centre.png" },
+    "logo": { "@type": "ImageObject", "url": "https://maisonmedicaleaixoise.com/assets/centre.png" },
   },
   "datePublished": "2025-04-29",
   "dateModified": "2025-04-29",
-  "url": "https://mmaixoise.fr/blog/ortho-gibaud-thuasne-guide",
+  "url": "https://maisonmedicaleaixoise.com/blog/ortho-gibaud-thuasne-guide",
 };
 
 const comparison = [
@@ -75,15 +75,17 @@ export default function ArticleOrtho() {
     <main className="min-h-screen bg-sage-bg">
       <Navbar />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://mmaixoise.fr" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://mmaixoise.fr/blog" },
-          { "@type": "ListItem", "position": 3, "name": "Guide Orthèses Gibaud & Thuasne", "item": "https://mmaixoise.fr/blog/ortho-gibaud-thuasne-guide" },
-        ],
-      }) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://maisonmedicaleaixoise.com" },
+            { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://maisonmedicaleaixoise.com/blog" },
+            { "@type": "ListItem", "position": 3, "name": "Guide Orthèses Gibaud & Thuasne", "item": "https://maisonmedicaleaixoise.com/blog/ortho-gibaud-thuasne-guide" },
+          ],
+        })
+      }} />
 
       <div className="pt-32 pb-16 max-w-3xl mx-auto px-6">
         <Link href="/blog" className="inline-flex items-center gap-2 text-medical-green font-black text-[10px] uppercase tracking-widest mb-12 hover:gap-4 transition-all">
@@ -152,7 +154,7 @@ export default function ArticleOrtho() {
             </h3>
             <p className="text-white/60 font-bold leading-relaxed mb-6">
               Toutes les gammes Gibaud et Thuasne sont disponibles au <strong className="text-white">70 Rue Alain Decaux,
-              Parc de la Duranne, 13100 Aix-en-Provence</strong>. Nos experts vous aident à choisir la bonne taille
+                Parc de la Duranne, 13100 Aix-en-Provence</strong>. Nos experts vous aident à choisir la bonne taille
               et le bon modèle.
             </p>
             <Link

@@ -17,11 +17,11 @@ export const metadata: Metadata = {
     "lit électrique médicalisé location",
     "livraison lit médicalisé Aix",
   ],
-  alternates: { canonical: "https://mmaixoise.fr/blog/location-lit-medicalise-aix-en-provence" },
+  alternates: { canonical: "https://maisonmedicaleaixoise.com/blog/location-lit-medicalise-aix-en-provence" },
   openGraph: {
     title: "Location Lit Médicalisé Aix-en-Provence — Guide Complet",
     description: "Prix, remboursement SS, livraison. Tout savoir sur la location de lit médicalisé à Aix-en-Provence.",
-    url: "https://mmaixoise.fr/blog/location-lit-medicalise-aix-en-provence",
+    url: "https://maisonmedicaleaixoise.com/blog/location-lit-medicalise-aix-en-provence",
     type: "article",
   },
 };
@@ -35,11 +35,11 @@ const articleSchema = {
   "publisher": {
     "@type": "Organization",
     "name": "Matériel Médical Aixoise",
-    "logo": { "@type": "ImageObject", "url": "https://mmaixoise.fr/assets/centre.png" },
+    "logo": { "@type": "ImageObject", "url": "https://maisonmedicaleaixoise.com/assets/centre.png" },
   },
   "datePublished": "2025-04-22",
   "dateModified": "2025-04-22",
-  "url": "https://mmaixoise.fr/blog/location-lit-medicalise-aix-en-provence",
+  "url": "https://maisonmedicaleaixoise.com/blog/location-lit-medicalise-aix-en-provence",
 };
 
 export default function ArticleLitMedicalise() {
@@ -47,15 +47,17 @@ export default function ArticleLitMedicalise() {
     <main className="min-h-screen bg-sage-bg">
       <Navbar />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://mmaixoise.fr" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://mmaixoise.fr/blog" },
-          { "@type": "ListItem", "position": 3, "name": "Location Lit Médicalisé Aix-en-Provence", "item": "https://mmaixoise.fr/blog/location-lit-medicalise-aix-en-provence" },
-        ],
-      }) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://maisonmedicaleaixoise.com" },
+            { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://maisonmedicaleaixoise.com/blog" },
+            { "@type": "ListItem", "position": 3, "name": "Location Lit Médicalisé Aix-en-Provence", "item": "https://maisonmedicaleaixoise.com/blog/location-lit-medicalise-aix-en-provence" },
+          ],
+        })
+      }} />
 
       <div className="pt-32 pb-16 max-w-3xl mx-auto px-6">
         <Link href="/blog" className="inline-flex items-center gap-2 text-medical-green font-black text-[10px] uppercase tracking-widest mb-12 hover:gap-4 transition-all">

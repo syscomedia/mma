@@ -15,11 +15,11 @@ export const metadata: Metadata = {
     "choisir chaussures Scholl",
     "orthèse Gibaud guide",
   ],
-  alternates: { canonical: "https://mmaixoise.fr/blog" },
+  alternates: { canonical: "https://maisonmedicaleaixoise.com/blog" },
   openGraph: {
     title: "Blog Santé & Orthopédie — Matériel Médical Aixoise",
     description: "Conseils d'experts en matériel médical et orthopédie à Aix-en-Provence.",
-    url: "https://mmaixoise.fr/blog",
+    url: "https://maisonmedicaleaixoise.com/blog",
     type: "website",
   },
 };
@@ -67,11 +67,11 @@ export default function BlogPage() {
             "@type": "Blog",
             "name": "Blog Matériel Médical Aixoise",
             "description": "Conseils en matériel médical, orthopédie et chaussures Scholl à Aix-en-Provence.",
-            "url": "https://mmaixoise.fr/blog",
+            "url": "https://maisonmedicaleaixoise.com/blog",
             "publisher": {
               "@type": "Organization",
               "name": "Matériel Médical Aixoise",
-              "url": "https://mmaixoise.fr",
+              "url": "https://maisonmedicaleaixoise.com",
             },
           }),
         }}
