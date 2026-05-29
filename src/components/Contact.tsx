@@ -31,7 +31,7 @@ export function Contact() {
   return (
     <section id="contact" className="py-32 bg-sage-bg relative overflow-hidden">
       <div className="absolute top-0 right-0 w-full h-full bg-medical-green/[0.03] blur-[200px] rounded-full translate-x-1/2" />
-      
+
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-24">
           <motion.div
@@ -40,21 +40,21 @@ export function Contact() {
             viewport={{ once: true }}
           >
             <div className="inline-flex items-center gap-3 text-medical-green font-black uppercase tracking-[0.4em] text-[10px] mb-8">
-                <Info size={18} />
-                INFORMATIONS LÉGALES
+              <Info size={18} />
+              INFORMATIONS LÉGALES
             </div>
             <h2 className="text-4xl sm:text-6xl md:text-[6rem] font-black text-medical-accent mb-8 sm:mb-12 uppercase leading-[0.9] tracking-tighter">
-               DISCUTONS <br />
-               <span className="text-medical-green">SANTÉ.</span>
+              DISCUTONS <br />
+              <span className="text-medical-green">SANTÉ.</span>
             </h2>
             <p className="text-base sm:text-xl text-medical-accent/50 font-bold mb-12 sm:mb-16 leading-relaxed max-w-lg">
-               Une question sur une location ou une technologie Scholl ? Notre équipe est à votre entière disposition.
+              Une question sur une location ou une technologie Scholl ? Notre équipe est à votre entière disposition.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-12 mb-16 sm:mb-20">
               {[
                 { icon: MapPin, text: siteData.address, title: "Siège" },
-                { icon: Phone, text: siteData.phone, title: "Ligne Directe" },
+                { icon: Phone, text: siteData.phones, title: "Ligne Directe" },
                 { icon: Mail, text: siteData.email, title: "Email" },
                 { icon: Clock, text: siteData.workingHours, title: "Disponibilité" },
               ].map((item, index) => (
@@ -65,14 +65,28 @@ export function Contact() {
                   </div>
                   <div>
                     <p className="text-medical-accent/20 text-[9px] sm:text-[10px] font-black uppercase tracking-[0.3em] mb-2">{item.title}</p>
-                    <p className="text-medical-accent font-black text-[11px] sm:text-xs uppercase tracking-widest leading-relaxed">{item.text}</p>
+                    {Array.isArray(item.text) ? (
+                      <div className="flex flex-col gap-1">
+                        {item.text.map((t, i) => (
+                          <a key={i} href={`tel:${t.replace(/[^0-9+]/g, '')}`} className="text-medical-accent font-black text-[11px] sm:text-xs uppercase tracking-widest leading-relaxed hover:text-medical-green transition-colors block">
+                            {t}
+                          </a>
+                        ))}
+                      </div>
+                    ) : item.title === 'Email' ? (
+                      <a href={`mailto:${item.text}`} className="text-medical-accent font-black text-[11px] sm:text-xs uppercase tracking-widest leading-relaxed hover:text-medical-green transition-colors block">
+                        {item.text}
+                      </a>
+                    ) : (
+                      <p className="text-medical-accent font-black text-[11px] sm:text-xs uppercase tracking-widest leading-relaxed">{item.text}</p>
+                    )}
                   </div>
                 </div>
               ))}
             </div>
 
             {/* Legal Block */}
-            <div className="bg-medical-accent p-8 sm:p-12 rounded-[3rem] sm:rounded-[4rem] border-4 border-medical-green/20 relative group overflow-hidden shadow-2xl">
+            {/* <div className="bg-medical-accent p-8 sm:p-12 rounded-[3rem] sm:rounded-[4rem] border-4 border-medical-green/20 relative group overflow-hidden shadow-2xl">
                 <div className="absolute top-0 right-0 w-32 h-32 sm:w-40 sm:h-40 bg-medical-green/5 rounded-bl-[6rem]" />
                 <div className="flex items-center gap-4 mb-8 sm:mb-10">
                    <ShieldCheck className="text-medical-green sm:hidden" size={28} />
@@ -93,7 +107,7 @@ export function Contact() {
                         <span className="text-white font-black text-[11px] sm:text-sm uppercase tracking-widest">{siteData.kbis.capital}</span>
                     </div>
                 </div>
-            </div>
+            </div> */}
           </motion.div>
 
           <motion.div
@@ -103,22 +117,22 @@ export function Contact() {
             className="bg-white p-8 sm:p-16 rounded-[3rem] sm:rounded-[5rem] border-4 border-medical-accent/5 shadow-[0_50px_100px_-30px_rgba(44,62,80,0.15)] relative mt-12 lg:mt-0"
           >
             <div className="absolute top-8 sm:top-16 right-8 sm:right-16">
-               <div className="w-4 h-4 sm:w-5 sm:h-5 bg-medical-green rounded-full animate-ping" />
+              <div className="w-4 h-4 sm:w-5 sm:h-5 bg-medical-green rounded-full animate-ping" />
             </div>
             <form className="space-y-8 sm:space-y-10">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10">
                 <div className="space-y-3 sm:space-y-4">
                   <label className="text-medical-accent font-black uppercase tracking-[0.3em] text-[10px] ml-3">Votre Nom</label>
-                  <input 
-                    type="text" 
+                  <input
+                    type="text"
                     placeholder="DUVAL JEAN"
                     className="w-full bg-sage-bg border-2 border-transparent rounded-[2rem] sm:rounded-[2.5rem] py-6 sm:py-8 px-10 sm:px-12 text-medical-accent font-black uppercase tracking-widest text-[10px] sm:text-xs focus:border-medical-green outline-none transition-all placeholder:text-medical-accent/10"
                   />
                 </div>
                 <div className="space-y-3 sm:space-y-4">
                   <label className="text-medical-accent font-black uppercase tracking-[0.3em] text-[10px] ml-3">Votre Email</label>
-                  <input 
-                    type="email" 
+                  <input
+                    type="email"
                     placeholder="JEAN@EXEMPLE.FR"
                     className="w-full bg-sage-bg border-2 border-transparent rounded-[2rem] sm:rounded-[2.5rem] py-6 sm:py-8 px-10 sm:px-12 text-medical-accent font-black uppercase tracking-widest text-[10px] sm:text-xs focus:border-medical-green outline-none transition-all placeholder:text-medical-accent/10"
                   />
@@ -127,7 +141,7 @@ export function Contact() {
               <div className="space-y-3 sm:space-y-4 relative" ref={dropdownRef}>
                 <label className="text-medical-accent font-black uppercase tracking-[0.3em] text-[10px] ml-3">Service Concerné</label>
                 <div className="relative">
-                  <button 
+                  <button
                     type="button"
                     onClick={() => setIsDropdownOpen(!isDropdownOpen)}
                     className="w-full bg-sage-bg border-2 border-transparent rounded-[2rem] sm:rounded-[2.5rem] py-6 sm:py-8 px-10 sm:px-12 text-medical-accent font-black uppercase tracking-widest text-[10px] sm:text-xs focus:border-medical-green outline-none transition-all flex items-center justify-between group"
@@ -138,7 +152,7 @@ export function Contact() {
 
                   <AnimatePresence>
                     {isDropdownOpen && (
-                      <motion.div 
+                      <motion.div
                         initial={{ opacity: 0, y: 10, scale: 0.95 }}
                         animate={{ opacity: 1, y: 0, scale: 1 }}
                         exit={{ opacity: 0, y: 10, scale: 0.95 }}
@@ -152,11 +166,10 @@ export function Contact() {
                               setSelectedService(service);
                               setIsDropdownOpen(false);
                             }}
-                            className={`w-full text-left px-8 py-5 rounded-2xl font-black uppercase tracking-widest text-[10px] transition-all ${
-                              selectedService === service 
-                                ? "bg-medical-accent text-medical-green" 
+                            className={`w-full text-left px-8 py-5 rounded-2xl font-black uppercase tracking-widest text-[10px] transition-all ${selectedService === service
+                                ? "bg-medical-accent text-medical-green"
                                 : "text-medical-accent/40 hover:bg-sage-bg hover:text-medical-accent"
-                            }`}
+                              }`}
                           >
                             {service}
                           </button>
@@ -168,7 +181,7 @@ export function Contact() {
               </div>
               <div className="space-y-3 sm:space-y-4">
                 <label className="text-medical-accent font-black uppercase tracking-[0.3em] text-[10px] ml-3">Message</label>
-                <textarea 
+                <textarea
                   rows={4}
                   placeholder="ÉCRIVEZ VOTRE MESSAGE..."
                   className="w-full bg-sage-bg border-2 border-transparent rounded-[2rem] sm:rounded-[2.5rem] py-8 sm:py-10 px-10 sm:px-12 text-medical-accent font-black uppercase tracking-widest text-[10px] sm:text-xs focus:border-medical-green outline-none transition-all placeholder:text-medical-accent/10 resize-none"

@@ -61,11 +61,19 @@ export default function ContactPage() {
                      <div className="grid grid-cols-2 gap-8">
                         <div>
                            <p className="text-medical-accent/40 font-black text-[10px] uppercase tracking-widest mb-4">Téléphone</p>
-                           <p className="text-medical-accent font-black text-lg">{siteData.phone}</p>
+                           <div className="flex flex-col gap-1">
+                              {siteData.phones?.map((phone, i) => (
+                                 <a key={i} href={`tel:${phone.replace(/[^0-9+]/g, '')}`} className="text-medical-accent font-black text-lg hover:text-medical-green transition-colors">
+                                    {phone}
+                                 </a>
+                              ))}
+                           </div>
                         </div>
                         <div>
                            <p className="text-medical-accent/40 font-black text-[10px] uppercase tracking-widest mb-4">Email</p>
-                           <p className="text-medical-accent font-black text-lg">{siteData.email}</p>
+                           <a href={`mailto:${siteData.email}`} className="text-medical-accent font-black text-lg hover:text-medical-green transition-colors block">
+                              {siteData.email}
+                           </a>
                         </div>
                      </div>
                   </div>

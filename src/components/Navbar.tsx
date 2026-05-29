@@ -10,8 +10,8 @@ import { cn } from "@/lib/utils";
 
 const navLinks = [
   { name: "Accueil", href: "/" },
-  { 
-    name: "Location", 
+  {
+    name: "Location",
     href: "/location",
     subLinks: [
       { name: "Matériel médical", href: "/location/materiel-medical" },
@@ -21,8 +21,8 @@ const navLinks = [
       { name: "Tire lait", href: "/location/tire-lait" }
     ]
   },
-  { 
-    name: "Vente", 
+  {
+    name: "Vente",
     href: "/vente",
     subLinks: [
       { name: "La marche", href: "/vente/la-marche" },
@@ -39,7 +39,7 @@ const navLinks = [
   },
   { name: "Expertises", href: "/services" },
   { name: "Engagement", href: "/about" },
-  { name: "Contact", href: "/contact" },
+  { name: "Contact", href: "/contact", mobileOnly: true },
 ];
 
 export function Navbar() {
@@ -69,8 +69,13 @@ export function Navbar() {
   return (
     <>
       <nav className={cn(
-        "fixed top-0 left-0 right-0 z-[100] transition-all duration-500",
-        scrolled || pathname !== "/" || isOpen ? "bg-sage-bg/95 backdrop-blur-2xl border-b border-medical-green/30 py-4 px-6" : "bg-transparent py-6 px-8"
+        "fixed top-0 left-0 right-0 transition-all duration-500",
+        isOpen ? "z-[130]" : "z-[100]",
+        isOpen
+          ? "bg-transparent border-b border-transparent py-4 px-6"
+          : scrolled || pathname !== "/"
+            ? "bg-sage-bg/95 backdrop-blur-2xl border-b border-medical-green/30 py-4 px-6"
+            : "bg-transparent py-6 px-8"
       )}>
         <div className="max-w-7xl mx-auto flex justify-between items-center relative">
           {/* Logo Section */}
@@ -80,10 +85,16 @@ export function Navbar() {
               <Activity className="text-medical-green hidden sm:block" size={28} />
             </div>
             <div className="flex flex-col">
-              <span className="text-lg sm:text-xl font-black tracking-tighter text-medical-accent leading-none uppercase">
-                Matériel Médical
+              <span className={cn(
+                "text-lg sm:text-xl font-black tracking-tighter leading-none uppercase transition-colors duration-300",
+                isOpen ? "text-white" : "text-medical-accent"
+              )}>
+                Maison Médicale
               </span>
-              <span className="text-[8px] sm:text-[10px] font-black text-medical-green uppercase tracking-[0.4em] mt-1">
+              <span className={cn(
+                "text-[8px] sm:text-[10px] font-black uppercase tracking-[0.4em] mt-1 transition-colors duration-300",
+                isOpen ? "text-white/90" : "text-medical-green"
+              )}>
                 Aixoise
               </span>
             </div>
@@ -91,9 +102,9 @@ export function Navbar() {
 
           {/* Desktop links */}
           <div className="hidden lg:flex items-center gap-10">
-            {navLinks.map((link) => (
+            {navLinks.filter(link => !link.mobileOnly).map((link) => (
               <div key={link.name} className="relative group">
-                <Link 
+                <Link
                   href={link.href}
                   className={cn(
                     "text-xs font-black transition-all uppercase tracking-[0.3em] hover:text-medical-green",
@@ -130,8 +141,8 @@ export function Navbar() {
 
           {/* Mobile Toggle Button - EXPLICITLY VISIBLE */}
           <div className="lg:hidden flex items-center">
-            <button 
-              className="relative w-12 h-12 sm:w-14 sm:h-14 bg-medical-accent rounded-xl sm:rounded-2xl flex items-center justify-center border-2 border-medical-green text-medical-green shadow-[0_0_20px_rgba(57,255,20,0.4)] z-[110] active:scale-95 transition-all" 
+            <button
+              className="relative w-12 h-12 sm:w-14 sm:h-14 bg-medical-accent rounded-xl sm:rounded-2xl flex items-center justify-center border-2 border-medical-green text-medical-green shadow-[0_0_20px_rgba(57,255,20,0.4)] z-[110] active:scale-95 transition-all"
               onClick={() => setIsOpen(!isOpen)}
               aria-label="Toggle Menu"
             >
@@ -158,124 +169,124 @@ export function Navbar() {
             </div>
 
             <div className="flex-1 flex flex-col justify-start px-8 sm:px-12 pt-28 pb-8 relative z-10">
-               <div className="space-y-6 sm:space-y-8">
-                  {navLinks.map((link, i) => (
-                    <motion.div
-                      key={link.name}
-                      initial={{ opacity: 0, x: -50 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ delay: 0.1 + i * 0.1, type: "spring", stiffness: 100 }}
-                      className="flex flex-col"
-                    >
-                      {link.subLinks ? (
-                        <button
-                          onClick={() => toggleSubmenu(link.name)}
-                          className={cn(
-                            "flex items-center gap-6 group w-full text-left focus:outline-none",
-                            pathname.startsWith(link.href) ? "text-medical-green" : "text-white/60 hover:text-white"
-                          )}
-                        >
-                          <span className="text-sm font-black text-medical-green/30 font-mono tracking-tighter">0{i + 1}</span>
-                          <span className="text-4xl sm:text-6xl font-black uppercase tracking-tighter flex items-center gap-4">
-                            {link.name}
-                            <span className="inline-block transition-transform duration-300">
-                              {openSubmenus[link.name] ? (
-                                <ChevronUp className="w-8 h-8 sm:w-12 sm:h-12 text-medical-green" />
-                              ) : (
-                                <ChevronDown className="w-8 h-8 sm:w-12 sm:h-12 text-white/40 group-hover:text-white" />
-                              )}
-                            </span>
-                          </span>
-                        </button>
-                      ) : (
-                        <Link 
-                          href={link.href}
-                          className={cn(
-                            "flex items-center gap-6 group w-fit",
-                            pathname === link.href ? "text-medical-green" : "text-white/60 hover:text-white"
-                          )}
-                          onClick={() => setIsOpen(false)}
-                        >
-                          <span className="text-sm font-black text-medical-green/30 font-mono tracking-tighter">0{i + 1}</span>
-                          <span className="text-4xl sm:text-6xl font-black uppercase tracking-tighter transition-all group-hover:translate-x-4">
-                            {link.name}
-                          </span>
-                          <ArrowRight className={cn(
-                            "transition-all duration-500",
-                            pathname === link.href ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10 group-hover:opacity-100 group-hover:translate-x-0"
-                          )} size={40} />
-                        </Link>
-                      )}
-
-                      <AnimatePresence>
-                        {link.subLinks && openSubmenus[link.name] && (
-                          <motion.div
-                            initial={{ height: 0, opacity: 0 }}
-                            animate={{ height: "auto", opacity: 1 }}
-                            exit={{ height: 0, opacity: 0 }}
-                            transition={{ duration: 0.3, ease: "easeInOut" }}
-                            className="overflow-hidden pl-16 sm:pl-20 mt-4 flex flex-col gap-3"
-                          >
-                            {link.subLinks.map(sub => (
-                              <Link
-                                key={sub.name}
-                                href={sub.href}
-                                onClick={() => setIsOpen(false)}
-                                className="text-lg sm:text-xl font-medium text-white/50 hover:text-medical-green transition-colors py-1"
-                              >
-                                {sub.name}
-                              </Link>
-                            ))}
-                          </motion.div>
+              <div className="space-y-6 sm:space-y-8">
+                {navLinks.map((link, i) => (
+                  <motion.div
+                    key={link.name}
+                    initial={{ opacity: 0, x: -50 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 0.1 + i * 0.1, type: "spring", stiffness: 100 }}
+                    className="flex flex-col"
+                  >
+                    {link.subLinks ? (
+                      <button
+                        onClick={() => toggleSubmenu(link.name)}
+                        className={cn(
+                          "flex items-center gap-6 group w-full text-left focus:outline-none",
+                          pathname.startsWith(link.href) ? "text-medical-green" : "text-white/60 hover:text-white"
                         )}
-                      </AnimatePresence>
-                    </motion.div>
-                  ))}
-               </div>
+                      >
+                        <span className="text-sm font-black text-medical-green/30 font-mono tracking-tighter">0{i + 1}</span>
+                        <span className="text-4xl sm:text-6xl font-black uppercase tracking-tighter flex items-center gap-4">
+                          {link.name}
+                          <span className="inline-block transition-transform duration-300">
+                            {openSubmenus[link.name] ? (
+                              <ChevronUp className="w-8 h-8 sm:w-12 sm:h-12 text-medical-green" />
+                            ) : (
+                              <ChevronDown className="w-8 h-8 sm:w-12 sm:h-12 text-white/40 group-hover:text-white" />
+                            )}
+                          </span>
+                        </span>
+                      </button>
+                    ) : (
+                      <Link
+                        href={link.href}
+                        className={cn(
+                          "flex items-center gap-6 group w-fit",
+                          pathname === link.href ? "text-medical-green" : "text-white/60 hover:text-white"
+                        )}
+                        onClick={() => setIsOpen(false)}
+                      >
+                        <span className="text-sm font-black text-medical-green/30 font-mono tracking-tighter">0{i + 1}</span>
+                        <span className="text-4xl sm:text-6xl font-black uppercase tracking-tighter transition-all group-hover:translate-x-4">
+                          {link.name}
+                        </span>
+                        <ArrowRight className={cn(
+                          "transition-all duration-500",
+                          pathname === link.href ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10 group-hover:opacity-100 group-hover:translate-x-0"
+                        )} size={40} />
+                      </Link>
+                    )}
 
-               <motion.div 
-                 initial={{ opacity: 0, y: 30 }}
-                 animate={{ opacity: 1, y: 0 }}
-                 transition={{ delay: 0.6 }}
-                 className="mt-12 sm:mt-16 pt-8 border-t border-white/10"
-               >
-                  <p className="text-medical-green font-black text-[10px] uppercase tracking-[0.4em] mb-6 text-center sm:text-left">Connectez-vous</p>
-                  <div className="flex justify-center sm:justify-start gap-6">
-                     {[
-                       { icon: Facebook, href: "#" },
-                       { icon: Instagram, href: "#" },
-                       { icon: Linkedin, href: "#" }
-                     ].map((item, i) => (
-                       <a 
-                         key={i} 
-                         href={item.href}
-                         className="w-12 h-12 sm:w-16 sm:h-16 bg-white/5 rounded-2xl flex items-center justify-center text-white/40 hover:text-medical-green hover:bg-white/10 hover:scale-110 transition-all border border-white/5"
-                       >
-                          <item.icon size={20} className="sm:hidden" />
-                          <item.icon size={28} className="hidden sm:block" />
-                       </a>
-                     ))}
-                  </div>
-               </motion.div>
+                    <AnimatePresence>
+                      {link.subLinks && openSubmenus[link.name] && (
+                        <motion.div
+                          initial={{ height: 0, opacity: 0 }}
+                          animate={{ height: "auto", opacity: 1 }}
+                          exit={{ height: 0, opacity: 0 }}
+                          transition={{ duration: 0.3, ease: "easeInOut" }}
+                          className="overflow-hidden pl-16 sm:pl-20 mt-4 flex flex-col gap-3"
+                        >
+                          {link.subLinks.map(sub => (
+                            <Link
+                              key={sub.name}
+                              href={sub.href}
+                              onClick={() => setIsOpen(false)}
+                              className="text-lg sm:text-xl font-medium text-white/50 hover:text-medical-green transition-colors py-1"
+                            >
+                              {sub.name}
+                            </Link>
+                          ))}
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </motion.div>
+                ))}
+              </div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.6 }}
+                className="mt-12 sm:mt-16 pt-8 border-t border-white/10"
+              >
+                <p className="text-medical-green font-black text-[10px] uppercase tracking-[0.4em] mb-6 text-center sm:text-left">Connectez-vous</p>
+                <div className="flex justify-center sm:justify-start gap-6">
+                  {[
+                    { icon: Facebook, href: "#" },
+                    { icon: Instagram, href: "#" },
+                    { icon: Linkedin, href: "#" }
+                  ].map((item, i) => (
+                    <a
+                      key={i}
+                      href={item.href}
+                      className="w-12 h-12 sm:w-16 sm:h-16 bg-white/5 rounded-2xl flex items-center justify-center text-white/40 hover:text-medical-green hover:bg-white/10 hover:scale-110 transition-all border border-white/5"
+                    >
+                      <item.icon size={20} className="sm:hidden" />
+                      <item.icon size={28} className="hidden sm:block" />
+                    </a>
+                  ))}
+                </div>
+              </motion.div>
             </div>
 
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.8 }}
               className="p-8 sm:p-12 bg-black/20 flex items-center justify-between relative z-10 mt-auto"
             >
-               <div className="flex flex-col">
-                  <p className="text-white/20 text-[9px] font-black uppercase tracking-widest mb-1">© 2025 MMAIXOISE</p>
-                  <p className="text-medical-green font-black text-[9px] uppercase tracking-[0.3em]">Excellence Médicale Aix</p>
-               </div>
-               <Link 
-                 href="/contact" 
-                 onClick={() => setIsOpen(false)}
-                 className="bg-medical-green text-medical-accent p-4 rounded-xl hover:scale-110 transition-all shadow-[0_0_20px_rgba(57,255,20,0.3)]"
-               >
-                 <Phone size={20} />
-               </Link>
+              <div className="flex flex-col">
+                <p className="text-white/20 text-[9px] font-black uppercase tracking-widest mb-1">© 2025 MMAIXOISE</p>
+                <p className="text-medical-green font-black text-[9px] uppercase tracking-[0.3em]">Excellence Médicale Aix</p>
+              </div>
+              <Link
+                href="/contact"
+                onClick={() => setIsOpen(false)}
+                className="bg-medical-green text-medical-accent p-4 rounded-xl hover:scale-110 transition-all shadow-[0_0_20px_rgba(57,255,20,0.3)]"
+              >
+                <Phone size={20} />
+              </Link>
             </motion.div>
           </motion.div>
         )}

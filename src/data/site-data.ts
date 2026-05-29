@@ -1,11 +1,12 @@
 export const siteData = {
-  name: "MATÉRIEL MÉDICAL AIXOISE",
+  name: "MAISON MÉDICAL AIXOISE",
   shortName: "MMA",
   slogan: "L'Innovation Scholl SS26 au cœur d'Aix",
   description: "La Maison Médicale Aixoise propose la vente et la location de matériel médical et orthopédique pour particuliers et professionnels de santé. Nous mettons à votre disposition une large gamme d’équipements fiables et certifiés : fauteuils roulants, déambulateurs, rollators, orthèses (genouillères, ceintures lombaires), bas de contention, aides à la marche, produits d’incontinence, literie médicalisée et coussins de positionnement, ainsi que des dispositifs de diagnostic.",
   address: "70 Rue Alain Decaux, 13100 Aix-en-Provence",
-  phone: "+33 4 42 XX XX XX",
-  email: "contact@mmaixoise.fr",
+  phone: "09.83.09.57.58",
+  phones: ["09.83.09.57.58", "06.16.51.08.54"],
+  email: "lamaison.medaix@hotmail.com",
   workingHours: "Lun - Ven: 9h00 - 18h30, Sam: 9h00 - 12h30",
   founder: "Amira ABIDI",
   kbis: {
