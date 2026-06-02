@@ -25,9 +25,42 @@ export const metadata: Metadata = {
    },
 };
 
+const organizationSchema = {
+   "@context": "https://schema.org",
+   "@type": "Organization",
+   "name": "Matériel Médical Aixoise",
+   "@id": "https://maisonmedicaleaixoise.com/#organization",
+   "url": "https://maisonmedicaleaixoise.com",
+   "logo": "https://maisonmedicaleaixoise.com/assets/centre.png",
+   "foundingDate": "2025",
+   "founder": { "@type": "Person", "name": "Amira ABIDI" },
+   "legalName": "Matériel Médical Aixoise",
+   "taxID": "939 690 657",
+   "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "70 Rue Alain Decaux",
+      "addressLocality": "Aix-en-Provence",
+      "addressRegion": "Bouches-du-Rhône",
+      "postalCode": "13100",
+      "addressCountry": "FR"
+   },
+   "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer service",
+      "telephone": "+33603975677",
+      "email": "contact@maisonmedicaleaixoise.com",
+      "availableLanguage": "French",
+      "areaServed": "FR"
+   },
+   "sameAs": [
+      "https://www.pagesjaunes.fr/pro/maison-medicale-aixoise"
+   ]
+};
+
 export default function AboutPage() {
    return (
       <main className="min-h-screen pt-24 bg-sage-bg">
+         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
          <Navbar />
 
          <section className="py-32 relative overflow-hidden">

@@ -26,9 +26,46 @@ export const metadata: Metadata = {
    },
 };
 
+const localBusinessSchema = {
+   "@context": "https://schema.org",
+   "@type": ["MedicalBusiness", "LocalBusiness"],
+   "name": "Matériel Médical Aixoise",
+   "@id": "https://maisonmedicaleaixoise.com/#business",
+   "url": "https://maisonmedicaleaixoise.com",
+   "telephone": "+33603975677",
+   "email": "contact@maisonmedicaleaixoise.com",
+   "image": "https://maisonmedicaleaixoise.com/assets/centre.png",
+   "priceRange": "€€",
+   "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "70 Rue Alain Decaux",
+      "addressLocality": "Aix-en-Provence",
+      "addressRegion": "Bouches-du-Rhône",
+      "postalCode": "13100",
+      "addressCountry": "FR"
+   },
+   "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 43.5297,
+      "longitude": 5.4474
+   },
+   "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "18:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday"], "opens": "09:00", "closes": "12:30" }
+   ],
+   "hasMap": "https://maps.google.com/?q=70+Rue+Alain+Decaux,+13100+Aix-en-Provence",
+   "areaServed": [
+      { "@type": "City", "name": "Aix-en-Provence" },
+      { "@type": "City", "name": "Marseille" },
+      { "@type": "State", "name": "Bouches-du-Rhône" },
+      { "@type": "Country", "name": "France" }
+   ]
+};
+
 export default function ContactPage() {
    return (
       <main className="min-h-screen pt-24 bg-sage-bg">
+         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
          <Navbar />
 
          <div className="py-24 bg-medical-accent text-white overflow-hidden relative">

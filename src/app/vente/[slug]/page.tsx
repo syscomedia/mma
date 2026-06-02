@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { siteData } from "@/data/site-data";
@@ -5,6 +6,82 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import { CheckCircle2, Info, ChevronLeft, ChevronRight } from "lucide-react";
 import { getProductSlug } from "@/lib/slug";
+
+const BASE = "https://maisonmedicaleaixoise.com";
+
+const categoryMeta: Record<string, { title: string; description: string; keywords: string[] }> = {
+  "la-marche": {
+    title: "Aides à la Marche Aix-en-Provence | Déambulateurs, Rollators, Cannes",
+    description: "Vente de déambulateurs, rollators et cannes de marche à Aix-en-Provence. Matériel certifié, livraison rapide 13100. Matériel Médical Aixoise.",
+    keywords: ["déambulateur Aix-en-Provence", "rollator Aix", "canne marche 13100", "aide à la marche Marseille", "déambulateur France"],
+  },
+  "la-mobilite": {
+    title: "Fauteuils Roulants & Mobilité Aix-en-Provence | Vente & Location",
+    description: "Fauteuils roulants manuels et électriques, scooters de mobilité à Aix-en-Provence. Vente et location. Matériel Médical Aixoise, La Duranne.",
+    keywords: ["fauteuil roulant Aix-en-Provence", "fauteuil roulant électrique Aix", "scooter mobilité 13100", "fauteuil roulant Marseille", "fauteuil roulant France"],
+  },
+  "la-respiration": {
+    title: "Matériel Respiratoire Aix-en-Provence | Aérosols, Nébuliseurs",
+    description: "Vente de matériel respiratoire à Aix-en-Provence : aérosolthérapie, nébuliseurs et assistants respiratoires. Livraison 13100. Matériel Médical Aixoise.",
+    keywords: ["matériel respiratoire Aix-en-Provence", "nébuliseur Aix", "aérosol médical 13100", "matériel respiration Marseille", "nébuliseur France"],
+  },
+  "autour-du-lit-et-repos": {
+    title: "Lits Médicalisés & Repos Aix-en-Provence | Vente & Location",
+    description: "Lits médicalisés, tables de lit et accessoires de confort à Aix-en-Provence. Vente et location. Matériel Médical Aixoise au Parc de la Duranne.",
+    keywords: ["lit médicalisé Aix-en-Provence", "lit médicalisé vente Aix", "table de lit 13100", "lit médical Marseille", "lit médicalisé France"],
+  },
+  "hygiene": {
+    title: "Matériel Hygiène Médical Aix-en-Provence | Sièges Douche, Chaises",
+    description: "Sièges de douche, chaises garde-robe, rehausses WC à Aix-en-Provence. Vente de matériel d'hygiène certifié. Matériel Médical Aixoise.",
+    keywords: ["siège douche Aix-en-Provence", "chaise garde-robe Aix", "rehausse WC 13100", "hygiène médical Marseille", "matériel hygiène France"],
+  },
+  "incontinence": {
+    title: "Produits Incontinence Aix-en-Provence | Protections, Alèses",
+    description: "Protections absorbantes et alèses médicales à Aix-en-Provence. Large choix de produits d'incontinence certifiés. Matériel Médical Aixoise.",
+    keywords: ["produits incontinence Aix-en-Provence", "protection incontinence Aix", "alèse médicale 13100", "incontinence Marseille", "protection incontinence France"],
+  },
+  "aides-techniques": {
+    title: "Aides Techniques Médicales Aix-en-Provence | Accessoires Autonomie",
+    description: "Accessoires d'aide au repas, habillement et préhension à Aix-en-Provence. Matériel d'autonomie certifié. Matériel Médical Aixoise.",
+    keywords: ["aides techniques Aix-en-Provence", "accessoires autonomie Aix", "aide préhension 13100", "aides techniques Marseille", "accessoires autonomie France"],
+  },
+  "maintien-postural": {
+    title: "Maintien Postural Aix-en-Provence | Coussins, Cales Anatomiques",
+    description: "Coussins de positionnement et cales anatomiques à Aix-en-Provence. Vente de matériel de maintien postural certifié. Matériel Médical Aixoise.",
+    keywords: ["coussin positionnement Aix-en-Provence", "maintien postural Aix", "cale anatomique 13100", "coussin médical Marseille", "positionnement médical France"],
+  },
+  "au-quotidien": {
+    title: "Matériel Médical Quotidien Aix-en-Provence | Objets Ergonomiques",
+    description: "Objets ergonomiques et accessoires du quotidien médical à Aix-en-Provence. Confort et autonomie au quotidien. Matériel Médical Aixoise.",
+    keywords: ["matériel quotidien Aix-en-Provence", "accessoire ergonomique Aix", "autonomie quotidienne 13100", "matériel médical domicile Marseille"],
+  },
+  "materiel-professionnel": {
+    title: "Matériel Professionnel Médical Aix-en-Provence | Consommables Santé",
+    description: "Consommables et matériel professionnel pour soignants à Aix-en-Provence. Vente en gros et au détail. Matériel Médical Aixoise.",
+    keywords: ["matériel professionnel médical Aix", "consommables médicaux Aix-en-Provence", "matériel soignant 13100", "consommables médicaux Marseille", "matériel médical pro France"],
+  },
+};
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const meta = categoryMeta[slug];
+  if (!meta) return { title: "Vente Matériel Médical | Matériel Médical Aixoise" };
+  return {
+    title: meta.title,
+    description: meta.description,
+    keywords: [...meta.keywords, "matériel médical Aix-en-Provence", "Matériel Médical Aixoise"],
+    alternates: { canonical: `${BASE}/vente/${slug}` },
+    openGraph: {
+      title: meta.title,
+      description: meta.description,
+      url: `${BASE}/vente/${slug}`,
+      siteName: "Matériel Médical Aixoise",
+      locale: "fr_FR",
+      type: "website",
+      images: [{ url: "/assets/centre.png", width: 1200, height: 630, alt: meta.title }],
+    },
+  };
+}
 
 export default async function VentePage({ 
   params,
@@ -83,10 +160,38 @@ export default async function VentePage({
     return pages;
   };
 
+  const meta = categoryMeta[slug];
+  const breadcrumb = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Accueil", "item": BASE },
+      { "@type": "ListItem", "position": 2, "name": "Vente", "item": `${BASE}/vente` },
+      { "@type": "ListItem", "position": 3, "name": meta?.title ?? catalogue.name, "item": `${BASE}/vente/${slug}` },
+    ]
+  };
+
+  const itemListSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": catalogue.name,
+    "description": catalogue.description,
+    "url": `${BASE}/vente/${slug}`,
+    "numberOfItems": catalogue.products.length,
+    "itemListElement": paginatedProducts.map((p, i) => ({
+      "@type": "ListItem",
+      "position": i + 1,
+      "name": p.name,
+      "url": `${BASE}/produit/${getProductSlug(p.name)}`,
+    }))
+  };
+
   return (
     <main className="min-h-screen pt-24 bg-sage-bg">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
       <Navbar />
-      
+
       <section className="pt-12 pb-32">
         <div className="max-w-7xl mx-auto px-6">
           <div className="max-w-3xl mb-24">

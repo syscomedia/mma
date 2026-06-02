@@ -1,17 +1,19 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import { LoadingScreen } from "@/components/LoadingScreen";
 import VisitorTracker from "@/components/VisitorTracker";
 
-const geistSans = Geist({
+const geistSans = localFont({
+  src: "../../public/fonts/geist-latin.woff2",
   variable: "--font-geist-sans",
-  subsets: ["latin"],
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
+const geistMono = localFont({
+  src: "../../public/fonts/geist-mono-latin.woff2",
   variable: "--font-geist-mono",
-  subsets: ["latin"],
+  display: "swap",
 });
 
 const BASE_URL = "https://maisonmedicaleaixoise.com";
@@ -108,7 +110,7 @@ export const metadata: Metadata = {
     images: ["/assets/centre.png"],
   },
   verification: {
-    google: "REMPLACER_PAR_VOTRE_CODE_SEARCH_CONSOLE",
+    google: "818d601d6a9a2bc7",
   },
   category: "health",
 };
