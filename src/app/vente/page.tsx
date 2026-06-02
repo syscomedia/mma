@@ -1,6 +1,38 @@
+import type { Metadata } from "next";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { siteData } from "@/data/site-data";
+
+const BASE = "https://maisonmedicaleaixoise.com";
+
+export const metadata: Metadata = {
+  title: "Vente Matériel Médical Aix-en-Provence | Fauteuils, Déambulateurs, Lits",
+  description:
+    "Achetez votre matériel médical à Aix-en-Provence : fauteuils roulants, déambulateurs, rollators, lits médicalisés, orthèses. Livraison rapide 13100. Matériel Médical Aixoise au Parc de la Duranne.",
+  keywords: [
+    "vente matériel médical Aix-en-Provence",
+    "fauteuil roulant Aix",
+    "déambulateur rollator Aix-en-Provence",
+    "lit médicalisé vente Aix",
+    "orthèse genouillère Aix 13100",
+    "achat matériel médical 13100",
+    "vente équipement médical Bouches-du-Rhône",
+    "vente matériel médical Marseille",
+    "vente matériel médical France",
+    "aide à la marche Aix-en-Provence",
+  ],
+  alternates: { canonical: `${BASE}/vente` },
+  openGraph: {
+    title: "Vente Matériel Médical | Matériel Médical Aixoise",
+    description:
+      "Fauteuils roulants, déambulateurs, lits médicalisés et orthèses en vente à Aix-en-Provence.",
+    url: `${BASE}/vente`,
+    siteName: "Matériel Médical Aixoise",
+    locale: "fr_FR",
+    type: "website",
+    images: [{ url: "/assets/centre.png", width: 1200, height: 630, alt: "Vente matériel médical Aix-en-Provence" }],
+  },
+};
 import Image from "next/image";
 import Link from "next/link";
 import { CheckCircle2, Info, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";

@@ -1,6 +1,38 @@
+import type { Metadata } from "next";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { siteData } from "@/data/site-data";
+
+const BASE = "https://maisonmedicaleaixoise.com";
+
+export const metadata: Metadata = {
+  title: "Location Matériel Médical Aix-en-Provence | Lits, Oxygène, Fauteuils",
+  description:
+    "Location courte et longue durée de matériel médical à Aix-en-Provence : lits médicalisés, concentrateurs d'oxygène, fauteuils roulants, tire-laits. Livraison à domicile 13100. Matériel Médical Aixoise.",
+  keywords: [
+    "location matériel médical Aix-en-Provence",
+    "location lit médicalisé Aix",
+    "location concentrateur oxygène Aix",
+    "location fauteuil roulant Aix 13100",
+    "location tire-lait Aix-en-Provence",
+    "location matériel médical domicile Bouches-du-Rhône",
+    "location matériel médical Marseille",
+    "location matériel médical France",
+    "location équipement médical 13100",
+    "maintien à domicile Aix-en-Provence",
+  ],
+  alternates: { canonical: `${BASE}/location` },
+  openGraph: {
+    title: "Location Matériel Médical | Matériel Médical Aixoise",
+    description:
+      "Location de lits médicalisés, concentrateurs d'oxygène et fauteuils roulants à Aix-en-Provence. Livraison à domicile.",
+    url: `${BASE}/location`,
+    siteName: "Matériel Médical Aixoise",
+    locale: "fr_FR",
+    type: "website",
+    images: [{ url: "/assets/centre.png", width: 1200, height: 630, alt: "Location matériel médical Aix-en-Provence" }],
+  },
+};
 import Image from "next/image";
 import Link from "next/link";
 import { CheckCircle2, Info, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";

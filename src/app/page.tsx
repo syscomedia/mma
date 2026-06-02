@@ -69,10 +69,21 @@ export default function Home() {
                },
                "areaServed": [
                   { "@type": "City", "name": "Aix-en-Provence" },
+                  { "@type": "City", "name": "Marseille" },
                   { "@type": "City", "name": "La Duranne" },
                   { "@type": "City", "name": "Les Milles" },
                   { "@type": "City", "name": "Jas de Bouffan" },
-                  { "@type": "City", "name": "Luynes" }
+                  { "@type": "City", "name": "Luynes" },
+                  { "@type": "City", "name": "Pertuis" },
+                  { "@type": "City", "name": "Gardanne" },
+                  { "@type": "City", "name": "Vitrolles" },
+                  { "@type": "City", "name": "Marignane" },
+                  { "@type": "City", "name": "Aubagne" },
+                  { "@type": "City", "name": "Trets" },
+                  { "@type": "City", "name": "Rousset" },
+                  { "@type": "City", "name": "Venelles" },
+                  { "@type": "State", "name": "Bouches-du-Rhône" },
+                  { "@type": "Country", "name": "France" }
                ],
                "hasOfferCatalog": {
                   "@type": "OfferCatalog",
