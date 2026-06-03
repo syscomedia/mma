@@ -21,8 +21,8 @@ const BASE_URL = "https://maisonmedicaleaixoise.com";
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: "Matériel Médical Aixoise | Matériel Médical & Orthopédie Aix-en-Provence",
-    template: "%s | Matériel Médical Aixoise",
+    default: "Maison Médicale Aixoise | Matériel Médical & Orthopédie Aix-en-Provence",
+    template: "%s | Maison Médicale Aixoise",
   },
   description:
     "Spécialiste en matériel médical, orthopédie et chaussures Scholl SS26 à Aix-en-Provence (La Duranne). Location lits médicalisés, vente fauteuils roulants, orthèses Gibaud, Thuasne. Livraison rapide 13100.",
@@ -63,11 +63,11 @@ export const metadata: Metadata = {
     "matelas anti-escarres Aix",
     "concentrateur oxygène Aix",
     "bas de contention Aix",
-    "Matériel Médical Aixoise",
+    "Maison Médicale Aixoise",
   ],
   authors: [{ name: "Amira ABIDI", url: BASE_URL }],
-  creator: "Matériel Médical Aixoise",
-  publisher: "Matériel Médical Aixoise",
+  creator: "Maison Médicale Aixoise",
+  publisher: "Maison Médicale Aixoise",
   robots: {
     index: true,
     follow: true,
@@ -86,11 +86,11 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Matériel Médical Aixoise | Matériel Médical & Orthopédie",
+    title: "Maison Médicale Aixoise | Matériel Médical & Orthopédie",
     description:
       "Votre expert en matériel médical et orthopédie au Parc de la Duranne, Aix-en-Provence. Scholl SS26, lits médicalisés, fauteuils roulants, orthèses.",
     url: BASE_URL,
-    siteName: "Matériel Médical Aixoise",
+    siteName: "Maison Médicale Aixoise",
     locale: "fr_FR",
     type: "website",
     images: [
@@ -98,13 +98,13 @@ export const metadata: Metadata = {
         url: "/assets/centre.png",
         width: 1200,
         height: 630,
-        alt: "Matériel Médical Aixoise - Matériel Médical Aix-en-Provence",
+        alt: "Maison Médicale Aixoise - Matériel Médical Aix-en-Provence",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Matériel Médical Aixoise | Matériel Médical Aix-en-Provence",
+    title: "Maison Médicale Aixoise | Matériel Médical Aix-en-Provence",
     description:
       "Expert en orthopédie et matériel médical au Parc de la Duranne. Scholl SS26, lits médicalisés, fauteuils roulants.",
     images: ["/assets/centre.png"],
@@ -113,6 +113,13 @@ export const metadata: Metadata = {
     google: "818d601d6a9a2bc7",
   },
   category: "health",
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico", sizes: "any" },
+    ],
+    apple: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
@@ -134,7 +141,6 @@ export default function RootLayout({
         <meta name="ICBM" content="43.5297, 5.4474" />
         <meta name="language" content="French" />
         <meta name="revisit-after" content="7 days" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
       </head>
       <body className="min-h-full flex flex-col">
         <VisitorTracker />
