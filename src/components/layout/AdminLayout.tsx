@@ -3,14 +3,15 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
-import { 
-  LayoutDashboard, 
-  Users, 
-  LogOut, 
-  Menu, 
-  X, 
+import {
+  LayoutDashboard,
+  Users,
+  LogOut,
+  Menu,
+  X,
   Shield,
-  ChevronRight
+  ChevronRight,
+  Mail
 } from 'lucide-react';
 
 interface AdminLayoutProps {
@@ -37,6 +38,12 @@ export default function AdminLayout({ children, username, role }: AdminLayoutPro
       href: '/admin/admins',
       icon: Users,
       description: 'Comptes & Rôles'
+    },
+    {
+      name: 'Emails',
+      href: '/admin/emails',
+      icon: Mail,
+      description: 'Scraping & Base de données'
     }
   ];
 
