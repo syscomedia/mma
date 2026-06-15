@@ -397,26 +397,7 @@ export function FullCatalog() {
         </AnimatePresence>
 
         {/* Global Footer of Catalog */}
-        <div className="mt-32 p-12 bg-medical-accent rounded-[4rem] border-4 border-medical-green/20 relative overflow-hidden flex flex-col lg:flex-row items-center justify-between gap-12">
-          <div className="absolute -top-10 -left-10 w-40 h-40 bg-medical-green/5 rounded-full blur-3xl" />
-          <div className="relative z-10 text-center lg:text-left">
-            <p className="text-medical-green font-black text-[10px] sm:text-xs uppercase tracking-[0.4em] mb-4">Besoin du catalogue complet ?</p>
-            <h4 className="text-white font-black text-2xl sm:text-3xl uppercase tracking-tighter">Téléchargez les PDF originaux par catégorie</h4>
-          </div>
-          <div className="flex flex-wrap justify-center gap-4 relative z-10">
-            {siteData.catalogues.filter(cat => cat.id !== "equipements-medicaux").map(cat => (
-              <a
-                key={cat.id}
-                href={`/assets/BJBR-SCHOLL SS26 - ${cat.id.toUpperCase().replace('-', ' ')} - NO PRICE.pdf`} // Construct URL
-                target="_blank"
-                className="bg-white/5 border-2 border-white/10 hover:border-medical-green px-8 py-4 rounded-full text-white text-[10px] font-black uppercase tracking-widest transition-all flex items-center gap-2 group/link"
-              >
-                <Download size={14} className="text-medical-green" />
-                {cat.name}
-              </a>
-            ))}
-          </div>
-        </div>
+    
       </div>
     </section>
   );
