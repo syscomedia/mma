@@ -198,10 +198,10 @@ export function FullCatalog() {
         <div ref={schollSectionRef} className="mt-48 pt-32 border-t-4 border-medical-accent/5">
           <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
             <div>
-              <p className="text-medical-green font-black uppercase tracking-[0.4em] text-[10px] mb-4">Partenaire Exclusif</p>
-              <h3 className="text-4xl md:text-6xl font-black text-medical-accent uppercase tracking-tighter">
+              {/* <p className="text-medical-green font-black uppercase tracking-[0.4em] text-[10px] mb-4">Partenaire Exclusif</p> */}
+              {/* <h3 className="text-4xl md:text-6xl font-black text-medical-accent uppercase tracking-tighter">
                 COLLECTIONS <span className="text-medical-green">SCHOLL SS26</span>
-              </h3>
+              </h3> */}
             </div>
 
             {/* Tabs for Scholl */}
